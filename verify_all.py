@@ -72,6 +72,8 @@ def main():
         '--output-dir', destination / 'fixed_image_and_power')
     run('practical_calibration', ROOT / 'practical_calibration/reproduce.py',
         '--archive-root', ROOT, '--output', destination / 'practical_calibration')
+    run('supplementary_results', ROOT / 'supplementary_results/check.py',
+        '--archive-root', ROOT, '--output', destination / 'supplementary_results')
     integrity()  # Component commands must leave every distributed file intact.
     import numpy
     import scipy
@@ -92,6 +94,9 @@ def main():
         'practical_calibration_full_deterministic_regeneration': True,
         'practical_calibration_numerical_outputs_byte_compared': 7,
         'practical_calibration_new_random_draws': 0,
+        'supplementary_results_exports_regenerated_and_compared': True,
+        'supplementary_results_new_random_draws': 0,
+        'supplementary_figures_rebuilt': False,
         'supplied_files_unchanged_after_verification': True,
         'network_requests': 0,
         'runtime': {'python': platform.python_version(), 'numpy': numpy.__version__,

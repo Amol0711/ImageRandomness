@@ -6,7 +6,7 @@ blocked average changing intensity (BACI), unified average changing intensity
 Three external grayscale crops are retained as fixed computational reference
 inputs, with their third-party provenance.
 
-Package version **1.0.0** is recorded in `VERSION.txt` and `RELEASE.json`.
+Package version **1.0.1** is recorded in `VERSION.txt` and `RELEASE.json`.
 The file manifest identifies the contents of this package. A package version
 is separate from any repository commit, published tag or DOI.
 
@@ -64,6 +64,7 @@ recomputes deterministic corrections, repeats independent finite-law checks,
 reanalyzes the archived power arrays, and regenerates the practical reference
 intervals and analytic power interpretation without new random draws.
 The latter seven numerical outputs must match the supplied files byte for byte.
+It also regenerates and byte-compares supplementary table and plotting exports.
 It copies writable computational modules into the chosen output directory
 before invoking their launchers.
 Supplied inputs, outputs and source files remain unchanged. No network access
@@ -102,6 +103,7 @@ The component READMEs describe all individual commands and output schemas.
 | `window_reference/` | Finite-grid larger-window moments, exact identities and numerical normal-approximation bounds | Complete deterministic regeneration and independent checks | No random simulation in this component |
 | `fixed_image_and_power/` | Callable fixed-image moments, three reference crops and paired BACI/UACI/NPCR power experiments | Exact-moment regeneration and power-array reanalysis | `--regenerate-addenda` regenerates all 13 raw power archives |
 | `practical_calibration/` | BACI Gaussian intervals, saved null shape diagnostics and analytic interpretation of the paired power experiment | Complete deterministic regeneration and byte comparison of seven numerical outputs | No new random draws in this component |
+| `supplementary_results/` | Additional BACI and UACI figures, full repeated-image and natural-reference tables, and execution details | Regeneration and byte comparison of table and plotting exports | Optional native TikZ/PGFPlots rendering; no new random draws |
 
 The original archive validation fully regenerated the baseline campaign. Its
 expanded checks recomputed every reported summary from archived arrays and
@@ -120,6 +122,21 @@ Monte Carlo estimates retain separate labels.
 ```sh
 python -B practical_calibration/reproduce.py --archive-root . --output ../practical_calibration_rebuild
 ```
+
+## Additional displays and tables
+
+The [supplementary-results index](supplementary_results/README.md) collects
+standalone fixed-reference and UACI figures, complete repeated-image calibration
+and natural-reference moment tables, plotting inputs and detailed execution
+methods. The numerical observations and exact moments are unchanged from
+version 1.0.0 at commit `70192958be5da28d19fda50a6524de52a9708d4d`.
+Version 1.0.1 adds readable exports and their reproduction code.
+
+Table and plotting-data checks require only the Python standard library.
+Rebuilding the optional PDFs also requires a TeX Live installation with
+pdfLaTeX and TikZ/PGFPlots. The supplied figures can be read without TeX.
+The module index gives the commands and the links between each display and
+its existing numerical inputs.
 
 ## Reproduction levels and random streams
 
