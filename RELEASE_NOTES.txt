@@ -1,6 +1,12 @@
 IMAGE RANDOMNESS COMPUTATIONAL ARCHIVE
-Version 1.0.0
+Version 1.0.1
 10 October 2026
+
+Changes in version 1.0.1
+- Added two standalone native TikZ/PGFPlots calibration figures and their sources.
+- Added readable full repeated-image and natural-reference moment tables.
+- Added deterministic export generation, content checks and execution documentation.
+- Retained all numerical algorithms, input arrays and saved results from version 1.0.0.
 
 Package contents
 - Uniform-pixel baseline and expanded BACI experiments.
@@ -15,7 +21,7 @@ moments with independent finite enumeration. It also checks variance
 decomposition and independent-replication scaling. Only NumPy is required
 beyond the Python standard library.
 
-verify_all.py checks all five computational components. Its default mode
+verify_all.py checks the five numerical components and supplementary presentation exports. Its default mode
 reanalyzes saved observations and regenerates deterministic calculations.
 The --engine option adds selected C++ random-stream replay across thread counts.
 The --regenerate-addenda option recomputes the complete high-precision entropy
