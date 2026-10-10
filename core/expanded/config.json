@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "q": 256,
+  "designs": [
+    {
+      "id": "random_R50",
+      "mode": "random",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 50,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610040000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    },
+    {
+      "id": "random_R100",
+      "mode": "random",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 100,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610041000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    },
+    {
+      "id": "fixed_zero",
+      "mode": "constant0",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 1,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610042000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    },
+    {
+      "id": "fixed_mid",
+      "mode": "constant128",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 1,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610043000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    },
+    {
+      "id": "fixed_checker",
+      "mode": "checker",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 1,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610044000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    },
+    {
+      "id": "fixed_split",
+      "mode": "split",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 1,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610045000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    },
+    {
+      "id": "fixed_ramp",
+      "mode": "ramp",
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "repeats": 1,
+      "bank_size": 9999,
+      "evaluation_size": 5000,
+      "seed_base": 202610046000000,
+      "bank_trial_ids": [
+        0,
+        9998
+      ],
+      "evaluation_trial_ids": [
+        9999,
+        14998
+      ]
+    }
+  ],
+  "levels": [
+    0.01,
+    0.05
+  ],
+  "fixed_intervals_percent": {
+    "random_R50": {
+      "0.01": [
+        26.7595,
+        26.7829
+      ],
+      "0.05": [
+        26.7623,
+        26.7801
+      ]
+    },
+    "random_R100": {
+      "0.01": [
+        26.7629,
+        26.7795
+      ],
+      "0.05": [
+        26.7649,
+        26.7775
+      ]
+    }
+  },
+  "fixed_interval_endpoints": "Reject percentage <= lower or >= upper",
+  "seed_rule": "SplitMix64(seed_base + trial_id) modulo 2^64",
+  "rng": "std::mt19937_64",
+  "bank_rule": "Trial indices 0 through bank_size-1",
+  "evaluation_rule": "Subsequent evaluation_size trial indices",
+  "rank_rule": "(1 + count(bank absolute score >= evaluation absolute score))/(bank_size+1) <= alpha; exact rational mean; ties included",
+  "gaussian_rule": "Reject absolute deviation > z(1-alpha/2)*sqrt(variance)",
+  "sampling_unit": "Average of repeats independent whole-image statistics"
+}

@@ -1,0 +1,952 @@
+{
+  "pixel_reference_moments": {
+    "mean_h": 68.2666666507721,
+    "A": 2621.551109890408,
+    "B": 436.9177745226315,
+    "mean_baci": 0.2677124182383219,
+    "mean_uaci": 0.3346354166666667,
+    "variance_uaci_pixel": 0.055992994121476715,
+    "mean_npcr": 0.99609375,
+    "variance_npcr_pixel": 0.0038909912109375
+  },
+  "designs": {
+    "BACI_16x16_R1": {
+      "kind": "baci",
+      "shape": [
+        16,
+        16
+      ],
+      "repeats": 1,
+      "bank_seed_spawn_key": [
+        0
+      ],
+      "fresh_seed_spawn_key": [
+        1
+      ],
+      "metrics": {
+        "baci": {
+          "mean": 0.2677124182383219,
+          "corrected_variance": 0.00014391948750067582,
+          "reference_variances": {
+            "edge_independence_gaussian": 2.986374026958757e-05,
+            "block_independence_gaussian": 4.9772562780479686e-05,
+            "overlap_gaussian": 0.00014391948750067582
+          },
+          "K": 225,
+          "S2": 2190,
+          "W": 12948,
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.26795066376180104,
+          "fresh_sample_variance": 0.0001437369932147789,
+          "empirical_to_corrected_variance_ratio": 0.9987319695958751,
+          "tests": [
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 1205,
+              "rate": 0.241,
+              "wilson_95": [
+                0.22934696544205754,
+                0.2530507041654821
+              ],
+              "absolute_deviation_threshold": 0.014076321565255142,
+              "corrected_to_reference_variance_ratio": 4.819205035989398
+            },
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1823,
+              "rate": 0.3646,
+              "wilson_95": [
+                0.35136745972645167,
+                0.3780404339602699
+              ],
+              "absolute_deviation_threshold": 0.010710757605208213,
+              "corrected_to_reference_variance_ratio": 4.819205035989398
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 670,
+              "rate": 0.134,
+              "wilson_95": [
+                0.12483819575960282,
+                0.14372376206417906
+              ],
+              "absolute_deviation_threshold": 0.01817239135656944,
+              "corrected_to_reference_variance_ratio": 2.89154263836942
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1243,
+              "rate": 0.2486,
+              "wilson_95": [
+                0.2368162533089532,
+                0.2607697472290215
+              ],
+              "absolute_deviation_threshold": 0.013827481705705703,
+              "corrected_to_reference_variance_ratio": 2.89154263836942
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.01,
+              "rejections": 46,
+              "rate": 0.0092,
+              "wilson_95": [
+                0.0069047385482477065,
+                0.012248837681020369
+              ],
+              "absolute_deviation_threshold": 0.03090130933211325,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.05,
+              "rejections": 270,
+              "rate": 0.054,
+              "wilson_95": [
+                0.048070671178201296,
+                0.06061411895678967
+              ],
+              "absolute_deviation_threshold": 0.023512991828545538,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 46,
+              "rate": 0.0092,
+              "wilson_95": [
+                0.0069047385482477065,
+                0.012248837681020369
+              ],
+              "absolute_deviation_threshold_strict": 0.031096586720529618,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 268,
+              "rate": 0.0536,
+              "wilson_95": [
+                0.04769284678695339,
+                0.060192557509593625
+              ],
+              "absolute_deviation_threshold_strict": 0.02355265075223728,
+              "bank_ties_at_threshold": 1
+            }
+          ]
+        }
+      }
+    },
+    "BACI_64x64_R1": {
+      "kind": "baci",
+      "shape": [
+        64,
+        64
+      ],
+      "repeats": 1,
+      "bank_seed_spawn_key": [
+        2
+      ],
+      "fresh_seed_spawn_key": [
+        3
+      ],
+      "metrics": {
+        "baci": {
+          "mean": 0.2677124182383219,
+          "corrected_variance": 8.53378203767672e-06,
+          "reference_variances": {
+            "edge_independence_gaussian": 1.6929557975956674e-06,
+            "block_independence_gaussian": 2.8215738537686897e-06,
+            "overlap_gaussian": 8.53378203767672e-06
+          },
+          "K": 3969,
+          "S2": 39438,
+          "W": 241812,
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.2677911807027338,
+          "fresh_sample_variance": 8.521453484708303e-06,
+          "empirical_to_corrected_variance_ratio": 0.9985553236637652,
+          "tests": [
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 1263,
+              "rate": 0.2526,
+              "wilson_95": [
+                0.24074945560168357,
+                0.26483040332073077
+              ],
+              "absolute_deviation_threshold": 0.0033515051345845578,
+              "corrected_to_reference_variance_ratio": 5.040758919870431
+            },
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1918,
+              "rate": 0.3836,
+              "wilson_95": [
+                0.3702159827332223,
+                0.39716273827958704
+              ],
+              "absolute_deviation_threshold": 0.0025501803821924318,
+              "corrected_to_reference_variance_ratio": 5.040758919870431
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 686,
+              "rate": 0.1372,
+              "wilson_95": [
+                0.127941479593388,
+                0.14701556493794546
+              ],
+              "absolute_deviation_threshold": 0.0043267598468022484,
+              "corrected_to_reference_variance_ratio": 3.0244758705423958
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1301,
+              "rate": 0.2602,
+              "wilson_95": [
+                0.24822624092789464,
+                0.2725419489249548
+              ],
+              "absolute_deviation_threshold": 0.0032922575489775486,
+              "corrected_to_reference_variance_ratio": 3.0244758705423958
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.01,
+              "rejections": 55,
+              "rate": 0.011,
+              "wilson_95": [
+                0.008461172335733187,
+                0.014289640166532683
+              ],
+              "absolute_deviation_threshold": 0.007524676832637875,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.05,
+              "rejections": 251,
+              "rate": 0.0502,
+              "wilson_95": [
+                0.04448534215006972,
+                0.05660528251970369
+              ],
+              "absolute_deviation_threshold": 0.005725571786513058,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 54,
+              "rate": 0.0108,
+              "wilson_95": [
+                0.008287189765234891,
+                0.014063929817809002
+              ],
+              "absolute_deviation_threshold_strict": 0.007575441636981817,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 243,
+              "rate": 0.0486,
+              "wilson_95": [
+                0.042978532307529155,
+                0.05491454900846843
+              ],
+              "absolute_deviation_threshold_strict": 0.005761547354989183,
+              "bank_ties_at_threshold": 1
+            }
+          ]
+        }
+      }
+    },
+    "BACI_256x256_R1": {
+      "kind": "baci",
+      "shape": [
+        256,
+        256
+      ],
+      "repeats": 1,
+      "bank_seed_spawn_key": [
+        4
+      ],
+      "fresh_seed_spawn_key": [
+        5
+      ],
+      "metrics": {
+        "baci": {
+          "mean": 0.2677124182383219,
+          "corrected_variance": 5.263498821130464e-07,
+          "reference_variances": {
+            "edge_independence_gaussian": 1.0333474141725803e-07,
+            "block_independence_gaussian": 1.7222340062449718e-07,
+            "overlap_gaussian": 5.263498821130464e-07
+          },
+          "K": 65025,
+          "S2": 649230,
+          "W": 4014228,
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.267728441352622,
+          "fresh_sample_variance": 5.195375420966838e-07,
+          "empirical_to_corrected_variance_ratio": 0.9870573923394562,
+          "tests": [
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 1251,
+              "rate": 0.2502,
+              "wilson_95": [
+                0.2383893709084218,
+                0.2623941729833287
+              ],
+              "absolute_deviation_threshold": 0.0008280189156032437,
+              "corrected_to_reference_variance_ratio": 5.093639127500059
+            },
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1928,
+              "rate": 0.3856,
+              "wilson_95": [
+                0.37220131303358994,
+                0.39917433717143924
+              ],
+              "absolute_deviation_threshold": 0.0006300445650122479,
+              "corrected_to_reference_variance_ratio": 5.093639127500059
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 677,
+              "rate": 0.1354,
+              "wilson_95": [
+                0.12619566525136555,
+                0.14516414300697011
+              ],
+              "absolute_deviation_threshold": 0.0010689641974452613,
+              "corrected_to_reference_variance_ratio": 3.0562042103712708
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1284,
+              "rate": 0.2568,
+              "wilson_95": [
+                0.24488077013994722,
+                0.2690926400861286
+              ],
+              "absolute_deviation_threshold": 0.0008133812768062178,
+              "corrected_to_reference_variance_ratio": 3.0562042103712708
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.01,
+              "rejections": 52,
+              "rate": 0.0104,
+              "wilson_95": [
+                0.007939964636342375,
+                0.013611769108257562
+              ],
+              "absolute_deviation_threshold": 0.0018687635066481176,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.05,
+              "rejections": 238,
+              "rate": 0.0476,
+              "wilson_95": [
+                0.04203767154178207,
+                0.05385694517810564
+              ],
+              "absolute_deviation_threshold": 0.0014219533738538954,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 62,
+              "rate": 0.0124,
+              "wilson_95": [
+                0.009685385642423546,
+                0.015863277294396162
+              ],
+              "absolute_deviation_threshold_strict": 0.0018126663822237155,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 253,
+              "rate": 0.0506,
+              "wilson_95": [
+                0.044862312290198145,
+                0.0570276982180192
+              ],
+              "absolute_deviation_threshold_strict": 0.001396466354556758,
+              "bank_ties_at_threshold": 1
+            }
+          ]
+        }
+      }
+    },
+    "BACI_16x16_R100": {
+      "kind": "baci",
+      "shape": [
+        16,
+        16
+      ],
+      "repeats": 100,
+      "bank_seed_spawn_key": [
+        6
+      ],
+      "fresh_seed_spawn_key": [
+        7
+      ],
+      "metrics": {
+        "baci": {
+          "mean": 0.2677124182383219,
+          "corrected_variance": 1.4391948750067581e-06,
+          "reference_variances": {
+            "edge_independence_gaussian": 2.986374026958757e-07,
+            "block_independence_gaussian": 4.977256278047968e-07,
+            "overlap_gaussian": 1.4391948750067581e-06
+          },
+          "K": 225,
+          "S2": 2190,
+          "W": 12948,
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.26772856481045754,
+          "fresh_sample_variance": 1.4367246945080423e-06,
+          "empirical_to_corrected_variance_ratio": 0.9982836372324462,
+          "tests": [
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 1218,
+              "rate": 0.2436,
+              "wilson_95": [
+                0.23190168140660686,
+                0.2556919961508185
+              ],
+              "absolute_deviation_threshold": 0.0014076321565255141,
+              "corrected_to_reference_variance_ratio": 4.819205035989398
+            },
+            {
+              "method": "edge_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1863,
+              "rate": 0.3726,
+              "wilson_95": [
+                0.3593009897067479,
+                0.38609462074885276
+              ],
+              "absolute_deviation_threshold": 0.0010710757605208213,
+              "corrected_to_reference_variance_ratio": 4.819205035989398
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.01,
+              "rejections": 636,
+              "rate": 0.1272,
+              "wilson_95": [
+                0.11824973335905259,
+                0.13672266521118204
+              ],
+              "absolute_deviation_threshold": 0.0018172391356569442,
+              "corrected_to_reference_variance_ratio": 2.89154263836942
+            },
+            {
+              "method": "block_independence_gaussian",
+              "alpha": 0.05,
+              "rejections": 1259,
+              "rate": 0.2518,
+              "wilson_95": [
+                0.23996270649522297,
+                0.2640183807503035
+              ],
+              "absolute_deviation_threshold": 0.0013827481705705703,
+              "corrected_to_reference_variance_ratio": 2.89154263836942
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.01,
+              "rejections": 47,
+              "rate": 0.0094,
+              "wilson_95": [
+                0.007076557215688711,
+                0.012476711932801345
+              ],
+              "absolute_deviation_threshold": 0.003090130933211325,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "overlap_gaussian",
+              "alpha": 0.05,
+              "rejections": 256,
+              "rate": 0.0512,
+              "wilson_95": [
+                0.045427963397957266,
+                0.05766112586792603
+              ],
+              "absolute_deviation_threshold": 0.002351299182854554,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 46,
+              "rate": 0.0092,
+              "wilson_95": [
+                0.0069047385482477065,
+                0.012248837681020369
+              ],
+              "absolute_deviation_threshold_strict": 0.003096906380414488,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 264,
+              "rate": 0.0528,
+              "wilson_95": [
+                0.04693748851677059,
+                0.05934914410288852
+              ],
+              "absolute_deviation_threshold_strict": 0.002337196742316139,
+              "bank_ties_at_threshold": 1
+            }
+          ]
+        }
+      }
+    },
+    "UACI_fixed_constant_128_64x64": {
+      "kind": "fixed",
+      "shape": [
+        64,
+        64
+      ],
+      "repeats": 1,
+      "bank_seed_spawn_key": [
+        8
+      ],
+      "fresh_seed_spawn_key": [
+        9
+      ],
+      "metrics": {
+        "uaci": {
+          "mean": 0.25098039215686274,
+          "corrected_variance": 5.126859260861208e-06,
+          "reference_variances": {
+            "pooled_pixel_gaussian": 5.126859260861208e-06,
+            "fixed_position_gaussian": 5.126859260861208e-06
+          },
+          "between_position_mean_variance": 0.0,
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.251007160692402,
+          "fresh_sample_variance": 4.93637260487898e-06,
+          "empirical_to_corrected_variance_ratio": 0.9628453510638733,
+          "tests": [
+            {
+              "method": "pooled_pixel_gaussian",
+              "alpha": 0.01,
+              "rejections": 46,
+              "rate": 0.0092,
+              "wilson_95": [
+                0.0069047385482477065,
+                0.012248837681020369
+              ],
+              "absolute_deviation_threshold": 0.005832339246288934,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "pooled_pixel_gaussian",
+              "alpha": 0.05,
+              "rejections": 235,
+              "rate": 0.047,
+              "wilson_95": [
+                0.04147349616779377,
+                0.053222041794428
+              ],
+              "absolute_deviation_threshold": 0.004437861954826069,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "fixed_position_gaussian",
+              "alpha": 0.01,
+              "rejections": 46,
+              "rate": 0.0092,
+              "wilson_95": [
+                0.0069047385482477065,
+                0.012248837681020369
+              ],
+              "absolute_deviation_threshold": 0.005832339246288934,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "fixed_position_gaussian",
+              "alpha": 0.05,
+              "rejections": 235,
+              "rate": 0.047,
+              "wilson_95": [
+                0.04147349616779377,
+                0.053222041794428
+              ],
+              "absolute_deviation_threshold": 0.004437861954826069,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 49,
+              "rate": 0.0098,
+              "wilson_95": [
+                0.007421083157823486,
+                0.012931571829110523
+              ],
+              "absolute_deviation_threshold_strict": 0.005787568933823539,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 235,
+              "rate": 0.047,
+              "wilson_95": [
+                0.04147349616779377,
+                0.053222041794428
+              ],
+              "absolute_deviation_threshold_strict": 0.0044538909313725505,
+              "bank_ties_at_threshold": 1
+            }
+          ]
+        }
+      }
+    },
+    "UACI_fixed_checkerboard_0_128_64x64": {
+      "kind": "fixed",
+      "shape": [
+        64,
+        64
+      ],
+      "repeats": 1,
+      "bank_seed_spawn_key": [
+        10
+      ],
+      "fresh_seed_spawn_key": [
+        11
+      ],
+      "metrics": {
+        "uaci": {
+          "mean": 0.37549019607843137,
+          "corrected_variance": 1.281574019007113e-05,
+          "reference_variances": {
+            "pooled_pixel_gaussian": 1.660057692654268e-05,
+            "fixed_position_gaussian": 1.281574019007113e-05
+          },
+          "between_position_mean_variance": 0.015502691272587467,
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.3755741854319853,
+          "fresh_sample_variance": 1.2955247567808217e-05,
+          "empirical_to_corrected_variance_ratio": 1.0108856278036262,
+          "tests": [
+            {
+              "method": "pooled_pixel_gaussian",
+              "alpha": 0.01,
+              "rejections": 17,
+              "rate": 0.0034,
+              "wilson_95": [
+                0.0021239367958294426,
+                0.0054385447760012945
+              ],
+              "absolute_deviation_threshold": 0.010494908833568267,
+              "corrected_to_reference_variance_ratio": 0.7720057108123772
+            },
+            {
+              "method": "pooled_pixel_gaussian",
+              "alpha": 0.05,
+              "rejections": 132,
+              "rate": 0.0264,
+              "wilson_95": [
+                0.022306626510353804,
+                0.031220540772004313
+              ],
+              "absolute_deviation_threshold": 0.007985639151819894,
+              "corrected_to_reference_variance_ratio": 0.7720057108123772
+            },
+            {
+              "method": "fixed_position_gaussian",
+              "alpha": 0.01,
+              "rejections": 57,
+              "rate": 0.0114,
+              "wilson_95": [
+                0.0088098452155523,
+                0.014740353125157526
+              ],
+              "absolute_deviation_threshold": 0.00922123153524918,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "fixed_position_gaussian",
+              "alpha": 0.05,
+              "rejections": 267,
+              "rate": 0.0534,
+              "wilson_95": [
+                0.047503970713696914,
+                0.05998174066362813
+              ],
+              "absolute_deviation_threshold": 0.007016490447287232,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 52,
+              "rate": 0.0104,
+              "wilson_95": [
+                0.007939964636342375,
+                0.013611769108257562
+              ],
+              "absolute_deviation_threshold_strict": 0.009282130821078427,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 242,
+              "rate": 0.0484,
+              "wilson_95": [
+                0.04279030408863613,
+                0.05470308430813947
+              ],
+              "absolute_deviation_threshold_strict": 0.007161458333333315,
+              "bank_ties_at_threshold": 2
+            }
+          ]
+        }
+      }
+    },
+    "random_random_64x64": {
+      "kind": "controls",
+      "shape": [
+        64,
+        64
+      ],
+      "repeats": 1,
+      "bank_seed_spawn_key": [
+        12
+      ],
+      "fresh_seed_spawn_key": [
+        13
+      ],
+      "metrics": {
+        "uaci": {
+          "mean": 0.3346354166666667,
+          "corrected_variance": 1.3670164580438651e-05,
+          "reference_variances": {
+            "standard_gaussian": 1.3670164580438651e-05
+          },
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.33465893937653185,
+          "fresh_sample_variance": 1.3386095694688373e-05,
+          "empirical_to_corrected_variance_ratio": 0.9792197903632581,
+          "tests": [
+            {
+              "method": "standard_gaussian",
+              "alpha": 0.01,
+              "rejections": 52,
+              "rate": 0.0104,
+              "wilson_95": [
+                0.007939964636342375,
+                0.013611769108257562
+              ],
+              "absolute_deviation_threshold": 0.009523661507537582,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "standard_gaussian",
+              "alpha": 0.05,
+              "rejections": 232,
+              "rate": 0.0464,
+              "wilson_95": [
+                0.040909582282313894,
+                0.052586876922241926
+              ],
+              "absolute_deviation_threshold": 0.007246611229248226,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 60,
+              "rate": 0.012,
+              "wilson_95": [
+                0.009334535211612843,
+                0.015414741886762912
+              ],
+              "absolute_deviation_threshold_strict": 0.009335746017156865,
+              "bank_ties_at_threshold": 1
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 243,
+              "rate": 0.0486,
+              "wilson_95": [
+                0.042978532307529155,
+                0.05491454900846843
+              ],
+              "absolute_deviation_threshold_strict": 0.007194010416666674,
+              "bank_ties_at_threshold": 1
+            }
+          ]
+        },
+        "npcr": {
+          "mean": 0.99609375,
+          "corrected_variance": 9.499490261077881e-07,
+          "reference_variances": {
+            "standard_gaussian": 9.499490261077881e-07
+          },
+          "fresh_n": 5000,
+          "bank_n": 9999,
+          "fresh_mean": 0.996083642578125,
+          "fresh_sample_variance": 9.534886727978836e-07,
+          "empirical_to_corrected_variance_ratio": 1.0037261438169987,
+          "tests": [
+            {
+              "method": "standard_gaussian",
+              "alpha": 0.01,
+              "rejections": 52,
+              "rate": 0.0104,
+              "wilson_95": [
+                0.007939964636342375,
+                0.013611769108257562
+              ],
+              "absolute_deviation_threshold": 0.0025105404924967802,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "standard_gaussian",
+              "alpha": 0.05,
+              "rejections": 282,
+              "rate": 0.0564,
+              "wilson_95": [
+                0.05033958885978194,
+                0.06314151630587275
+              ],
+              "absolute_deviation_threshold": 0.0019102853361609511,
+              "corrected_to_reference_variance_ratio": 1.0
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.01,
+              "rejections": 52,
+              "rate": 0.0104,
+              "wilson_95": [
+                0.007939964636342375,
+                0.013611769108257562
+              ],
+              "absolute_deviation_threshold_strict": 0.00244140625,
+              "bank_ties_at_threshold": 91
+            },
+            {
+              "method": "independent_rank",
+              "alpha": 0.05,
+              "rejections": 157,
+              "rate": 0.0314,
+              "wilson_95": [
+                0.026914300443434944,
+                0.0366051898194726
+              ],
+              "absolute_deviation_threshold_strict": 0.001953125,
+              "bank_ties_at_threshold": 265
+            }
+          ]
+        }
+      }
+    }
+  },
+  "entropy": {
+    "n": 10000,
+    "empirical_mean": 7.902474839292397,
+    "empirical_sd": 0.0015889592346735619,
+    "reference_mean": 7.902469317,
+    "reference_average_sd": 0.0015873410508417843,
+    "tests": [
+      {
+        "method": "fixed_interval",
+        "alpha": 0.05,
+        "interval": [
+          7.901901305,
+          7.903037329
+        ],
+        "rejections": 7176,
+        "n": 10000,
+        "rate": 0.7176,
+        "wilson_95": [
+          0.7086946312603476,
+          0.726338252648734
+        ]
+      },
+      {
+        "method": "gaussian_block_mean",
+        "alpha": 0.05,
+        "interval": [
+          7.899358185709168,
+          7.9055804482908325
+        ],
+        "rejections": 491,
+        "n": 10000,
+        "rate": 0.0491,
+        "wilson_95": [
+          0.045035391683213966,
+          0.053510898047462174
+        ]
+      }
+    ]
+  },
+  "npcr_exact": {
+    "binomial_n": 4096,
+    "binomial_p": 0.99609375,
+    "summed_mass": 1.0000000000000002,
+    "tests": [
+      {
+        "alpha": 0.01,
+        "method": "standard_gaussian",
+        "probability": 0.008711458260276628
+      },
+      {
+        "alpha": 0.01,
+        "method": "independent_rank",
+        "probability": 0.008711458260276628
+      },
+      {
+        "alpha": 0.05,
+        "method": "standard_gaussian",
+        "probability": 0.05819106592253988
+      },
+      {
+        "alpha": 0.05,
+        "method": "independent_rank",
+        "probability": 0.03198575839618425
+      }
+    ]
+  }
+}

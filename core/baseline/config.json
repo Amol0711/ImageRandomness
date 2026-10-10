@@ -1,0 +1,74 @@
+{
+  "master_seed": 202610041850,
+  "q": 256,
+  "fresh_evaluation_draws": 5000,
+  "independent_calibration_bank_draws": 9999,
+  "alpha": [
+    0.01,
+    0.05
+  ],
+  "baci_image_shapes": [
+    [
+      16,
+      16
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      256,
+      256
+    ]
+  ],
+  "uaci_fixed_image_shape": [
+    64,
+    64
+  ],
+  "uaci_fixed_profiles": [
+    "constant_128",
+    "checkerboard_0_128"
+  ],
+  "control_image_shape": [
+    64,
+    64
+  ],
+  "batch_size": {
+    "default": 64,
+    "256_by_256": 32
+  },
+  "baci_repeated_whole_image_design": {
+    "shape": [
+      16,
+      16
+    ],
+    "repeats": 100
+  },
+  "generator": {
+    "api": "numpy.random.default_rng",
+    "bit_generator": "PCG64",
+    "pixel_dtype": "int16",
+    "seed_sequence_children": 14,
+    "stream_order": "bank then fresh for each design in declared order"
+  },
+  "entropy": {
+    "seed": 202610040187,
+    "trials": 10000,
+    "blocks_per_trial": 30,
+    "pixels_per_block": 1936,
+    "alphabet": 256,
+    "alpha": 0.05,
+    "reference_mean": 7.902469317,
+    "reference_block_sd": 0.008694225,
+    "fixed_interval": [
+      7.901901305,
+      7.903037329
+    ],
+    "batch_size": 100
+  },
+  "generation_versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}
