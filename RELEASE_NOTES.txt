@@ -1,0 +1,32 @@
+IMAGE RANDOMNESS COMPUTATIONAL ARCHIVE
+Version 1.0.0
+10 October 2026
+
+Package contents
+- Uniform-pixel baseline and expanded BACI experiments.
+- Aggregate BACI and local-entropy reference calibration.
+- Finite-grid moments for larger windows and normal-approximation checks.
+- Exact fixed-image moments, three reference crops and paired power experiments.
+- Practical Gaussian intervals and analytic power calculations.
+
+Reproduction
+quick_check.py verifies the file manifest and compares exact BACI and UACI
+moments with independent finite enumeration. It also checks variance
+decomposition and independent-replication scaling. Only NumPy is required
+beyond the Python standard library.
+
+verify_all.py checks all five computational components. Its default mode
+reanalyzes saved observations and regenerates deterministic calculations.
+The --engine option adds selected C++ random-stream replay across thread counts.
+The --regenerate-addenda option recomputes the complete high-precision entropy
+moments and all 13 raw power archives. Full baseline and expanded campaigns
+have separate commands documented in README.md.
+
+Each verification run records its actual operations. Retained component
+validation records describe the calculations performed during those runs.
+The SHA-256 manifest identifies every supplied file except itself.
+
+Rights and provenance
+LICENSE_STATUS.txt records the status of the original software and generated
+data. Third-party source credits and image rights are documented separately.
+This package version does not assign a public repository commit, tag or DOI.

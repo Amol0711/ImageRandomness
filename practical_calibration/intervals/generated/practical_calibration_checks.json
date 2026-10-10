@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "model": "two independent iid uniform images",
+  "q": 256,
+  "window_width": 2,
+  "interval_method": "two-sided Gaussian using exact finite-grid moments",
+  "units": "proportion unless explicitly percent; standard errors in percentage points where labelled",
+  "distinct_designs": 6,
+  "gaussian_intervals": 12,
+  "independent_endpoint_checks": 24,
+  "maximum_independent_endpoint_difference_proportion": 0.0,
+  "exact_per_image_moment_comparisons": 18,
+  "exact_api_mean_variance_comparisons": 12,
+  "symmetric_mean_checks": 12,
+  "independent_repetition_scaling_checks": 6,
+  "literal_grid_count_checks": [
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      7,
+      4
+    ]
+  ],
+  "moments": [
+    {
+      "M": 256,
+      "N": 256,
+      "q": 256,
+      "mean_fraction": "16843009/62914560",
+      "per_image_variance_fraction": "179708138873461494779/341423347815749674598400000",
+      "full_to_pair_variance_ratio": 5.093639127500059
+    },
+    {
+      "M": 512,
+      "N": 512,
+      "q": 256,
+      "mean_fraction": "16843009/62914560",
+      "per_image_variance_fraction": "3614448475820195063783/27528725141299609380008755200",
+      "full_to_pair_variance_ratio": 5.102359103714284
+    },
+    {
+      "M": 1024,
+      "N": 1024,
+      "q": 256,
+      "mean_fraction": "16843009/62914560",
+      "per_image_variance_fraction": "14498451206444047478759/442186046453323006534169395200",
+      "full_to_pair_variance_ratio": 5.1067091893761605
+    }
+  ],
+  "scope": "variance ratios belong to the random/random design; no universal fixed-image multiplier is used",
+  "saved_null_shape": {
+    "source": "core/baseline/data/null_samples.npz",
+    "sha256": "65dd6a876a408337eb651818c90a7aaa24e7f77601f16da79499ab2f6b929c69",
+    "source_role": "independent fresh evaluation observations only; calibration banks excluded",
+    "estimators": "bias-corrected Fisher-Pearson skewness and Fisher excess kurtosis",
+    "uncertainty": "standard errors are exact Gaussian-reference values; not estimated errors under the BACI law",
+    "interpretation": "central-shape diagnostic; does not certify finite-grid tail accuracy",
+    "scipy_independent_estimator_checks": 6,
+    "rows": [
+      {
+        "M": 16,
+        "N": 16,
+        "R": 1,
+        "q": 256,
+        "array_key": "BACI_16x16_R1_baci_fresh",
+        "n": 5000,
+        "bias_corrected_skewness": -0.021693470207679786,
+        "bias_corrected_excess_kurtosis": -0.000464718889542998,
+        "gaussian_reference_se_skewness": 0.0346306299062346,
+        "gaussian_reference_se_excess_kurtosis": 0.06924743109577537
+      },
+      {
+        "M": 64,
+        "N": 64,
+        "R": 1,
+        "q": 256,
+        "array_key": "BACI_64x64_R1_baci_fresh",
+        "n": 5000,
+        "bias_corrected_skewness": 0.017756255619852838,
+        "bias_corrected_excess_kurtosis": -0.021761559842977625,
+        "gaussian_reference_se_skewness": 0.0346306299062346,
+        "gaussian_reference_se_excess_kurtosis": 0.06924743109577537
+      },
+      {
+        "M": 256,
+        "N": 256,
+        "R": 1,
+        "q": 256,
+        "array_key": "BACI_256x256_R1_baci_fresh",
+        "n": 5000,
+        "bias_corrected_skewness": -0.03564562438840654,
+        "bias_corrected_excess_kurtosis": 0.058442012445941376,
+        "gaussian_reference_se_skewness": 0.0346306299062346,
+        "gaussian_reference_se_excess_kurtosis": 0.06924743109577537
+      }
+    ]
+  }
+}

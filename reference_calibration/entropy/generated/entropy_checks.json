@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "small_alphabets_exhaustive": [
+    {
+      "q": 2,
+      "T": 2,
+      "enumerated_images": 4
+    },
+    {
+      "q": 2,
+      "T": 3,
+      "enumerated_images": 8
+    },
+    {
+      "q": 2,
+      "T": 4,
+      "enumerated_images": 16
+    },
+    {
+      "q": 2,
+      "T": 5,
+      "enumerated_images": 32
+    },
+    {
+      "q": 2,
+      "T": 6,
+      "enumerated_images": 64
+    },
+    {
+      "q": 2,
+      "T": 7,
+      "enumerated_images": 128
+    },
+    {
+      "q": 2,
+      "T": 8,
+      "enumerated_images": 256
+    },
+    {
+      "q": 3,
+      "T": 2,
+      "enumerated_images": 9
+    },
+    {
+      "q": 3,
+      "T": 3,
+      "enumerated_images": 27
+    },
+    {
+      "q": 3,
+      "T": 4,
+      "enumerated_images": 81
+    },
+    {
+      "q": 3,
+      "T": 5,
+      "enumerated_images": 243
+    },
+    {
+      "q": 3,
+      "T": 6,
+      "enumerated_images": 729
+    },
+    {
+      "q": 4,
+      "T": 2,
+      "enumerated_images": 16
+    },
+    {
+      "q": 4,
+      "T": 3,
+      "enumerated_images": 64
+    },
+    {
+      "q": 4,
+      "T": 4,
+      "enumerated_images": 256
+    },
+    {
+      "q": 4,
+      "T": 5,
+      "enumerated_images": 1024
+    }
+  ],
+  "total_enumerated_images": 2957,
+  "source_interval_count": 78,
+  "exact_binary_rule_sizes_checked": 156,
+  "exact_discrete_acceptance_sets_checked": 39,
+  "all_exact_discrete_sets_control_size_and_are_narrowest_symmetric": true,
+  "nine_decimal_rounding_preserves_all_binary_gaussian_decisions": true,
+  "binary_normal_oversize_at_k100_alpha005_confirmed": true
+}

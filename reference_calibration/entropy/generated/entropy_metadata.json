@@ -1,0 +1,45 @@
+{
+  "source": {
+    "citation": "Y. Wu, Y. Zhou, G. Saveriades, S. Agaian, J. P. Noonan, P. Natarajan, Local Shannon entropy measure with statistical tests for image randomness, Information Sciences 222 (2013) 323\u2013342",
+    "doi": "10.1016/j.ins.2012.07.049",
+    "numerical_inputs": "Tables 3 and 4, printed page 334",
+    "table4_rows": 26,
+    "intervals": 78,
+    "endpoints": 156,
+    "transcription_check": "All 26 rows compared with extracted full text and visually inspected on source page 334.",
+    "source_table3_sha256": "a6dd34248edbd013ebfa2dabfd607321b9037079ab6e4bf46bd7b39d1fa0602b",
+    "source_table4_sha256": "73211ad5ea652d0b5b19f7341ffaaec1fa6d9185c5c0ce8a147cdc2982a97539"
+  },
+  "precision": {
+    "primary_dps": 60,
+    "independent_dps": 80,
+    "output_significant_digits": 40,
+    "table_decimal_places": 9,
+    "method": "Complete marginal and bivariate multinomial finite sums; no tail truncation",
+    "independent_method": "Condition on the combined count of two symbols, then use its binomial split",
+    "normal_quantiles": "mpmath erfinv at primary_dps"
+  },
+  "assumptions": [
+    "Uniform independent scalar entries",
+    "k independent blocks with T scalar entries each",
+    "The q=256 RGB interpretation uses 8-bit scalar channel entries, not a 24-bit alphabet or T RGB triples",
+    "Binary T=2 block entropy is Bernoulli(1/2)",
+    "Endpoints define a closed acceptance interval"
+  ],
+  "interpretation": {
+    "corrected_intervals": "Gaussian approximations using finite-multinomial moments",
+    "binary_sizes": "Exact rational binomial sums, with decimal rendering",
+    "binary_exact_intervals": "Narrowest symmetric nonrandomized acceptance interval with size no greater than alpha",
+    "binary_exact_interval_implementation": "Use inclusive integer accepted_count_min and accepted_count_max; decimal entropy endpoints are display values",
+    "ideal_normal_source_scale_rejection_probability": "Normal-law diagnostic erfc(z/sqrt(2k)); not an exact finite-k size"
+  },
+  "checks": {
+    "all_source_endpoints_match_inverse_k_scale_to_nearest_9dp": true,
+    "maximum_source_endpoint_reconstruction_error": "0.0000000004943026279752149325077907539815042800136",
+    "independent_full_moment_sums_agree": true
+  },
+  "software": {
+    "python": "3.12.14",
+    "mpmath": "1.3.0"
+  }
+}
