@@ -1,0 +1,139 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=14mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,graphicx,xcolor,float,caption}
+\usepackage{tikz,pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\captionsetup{font=small,justification=justified,singlelinecheck=false}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}
+\pagestyle{empty}
+\pdfinfo{/Author () /Title (Fixed-reference BACI calibration)}
+\begin{document}
+{\large\bfseries Fixed-reference BACI calibration}\par\smallskip
+\begin{figure}[H]
+\centering
+\begingroup
+\definecolor{fixedSource}{RGB}{173,55,50}
+\definecolor{fixedWithin}{RGB}{197,132,36}
+\definecolor{fixedFull}{RGB}{31,110,141}
+\definecolor{fixedRank}{RGB}{51,61,72}
+\definecolor{fixedMid}{gray}{0.5019607843137255}
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[font=\small]
+% All pattern intensities use the same fixed 0--255 grey scale.
+% The checkerboard is a labelled crop of the actual single-pixel pattern.
+\node[anchor=west,font=\small\bfseries] at (0,10.55)
+ {(a) Fixed reference patterns};
+\node[anchor=east,font=\footnotesize] at (16,10.55)
+ {Image size $256\times256$ \quad Common intensity scale $0$--$255$};
+\foreach \xx/\name in {0.4/Zero,3.65/Mid,6.9/Checker,10.15/Split,13.4/Ramp}{
+ \node[font=\small] at (\xx+1,10.08) {\name};
+}
+\fill[black] (0.4,7.75) rectangle (2.4,9.75);
+\fill[fixedMid] (3.65,7.75) rectangle (5.65,9.75);
+\foreach \rr in {0,...,7}{
+ \foreach \cc in {0,...,7}{
+  \pgfmathtruncatemacro{\parity}{mod(\rr+\cc,2)}
+  \ifnum\parity=0
+   \fill[black] (6.9+\cc/4,9.75-\rr/4) rectangle ++(.25,-.25);
+  \else
+   \fill[fixedMid] (6.9+\cc/4,9.75-\rr/4) rectangle ++(.25,-.25);
+  \fi
+ }
+}
+\fill[black] (10.15,7.75) rectangle (11.15,9.75);
+\fill[fixedMid] (11.15,7.75) rectangle (12.15,9.75);
+\foreach \jj in {0,...,255}{
+ \pgfmathsetmacro{\rampgray}{\jj/255}
+ \definecolor{fixedRampPixel}{gray}{\rampgray}
+ \fill[fixedRampPixel] (13.4+\jj/128,7.75) rectangle ++(0.0078125,2);
+}
+\foreach \xx in {0.4,3.65,6.9,10.15,13.4}{
+ \draw[black!50,line width=.35pt] (\xx,7.75) rectangle ++(2,2);
+}
+\node[font=\footnotesize] at (1.4,7.48) {Constant $0$};
+\node[font=\footnotesize] at (4.65,7.48) {Constant $128$};
+\node[font=\footnotesize] at (7.9,7.48) {$8\times8$ pixel crop};
+\node[font=\footnotesize] at (11.15,7.48) {Vertical halves $0$, $128$};
+\node[font=\footnotesize] at (14.4,7.48) {Columns $0$--$255$};
+\node[align=center,font=\footnotesize,text=black!75] at (12.55,6.65)
+ {Checker and Split share the same histogram\\32768 pixels at $0$ and 32768 at $128$};
+\begin{axis}[
+ at={(.8cm,.9cm)},anchor=south west,scale only axis,width=6.4cm,height=4.55cm,
+ title={(b) Calibration at nominal 5\%},title style={font=\small,yshift=3pt},
+ tick label style={font=\footnotesize},label style={font=\small},
+ ymajorgrids,grid style={black!10},axis line style={black!45},tick style={black!45},
+ xmin=.55,xmax=5.45,xtick={1,2,3,4,5},
+ xticklabels={Zero,Mid,Checker,Split,Ramp},
+ ylabel={Null rejection (\%)},ymin=0,ymax=47,ytick={0,10,20,30,40},
+ legend style={draw=none,font=\footnotesize,legend columns=4,
+ /tikz/every even column/.append style={column sep=.25cm}},
+ legend to name=fixedCalibrationLegend,error bars/y dir=both,error bars/y explicit]
+\addplot+[only marks,mark=square*,mark size=2pt,color=fixedSource,mark options={draw=fixedSource,fill=fixedSource}]
+ table[x expr=\thisrow{x}-0.15,y=rate,y error minus=minus,y error plus=plus,col sep=comma]{../generated/fixed_reference_pair.csv};
+\addlegendentry{Pair indep.}
+\addplot+[only marks,mark=triangle*,mark size=2pt,color=fixedWithin,mark options={draw=fixedWithin,fill=fixedWithin}]
+ table[x expr=\thisrow{x}-0.05,y=rate,y error minus=minus,y error plus=plus,col sep=comma]{../generated/fixed_reference_within_window.csv};
+\addlegendentry{Within-window}
+\addplot+[only marks,mark=*,mark size=2pt,color=fixedFull,mark options={draw=fixedFull,fill=fixedFull}]
+ table[x expr=\thisrow{x}+0.05,y=rate,y error minus=minus,y error plus=plus,col sep=comma]{../generated/fixed_reference_full_covariance.csv};
+\addlegendentry{Full covariance}
+\addplot+[only marks,mark=diamond*,mark size=2pt,color=fixedRank,mark options={draw=fixedRank,fill=fixedRank}]
+ table[x expr=\thisrow{x}+0.15,y=rate,y error minus=minus,y error plus=plus,col sep=comma]{../generated/fixed_reference_rank.csv};
+\addlegendentry{Null rank}
+\addplot[black!60,dashed,forget plot] coordinates {(.55,5) (5.45,5)};
+\node[anchor=west,font=\scriptsize,fill=white,inner sep=1pt] at (axis cs:.67,7.8) {Nominal 5\%};
+\end{axis}
+\begin{axis}[
+ at={(8.9cm,.9cm)},anchor=south west,scale only axis,width=2.55cm,height=4.55cm,
+ title={(c) Exact mean},title style={font=\small,yshift=3pt},
+ tick label style={font=\footnotesize},label style={font=\small},
+ ymajorgrids,grid style={black!10},axis line style={black!45},tick style={black!45},
+ xmin=.45,xmax=2.55,xtick={1,2},xticklabels={Checker,Split},
+ ylabel={Mean (\%)},ymin=0,ymax=36,ytick={0,10,20,30}]
+\addplot+[ybar,mark=none,bar width=12pt,draw=fixedFull,fill=fixedFull!18,
+ nodes near coords,point meta=y,
+ every node near coord/.append style={font=\scriptsize,text=fixedFull,
+ /pgf/number format/fixed,/pgf/number format/precision=5,/pgf/number format/fixed zerofill}]
+ table[x=x,y=mean_percent,col sep=comma]{../generated/fixed_reference_geometry_plot.csv};
+\end{axis}
+\begin{axis}[
+ at={(13.35cm,.9cm)},anchor=south west,scale only axis,width=2.55cm,height=4.55cm,
+ title={(d) Exact variance},title style={font=\small,yshift=3pt},
+ tick label style={font=\footnotesize},label style={font=\small},
+ ymajorgrids,grid style={black!10},axis line style={black!45},tick style={black!45},
+ xmin=.45,xmax=2.55,xtick={1,2},xticklabels={Checker,Split},
+ ylabel={Variance (percentage points$^2$)},
+ ymin=0,ymax=.0093,ytick={0,.003,.006,.009},scaled y ticks=false,
+ yticklabel style={/pgf/number format/fixed,/pgf/number format/precision=3}]
+\addplot+[ybar,mark=none,bar width=12pt,draw=fixedFull,fill=fixedFull!18,
+ nodes near coords,point meta=y,
+ every node near coord/.append style={font=\scriptsize,text=fixedFull,
+ /pgf/number format/fixed,/pgf/number format/precision=6,/pgf/number format/fixed zerofill}]
+ table[x=x,y expr=\thisrow{sd_percent}*\thisrow{sd_percent},col sep=comma]{../generated/fixed_reference_geometry_plot.csv};
+\end{axis}
+\node[font=\footnotesize,text=fixedFull,anchor=north] at (14.625,.27)
+ {Variance ratio $2.32180$};
+\node[anchor=north] at (8,-.18) {\pgfplotslegendfromname{fixedCalibrationLegend}};
+\end{tikzpicture}%
+}
+\endgroup
+\caption*{Spatial conditioning in blocked average changing intensity (BACI) with overlapping $2\times2$ windows, a fixed reference image and $q=256$. Here $B$ denotes the normalized BACI statistic. (a) Five deterministic $256\times256$ reference patterns on a common intensity scale. Checker shows an enlarged $8\times8$ pixel crop; the other thumbnails represent the full images. (b) Rejection at nominal 5\% over 5000 independent comparison images per pattern, with mutually independent uniform pixels. Pair indep.\ denotes the Gaussian rule using the pair-occurrence independence approximation~\cite{zhang2021}, which treats every pair occurrence as independent. Within-window denotes the within-window covariance diagnostic. Full covariance denotes the full-covariance Gaussian rule. Error bars are Wilson 95\% intervals, conditional on the realized independent bank of $L=9999$ reference statistics for the independent-null rank rule. Panels~(c,d) display exact $\E[100B]$ and $\Var(100B)$, respectively, for Checker and Split. The mean is expressed as a percentage and the variance in squared percentage points. These patterns have identical histograms, and the checkerboard variance is 2.32180 times the split variance. The moment panels contain deterministic calculations.}
+\end{figure}
+
+\vspace{-4pt}
+{\small
+\renewcommand{\refname}{Reference}
+\begin{thebibliography}{1}
+\bibitem{zhang2021}
+Y.~Zhang, Statistical test criteria for sensitivity indexes of image cryptosystems,
+\emph{Information Sciences} 550 (2021) 313--328.
+DOI 10.1016/j.ins.2020.10.026.
+\end{thebibliography}
+}
+\end{document}

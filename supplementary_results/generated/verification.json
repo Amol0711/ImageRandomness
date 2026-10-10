@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "fixed_geometry_pairs": 2,
+    "fixed_plot_points": 20,
+    "natural_moment_rows": 6,
+    "recomputed_wilson_intervals": 58,
+    "repeated_calibration_rows": 20,
+    "uaci_plot_points": 18
+  },
+  "generated_sha256": {
+    "fixed_reference_calibration.csv": "fbb69f5b47b0572ab6112422fa688b85e8fc3997e9503d88994fe3788de23de4",
+    "fixed_reference_full_covariance.csv": "999d94877a3392d7be81b8006f5d0ee7033940e59d1833543c3b9435e88ee296",
+    "fixed_reference_geometry.csv": "f13cad1d4d59af2457f618066757a2c28cbb823c7b84570f89bfafef6a8001ef",
+    "fixed_reference_geometry_plot.csv": "1c595de20a702a693c260fca272597befec4e7b1b153edc4301a1dbe0d43c9ba",
+    "fixed_reference_pair.csv": "7192b570b266e838d9e5d9fcec5fc39d78226ce5034287b8f8d155ac8f2d2680",
+    "fixed_reference_rank.csv": "ff6ea844c715fce72e5fc7e667288bfaf2a127c99bffea8330ab32e408ad8658",
+    "fixed_reference_within_window.csv": "2c85ecb4620a81df3a4bd5171ed5d140b149c0d4d6ed400b28547fe0e894cfc6",
+    "natural_reference_moments.csv": "59ebb2bbcd24f9c5d734842ceffd3395b1c96dd559c404fd8d1e8a1f6473b916",
+    "natural_reference_moments.md": "7381b9d71e12f87cb34932bf035dc31f151f18c9b578d38ad809a064f5018911",
+    "repeated_image_calibration.csv": "62c5550c8f7d5fde383e8540c4f525e08c1b1a962f006e49f7a8aa288dab0164",
+    "repeated_image_calibration.md": "ba003d9e277fc1b0ddd5404a7bf13e4862eb4e04355226e46209e7725beda245",
+    "tables.html": "38ebeb4a4c6a5ce9d2f512aa8d349f764044831506aaba127d56c74761ad5f19",
+    "uaci_calibration.csv": "0931e1d5fbf9f92398dc058940b401dc35d1c87cb12ea4b43b1f59306936a64e",
+    "uaci_nominal_01.csv": "429ef224632cbf59f6f6dc92654bd0db42f3c04b4598cc23bf9fc740312c63d4",
+    "uaci_nominal_05.csv": "e97409efa6e487a25c36776c6a726bdc0120e5cbc39f3b677cfe7271b2f89053"
+  },
+  "input_sha256": {
+    "core/baseline/expected/rejection_rates.csv": "95abaf2807d389d2f56557141e737215be1c745b6173d1189b4b7a6bd8aacffd",
+    "core/expanded/expected_moments.csv": "0c8112f24fa196ebbac6245d329ed51b7afc204b50cf958330cf9f7cf5a3687b",
+    "core/expanded/expected_rejection_rates.csv": "662d62354870ae08c5ef9553efb31a89ac8e59d00e2a80efa0d39e3327189daa",
+    "fixed_image_and_power/natural_images/outputs/natural_image_moments.csv": "fa2999a3808d32b6b6b7b55221c7f29956084c3977efcde4b0e04639d3f70c94",
+    "fixed_image_and_power/natural_images/outputs/natural_image_moments_exact.json": "5b9d4ff54b1ab1ad703be60ec774c919dad086082da184565ea6f6b1f49a4356"
+  },
+  "qualification": "Gaussian tail rules remain approximations; rank validity is marginal over bank and test draws; rank Wilson intervals condition on the reused bank.",
+  "random_draws": 0,
+  "scope": "Archived-output export and independent count, Wilson, exact-moment and unit checks; no simulation or figure compilation",
+  "status": "PASS"
+}
