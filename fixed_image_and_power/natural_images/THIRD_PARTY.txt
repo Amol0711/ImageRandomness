@@ -1,0 +1,34 @@
+Third-party image provenance
+
+Upstream distribution is scikit-image 0.25.2.
+Primary documentation
+https://scikit-image.org/docs/0.25.x/api/skimage.data.html
+Versioned primary source docstrings
+https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/_fetchers.py
+Versioned primary checksums
+https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/_registry.py
+
+Camera
+Lav Varshney, CC0-1.0, as stated by the primary documentation under
+skimage.data.camera. This is the replacement image introduced in version 0.18,
+not the older camera image with copyright restrictions.
+https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.camera
+
+Clock
+Stefan van der Walt. Released into the public domain by the photographer, as
+stated by the primary documentation under skimage.data.clock.
+https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.clock
+
+Grass
+linolafett, Grass 01, DeviantArt. CC0-1.0, as stated by the primary documentation
+under skimage.data.grass. The supplied scikit-image asset already uses grayscale
+uint8 pixels. Its earlier upstream processing is described in the versioned
+source docstring; this computation only selects a center crop from that asset.
+https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.grass
+https://www.deviantart.com/linolafett/art/Grass-01-434853879
+
+CC0 legal terms
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Image arrays in this archive contain pixel values, array dimensions and data
+type only. Source credits are third-party provenance, not manuscript metadata.

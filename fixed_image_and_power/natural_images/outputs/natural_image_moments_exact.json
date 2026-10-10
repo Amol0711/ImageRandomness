@@ -1,0 +1,188 @@
+{
+  "camera_original": {
+    "input_pixel_sha256": "685445e0c73e742f8c7b9262e59192536d26cfecceabd3c3502539bfb5732626",
+    "baci": {
+      "mean": "827590830761/3260030976000",
+      "variance": "732393801630127669/2125560392895902515200000",
+      "pair_occurrence_variance": "190794888606801629/2125560392895902515200000",
+      "independent_edge_variance": "1586714430086883161/10627801964479512576000000",
+      "vertex_projection_variance": "404504232419518907/1771300327413252096000000",
+      "edge_residual_variance": "1234943613633524903/10627801964479512576000000",
+      "raw_mean": "827590830761/32768",
+      "normalization": 99488250,
+      "pixels": 65536,
+      "windows": 65025,
+      "repeats": 1,
+      "reflected_classes": 128,
+      "arithmetic": "checked int64 with Python integer totals"
+    },
+    "uaci": {
+      "mean": "180766421/534773760",
+      "variance": "1787587600603/2287863795076300800",
+      "pooled_variance": "960827724856663/1102481188780297420800",
+      "pooled_excess": "112676913228233/1249478680617670410240",
+      "pixels": 65536,
+      "repeats": 1
+    },
+    "ratios": {
+      "baci_full_to_pair": "732393801630127669/190794888606801629",
+      "baci_full_to_independent_edge": "3661969008150638345/1586714430086883161",
+      "uaci_pooled_to_fixed": "16334071322563271/14643917624139776"
+    }
+  },
+  "camera_permuted": {
+    "input_pixel_sha256": "718c5ab1d63b8a1b54b96a59f2df506fd6c403c6153eb6d664dc143851dc5dbc",
+    "baci": {
+      "mean": "11022440813/40750387200",
+      "variance": "55487939325454829/118086688494216806400000",
+      "pair_occurrence_variance": "263334024258246181/2656950491119878144000000",
+      "independent_edge_variance": "35058016954680547/212556039289590251520000",
+      "vertex_projection_variance": "494107318395229493/1328475245559939072000000",
+      "edge_residual_variance": "520527996064549333/5313900982239756288000000",
+      "raw_mean": "55112204065/2048",
+      "normalization": 99488250,
+      "pixels": 65536,
+      "windows": 65025,
+      "repeats": 1,
+      "reflected_classes": 128,
+      "arithmetic": "checked int64 with Python integer totals"
+    },
+    "uaci": {
+      "mean": "180766421/534773760",
+      "variance": "1787587600603/2287863795076300800",
+      "pooled_variance": "960827724856663/1102481188780297420800",
+      "pooled_excess": "112676913228233/1249478680617670410240",
+      "pixels": 65536,
+      "repeats": 1
+    },
+    "ratios": {
+      "baci_full_to_pair": "2496957269645467305/526668048516492362",
+      "baci_full_to_independent_edge": "499391453929093461/175290084773402735",
+      "uaci_pooled_to_fixed": "16334071322563271/14643917624139776"
+    }
+  },
+  "clock_original": {
+    "input_pixel_sha256": "a68a3c89ff40d7dea57c6915ef866fd493088eabe63e5cb8f5c5567772815718",
+    "baci": {
+      "mean": "610689486241/3260030976000",
+      "variance": "227991837296167717/1180866884942168064000000",
+      "pair_occurrence_variance": "508326167752945747/10627801964479512576000000",
+      "independent_edge_variance": "846060867003148423/10627801964479512576000000",
+      "vertex_projection_variance": "14015273920852861/106278019644795125760000",
+      "edge_residual_variance": "650399143580223353/10627801964479512576000000",
+      "raw_mean": "610689486241/32768",
+      "normalization": 99488250,
+      "pixels": 65536,
+      "windows": 65025,
+      "repeats": 1,
+      "reflected_classes": 120,
+      "arithmetic": "checked int64 with Python integer totals"
+    },
+    "uaci": {
+      "mean": "570725041/2139095040",
+      "variance": "1918994489867/4575727590152601600",
+      "pooled_variance": "43764337448880949/99958294449413632819200",
+      "pooled_excess": "1105957891743827/59974976669648179691520",
+      "pixels": 65536,
+      "repeats": 1
+    },
+    "ratios": {
+      "baci_full_to_pair": "2051926535665509453/508326167752945747",
+      "baci_full_to_independent_edge": "2051926535665509453/846060867003148423",
+      "uaci_pooled_to_fixed": "131293012346642847/125763222887923712"
+    }
+  },
+  "clock_permuted": {
+    "input_pixel_sha256": "f91f46729af2986a3e16bddee730ce2540e6edee63e3e0b27afdd124336a5adf",
+    "baci": {
+      "mean": "208424136691/1086676992000",
+      "variance": "2654691244482733553/10627801964479512576000000",
+      "pair_occurrence_variance": "105806912427403321/2125560392895902515200000",
+      "independent_edge_variance": "176072376138243841/2125560392895902515200000",
+      "vertex_projection_variance": "1039722863412630907/5313900982239756288000000",
+      "edge_residual_variance": "63916168628607971/1180866884942168064000000",
+      "raw_mean": "625272410073/32768",
+      "normalization": 99488250,
+      "pixels": 65536,
+      "windows": 65025,
+      "repeats": 1,
+      "reflected_classes": 120,
+      "arithmetic": "checked int64 with Python integer totals"
+    },
+    "uaci": {
+      "mean": "570725041/2139095040",
+      "variance": "1918994489867/4575727590152601600",
+      "pooled_variance": "43764337448880949/99958294449413632819200",
+      "pooled_excess": "1105957891743827/59974976669648179691520",
+      "pixels": 65536,
+      "repeats": 1
+    },
+    "ratios": {
+      "baci_full_to_pair": "2654691244482733553/529034562137016605",
+      "baci_full_to_independent_edge": "2654691244482733553/880361880691219205",
+      "uaci_pooled_to_fixed": "131293012346642847/125763222887923712"
+    }
+  },
+  "grass_original": {
+    "input_pixel_sha256": "8f48099c41b85fa495c03a7c868f6ff7a176940d96ccb90d7b0c6594456da7cc",
+    "baci": {
+      "mean": "3317018399/16300154880",
+      "variance": "1369185760202253461/5313900982239756288000000",
+      "pair_occurrence_variance": "303553896110168827/5313900982239756288000000",
+      "independent_edge_variance": "252434797678404569/2656950491119878144000000",
+      "vertex_projection_variance": "1012926012920854087/5313900982239756288000000",
+      "edge_residual_variance": "178129873640699687/2656950491119878144000000",
+      "raw_mean": "82925459975/4096",
+      "normalization": 99488250,
+      "pixels": 65536,
+      "windows": 65025,
+      "repeats": 1,
+      "reflected_classes": 127,
+      "arithmetic": "checked int64 with Python integer totals"
+    },
+    "uaci": {
+      "mean": "591428437/2139095040",
+      "variance": "2229967265111/4575727590152601600",
+      "pooled_variance": "50564231015633389/99958294449413632819200",
+      "pooled_excess": "5549558360585671/299874883348240898457600",
+      "pixels": 65536,
+      "repeats": 1
+    },
+    "ratios": {
+      "baci_full_to_pair": "1369185760202253461/303553896110168827",
+      "baci_full_to_independent_edge": "1369185760202253461/504869595356809138",
+      "uaci_pooled_to_fixed": "151692693046900167/146143134686314496"
+    }
+  },
+  "grass_permuted": {
+    "input_pixel_sha256": "51c50716b2b5e1906a210708c0aeef4c08f2fd272f3e12a83d99fa4f91f3d5e8",
+    "baci": {
+      "mean": "672194669659/3260030976000",
+      "variance": "3135775408848274141/10627801964479512576000000",
+      "pair_occurrence_variance": "619142949905389709/10627801964479512576000000",
+      "independent_edge_variance": "1030283743992056759/10627801964479512576000000",
+      "vertex_projection_variance": "123551156746795553/531390098223975628800000",
+      "edge_residual_variance": "221584091304121027/3542600654826504192000000",
+      "raw_mean": "672194669659/32768",
+      "normalization": 99488250,
+      "pixels": 65536,
+      "windows": 65025,
+      "repeats": 1,
+      "reflected_classes": 127,
+      "arithmetic": "checked int64 with Python integer totals"
+    },
+    "uaci": {
+      "mean": "591428437/2139095040",
+      "variance": "2229967265111/4575727590152601600",
+      "pooled_variance": "50564231015633389/99958294449413632819200",
+      "pooled_excess": "5549558360585671/299874883348240898457600",
+      "pixels": 65536,
+      "repeats": 1
+    },
+    "ratios": {
+      "baci_full_to_pair": "3135775408848274141/619142949905389709",
+      "baci_full_to_independent_edge": "3135775408848274141/1030283743992056759",
+      "uaci_pooled_to_fixed": "151692693046900167/146143134686314496"
+    }
+  }
+}
