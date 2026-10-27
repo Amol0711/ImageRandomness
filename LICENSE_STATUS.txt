@@ -1,0 +1,8 @@
+LICENSE STATUS
+
+No software or original-data license has been assigned for the original code
+or generated numerical data. This notice does not grant a license.
+
+The third-party reference arrays retain their separately documented CC0 or
+public-domain source status. See THIRD_PARTY.txt and
+fixed_image_and_power/natural_images/THIRD_PARTY.txt.

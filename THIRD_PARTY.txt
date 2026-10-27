@@ -1,0 +1,16 @@
+THIRD-PARTY MATERIALS
+
+The fixed_image_and_power/natural_images/inputs directory contains numerical
+center crops of the Camera, Clock and Grass grayscale assets distributed with
+scikit-image 0.25.2. These fixed reference arrays are computational inputs.
+They are the only external image inputs in this archive. Their sources, crop
+origins, upstream-byte hashes, array hashes and third-party credits are in
+fixed_image_and_power/natural_images/input_manifest.json and THIRD_PARTY.txt.
+The two Camera and Grass sources have CC0 status; Clock was released into the
+public domain by its photographer according to the upstream documentation.
+These source rights are separate from the status of the original software.
+
+Third-party software packages are runtime dependencies and are not vendored.
+The requirements file specifies NumPy, SciPy and mpmath. Optional re-fetching
+of the upstream PNG inputs additionally uses Pillow 12.3.0. Consult those
+packages' upstream distributions for their licenses.

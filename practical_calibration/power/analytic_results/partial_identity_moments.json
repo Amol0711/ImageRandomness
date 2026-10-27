@@ -1,0 +1,182 @@
+[
+  {
+    "strength": 0.0,
+    "exact_constants": {
+      "difference_mean": "21845/256",
+      "difference_second_moment": "21845/2",
+      "pair_mean": "286331153/4194304",
+      "pair_variance": "46118814850137311/17592186044416",
+      "shared_endpoint_covariance": "7686338775514335/17592186044416"
+    },
+    "normalized_moments": {
+      "BACI": {
+        "mean_exact": "16843009/62914560",
+        "variance_exact": "18091933738657058893/2120037008067585795686400",
+        "mean": 0.2677124182383219,
+        "variance": 8.53378203767672e-06
+      },
+      "UACI": {
+        "mean_exact": "257/768",
+        "variance_exact": "935737/68451041280",
+        "mean": 0.3346354166666667,
+        "variance": 1.3670164580438651e-05
+      },
+      "NPCR": {
+        "mean_exact": "255/256",
+        "variance_exact": "255/268435456",
+        "mean": 0.99609375,
+        "variance": 9.499490261077881e-07
+      }
+    }
+  },
+  {
+    "strength": 0.002,
+    "exact_constants": {
+      "difference_mean": "2180131/25600",
+      "difference_second_moment": "2180131/200",
+      "pair_mean": "71653936091193/1048576000000",
+      "pair_variance": "2888182472187543025187836751/1099511627776000000000000",
+      "shared_endpoint_covariance": "481348845422117200993276751/1099511627776000000000000"
+    },
+    "normalized_moments": {
+      "BACI": {
+        "mean_exact": "1404979139043/5242880000000",
+        "variance_exact": "1132993445609667748498465298077/132502313004224112230400000000000000",
+        "mean": 0.2679785039983749,
+        "variance": 8.550744661895438e-06
+      },
+      "UACI": {
+        "mean_exact": "128243/384000",
+        "variance_exact": "140640122567/10267656192000000",
+        "mean": 0.33396614583333334,
+        "variance": 1.3697393050283389e-05
+      },
+      "NPCR": {
+        "mean_exact": "25449/25600",
+        "variance_exact": "3842799/2684354560000",
+        "mean": 0.9941015625,
+        "variance": 1.4315541833639145e-06
+      }
+    }
+  },
+  {
+    "strength": 0.005,
+    "exact_constants": {
+      "difference_mean": "869431/10240",
+      "difference_second_moment": "869431/80",
+      "pair_mean": "11481447564993/167772160000",
+      "pair_variance": "74157805308093582848909951/28147497671065600000000",
+      "shared_endpoint_covariance": "12358408910911547765645951/28147497671065600000000"
+    },
+    "normalized_moments": {
+      "BACI": {
+        "mean_exact": "225126422843/838860800000",
+        "variance_exact": "29089734238141441493490418477/3392059212908137273098240000000000",
+        "mean": 0.26837160926222803,
+        "variance": 8.575833265953438e-06
+      },
+      "UACI": {
+        "mean_exact": "51143/153600",
+        "variance_exact": "22568843327/1642824990720000",
+        "mean": 0.3329622395833333,
+        "variance": 1.3737825668885622e-05
+      },
+      "NPCR": {
+        "mean_exact": "10149/10240",
+        "variance_exact": "923559/429496729600",
+        "mean": 0.99111328125,
+        "variance": 2.150328364223242e-06
+      }
+    }
+  },
+  {
+    "strength": 0.01,
+    "exact_constants": {
+      "difference_mean": "432531/5120",
+      "difference_second_moment": "432531/40",
+      "pair_mean": "2877197509593/41943040000",
+      "pair_variance": "4657699540118766544974351/1759218604441600000000",
+      "shared_endpoint_covariance": "776028408923785857102351/1759218604441600000000"
+    },
+    "normalized_moments": {
+      "BACI": {
+        "mean_exact": "56415637443/209715200000",
+        "variance_exact": "202976150218068600710227253/23555966756306508840960000000000",
+        "mean": 0.2690107223653793,
+        "variance": 8.616761617891438e-06
+      },
+      "UACI": {
+        "mean_exact": "8481/25600",
+        "variance_exact": "629937583/45634027520000",
+        "mean": 0.3312890625,
+        "variance": 1.3804119803449686e-05
+      },
+      "NPCR": {
+        "mean_exact": "5049/5120",
+        "variance_exact": "358479/107374182400",
+        "mean": 0.9861328125,
+        "variance": 3.338595852255821e-06
+      }
+    }
+  },
+  {
+    "strength": 0.02,
+    "exact_constants": {
+      "difference_mean": "214081/2560",
+      "difference_second_moment": "214081/20",
+      "pair_mean": "722556129393/10485760000",
+      "pair_variance": "293935874664540449451551/109951162777600000000",
+      "shared_endpoint_covariance": "48932852499122870955551/109951162777600000000"
+    },
+    "normalized_moments": {
+      "BACI": {
+        "mean_exact": "14167767243/52428800000",
+        "variance_exact": "2351430230896088141154973/270412883682090024960000000000",
+        "mean": 0.27022871480941774,
+        "variance": 8.695703395776582e-06
+      },
+      "UACI": {
+        "mean_exact": "12593/38400",
+        "variance_exact": "1430552207/102676561920000",
+        "mean": 0.32794270833333333,
+        "variance": 1.3932607210929098e-05
+      },
+      "NPCR": {
+        "mean_exact": "2499/2560",
+        "variance_exact": "152439/26843545600",
+        "mean": 0.976171875,
+        "variance": 5.6787952780723576e-06
+      }
+    }
+  },
+  {
+    "strength": 0.04,
+    "exact_constants": {
+      "difference_mean": "13107/160",
+      "difference_second_moment": "52428/5",
+      "pair_mean": "2845411737/40960000",
+      "pair_variance": "4570156317534642831/1677721600000000",
+      "shared_endpoint_covariance": "758816509876914831/1677721600000000"
+    },
+    "normalized_moments": {
+      "BACI": {
+        "mean_exact": "55792387/204800000",
+        "variance_exact": "596099891746889218079/67394161480826880000000000",
+        "mean": 0.2724237646484375,
+        "variance": 8.844978239197694e-06
+      },
+      "UACI": {
+        "mean_exact": "257/800",
+        "variance_exact": "1894861/133693440000",
+        "mean": 0.32125,
+        "variance": 1.4173178579293046e-05
+      },
+      "NPCR": {
+        "mean_exact": "153/160",
+        "variance_exact": "1071/104857600",
+        "mean": 0.95625,
+        "variance": 1.0213851928710938e-05
+      }
+    }
+  }
+]

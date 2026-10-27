@@ -1,0 +1,243 @@
+{
+  "scope": "Deterministic analytic evaluation and reuse of saved samples only; no new random draws",
+  "source_hashes": {
+    "design.json": "7cf0a05ceb7c06c953cb9fe6936bb4241bd8f5ff8cb241a2efe7b3abdd0f0fa1",
+    "results/thresholds.json": "38561c23f2c1a751fdf00870579e4a4b16b553715b4c509333d535ad35e6a154",
+    "results/power_summary.csv": "5abfe60dc447bdf9479e325b1dd3a8ca14c2c96617cacddfb022d3d6d7838f87",
+    "results/raw/calibration.npz": "a19e4caf1193f0ace586133a6fb0dd8c48a3115aa030c33d734fb01a579b920c",
+    "results/raw/null_validation.npz": "b27af067278bd33e059a59177291a5d5f63d1e873a5700a9527e64c372de1a04",
+    "results/raw/identity_01.npz": "2683a1a5073166deef26b8ee886b17817dc82dddae5e3950f80439e073a9aaee",
+    "results/raw/identity_02.npz": "b4da535ea169034fbc9c2b5ed818c7fbb635053d34512b6518e46f49955d0f21",
+    "results/raw/identity_03.npz": "e24f03a74ed54778fae105df719717671aaf62993d8b9ec0d60e9b65e76733cf",
+    "results/raw/identity_04.npz": "6b1089fd9ba3adc00772d1633cbfb27964b892330923ca8117c579193df85789",
+    "results/raw/identity_05.npz": "2152d8ccf6f0262c0b9cdea34f4188d0b2273dabfe537c61dc2b88ac6cb86f60"
+  },
+  "calibration_thresholds_reproduced": 6,
+  "conditional_estimate_counts_reproduced": 36,
+  "exact_small_grid_enumerations": [
+    {
+      "alphabet_size": 2,
+      "rows": 2,
+      "columns": 2,
+      "strength": "0",
+      "states_enumerated": 16,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 2,
+      "columns": 2,
+      "strength": "1/5",
+      "states_enumerated": 16,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 2,
+      "columns": 2,
+      "strength": "3/5",
+      "states_enumerated": 16,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 2,
+      "columns": 3,
+      "strength": "0",
+      "states_enumerated": 64,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 2,
+      "columns": 3,
+      "strength": "1/5",
+      "states_enumerated": 64,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 2,
+      "columns": 3,
+      "strength": "3/5",
+      "states_enumerated": 64,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 3,
+      "columns": 3,
+      "strength": "0",
+      "states_enumerated": 512,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 3,
+      "columns": 3,
+      "strength": "1/5",
+      "states_enumerated": 512,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 2,
+      "rows": 3,
+      "columns": 3,
+      "strength": "3/5",
+      "states_enumerated": 512,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 3,
+      "rows": 2,
+      "columns": 2,
+      "strength": "0",
+      "states_enumerated": 81,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 3,
+      "rows": 2,
+      "columns": 2,
+      "strength": "1/5",
+      "states_enumerated": 81,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 3,
+      "rows": 2,
+      "columns": 2,
+      "strength": "3/5",
+      "states_enumerated": 81,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 3,
+      "rows": 2,
+      "columns": 3,
+      "strength": "0",
+      "states_enumerated": 729,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 3,
+      "rows": 2,
+      "columns": 3,
+      "strength": "1/5",
+      "states_enumerated": 729,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    },
+    {
+      "alphabet_size": 3,
+      "rows": 2,
+      "columns": 3,
+      "strength": "3/5",
+      "states_enumerated": 729,
+      "statistics_verified": [
+        "BACI",
+        "UACI",
+        "NPCR"
+      ]
+    }
+  ],
+  "null_pair_constants": "Exact finite sums match closed formulas for q=2,3,4,16,256",
+  "horizontal_copy_count": "Literal window-pair enumeration matches the finite-boundary coefficient on five grids, including 64 by 64",
+  "exact_npcr_crosscheck": "Summed binomial masses agree with independent cumulative-tail evaluation within 5e-13",
+  "gaussian_boundary_convention": "Saved numerical threshold used; continuous surrogate has zero point mass, so the saved tie probability does not affect that approximation",
+  "horizontal_copy_scope": "Ideal Gaussian variance-only benchmark for UACI/NPCR and exact BACI mean shift; no BACI alternative variance or full power curve is claimed",
+  "gaussian_predictions_outside_pointwise_wilson_intervals": [
+    {
+      "strength": 0.0,
+      "alpha": 0.05,
+      "statistic": "UACI",
+      "prediction": 0.050089070859615656,
+      "observed_probability": 0.0469,
+      "observed_ci_low": 0.0440558585881776,
+      "observed_ci_high": 0.04991816448586441
+    },
+    {
+      "strength": 0.005,
+      "alpha": 0.01,
+      "statistic": "UACI",
+      "prediction": 0.01805035219994232,
+      "observed_probability": 0.0211,
+      "observed_ci_low": 0.0184616240216039,
+      "observed_ci_high": 0.02410616961783014
+    },
+    {
+      "strength": 0.01,
+      "alpha": 0.05,
+      "statistic": "BACI",
+      "prediction": 0.07302851469826675,
+      "observed_probability": 0.066,
+      "observed_ci_low": 0.06129849654971101,
+      "observed_ci_high": 0.07103481403603629
+    },
+    {
+      "strength": 0.01,
+      "alpha": 0.01,
+      "statistic": "BACI",
+      "prediction": 0.01830135270574858,
+      "observed_probability": 0.0152,
+      "observed_ci_low": 0.012981435254342082,
+      "observed_ci_high": 0.017790889565865945
+    }
+  ],
+  "units": "Fractions, not percentages"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "example_count": 3,
+  "model": "Two independent iid uniform images; complete-pair sliding square windows.",
+  "arithmetic": "Exact reference variances and residual bounds; floating-point bound evaluations.",
+  "quantity": "Upper bound on the supremum difference between standardized-score and normal CDFs.",
+  "interpretation": "All clipped bounds equal 1. These examples provide no nontrivial finite-sample Gaussian accuracy or tail certification.",
+  "monte_carlo_trials": 0
+}

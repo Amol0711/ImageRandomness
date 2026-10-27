@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 396,
+  "api_exact_equalities": 8,
+  "generated": {
+    "interval_rows": 16,
+    "majority_rows": 64,
+    "joint_rows": 32,
+    "cutoff_rows": 12,
+    "variance_ratio": 5.093639127500059
+  }
+}
