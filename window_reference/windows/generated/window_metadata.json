@@ -1,9 +1,0 @@
-{
-  "arithmetic": "Exact fractions; only decimal display uses binary floating point",
-  "boundary_model": "All fully contained sliding square windows; no wrapping",
-  "dependencies": "Python standard library only",
-  "grid_limit": "Fixed alphabet and window width; both dimensions tend to infinity",
-  "pixel_model": "Two mutually independent iid uniform images",
-  "ratio": "Exact variance divided by pair-occurrence independence approximation",
-  "score": "Mean of all unordered within-window pair distances, normalized by q-1"
-}
