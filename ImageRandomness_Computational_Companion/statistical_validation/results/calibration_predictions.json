@@ -1,0 +1,689 @@
+{
+  "status": "verified",
+  "alpha": 0.01,
+  "confidence": 0.95,
+  "prediction": "2 Phi(-z_(1-alpha/2)/sqrt(V_exact/V_pair))",
+  "scope": "Normal-tail approximation using exact moments; not an exact rejection probability. The fixed-square uniform-image normal theorem does not assert these predictions for rectangular or prescribed nonuniform-law cases.",
+  "provenance_sha256": {
+    "code/calibration_predictions.py": "766a5ac395a33f08e7211e6ad74ebd90ecb9caf93ef231e980d38f7f2610248c",
+    "code/statistical_core.py": "145b7a374a5657176159f5b4d26e694d9a4f69675ae2a29f92bdf4dcd479240c",
+    "code/moment_engine.py": "78107f4baaad496285e459351627c617034b5728cfe200b39f26025c1b0e8bb0",
+    "code/alphabet_baseline.py": "e3ef0cdb5bb19b9a37e06171dd12f9eca52ebf39b29652d55685819839a8bffa",
+    "results/calibration.json": "f77a04d6d703de4c2c7a695242361220cf3b67adff8f35fdb9fb81cb44a1df69",
+    "results/calibration_scores.npz": "6b45b0ce349742ccc56ead799f5cf1a4e4c5ed0947cc16a2d8c7216de57a843b"
+  },
+  "cases": [
+    {
+      "case": {
+        "id": "random_q2_4",
+        "rows": 4,
+        "columns": 4,
+        "height": 2,
+        "width": 2,
+        "q": 2,
+        "model": "two_random"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "27",
+        "denominator": "1"
+      },
+      "exact_variance": {
+        "numerator": "39",
+        "denominator": "2"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "27",
+        "denominator": "2"
+      },
+      "variance_ratio": {
+        "numerator": "13",
+        "denominator": "9"
+      },
+      "variance_ratio_float": 1.4444444444444444,
+      "gaussian_pair_occurrence_prediction": 0.03209547477408902,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 322,
+          "upper_count": 0,
+          "count": 322,
+          "rate": 0.0161,
+          "wilson_interval": [
+            0.014446318642886452,
+            0.0179395338522116
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 723,
+          "upper_count": 0,
+          "count": 723,
+          "rate": 0.03615,
+          "wilson_interval": [
+            0.033650817647403505,
+            0.038827334201844754
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "random_q256_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "two_random"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "exact_variance": {
+        "numerator": "2768065862014530010629",
+        "denominator": "8796093022208"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "549136728420584962077",
+        "denominator": "8796093022208"
+      },
+      "variance_ratio": {
+        "numerator": "70396629333295949",
+        "denominator": "13965482272083237"
+      },
+      "variance_ratio_float": 5.040758919870431,
+      "gaussian_pair_occurrence_prediction": 0.2512662520886219,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 97,
+          "upper_count": 90,
+          "count": 187,
+          "rate": 0.00935,
+          "wilson_interval": [
+            0.008107200901625576,
+            0.010781244080229893
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 2508,
+          "upper_count": 2529,
+          "count": 5037,
+          "rate": 0.25185,
+          "wilson_interval": [
+            0.2458821730925662,
+            0.2579131344020786
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "random_q65536_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 65536,
+        "model": "two_random"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "14643025445710642071987",
+        "denominator": "35184372088832"
+      },
+      "exact_variance": {
+        "numerator": "51060219886557814422048918813937988124165",
+        "denominator": "2475880078570760549798248448"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "10129355363870214397946009133063027472413",
+        "denominator": "2475880078570760549798248448"
+      },
+      "variance_ratio": {
+        "numerator": "2830567586681750020173703636235",
+        "denominator": "561529602313760065321932580467"
+      },
+      "variance_ratio_float": 5.04081632565498,
+      "gaussian_pair_occurrence_prediction": 0.2512689511755608,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 90,
+          "upper_count": 94,
+          "count": 184,
+          "rate": 0.0092,
+          "wilson_interval": [
+            0.007967842199852375,
+            0.010620660392819925
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 2504,
+          "upper_count": 2483,
+          "count": 4987,
+          "rate": 0.24935,
+          "wilson_interval": [
+            0.24340258677881493,
+            0.25539368089611025
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "random_window4",
+        "rows": 32,
+        "columns": 32,
+        "height": 4,
+        "width": 4,
+        "q": 256,
+        "model": "two_random"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "3612067495095",
+        "denominator": "524288"
+      },
+      "exact_variance": {
+        "numerator": "22586684900847164638155",
+        "denominator": "1099511627776"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "581788849334482178265",
+        "denominator": "2199023255552"
+      },
+      "variance_ratio": {
+        "numerator": "689301438951618666",
+        "denominator": "8877528791248679"
+      },
+      "variance_ratio_float": 77.64564386782058,
+      "gaussian_pair_occurrence_prediction": 0.7700419676173946,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 95,
+          "upper_count": 91,
+          "count": 186,
+          "rate": 0.0093,
+          "wilson_interval": [
+            0.008060738256756446,
+            0.010727725928704633
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 7739,
+          "upper_count": 7694,
+          "count": 15433,
+          "rate": 0.77165,
+          "wilson_interval": [
+            0.7657805591342272,
+            0.7774151076764911
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "random_rectangle",
+        "rows": 16,
+        "columns": 24,
+        "height": 2,
+        "width": 3,
+        "q": 256,
+        "model": "two_random"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "708669603675",
+        "denominator": "2097152"
+      },
+      "exact_variance": {
+        "numerator": "1248712056423693721707",
+        "denominator": "8796093022208"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "114144066754089844725",
+        "denominator": "8796093022208"
+      },
+      "variance_ratio": {
+        "numerator": "95270623058189801",
+        "denominator": "8708634069893175"
+      },
+      "variance_ratio_float": 10.93978944270401,
+      "gaussian_pair_occurrence_prediction": 0.43611163672672626,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 106,
+          "upper_count": 89,
+          "count": 195,
+          "rate": 0.00975,
+          "wilson_interval": [
+            0.008479242922518296,
+            0.01120904843049229
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 4286,
+          "upper_count": 4360,
+          "count": 8646,
+          "rate": 0.4323,
+          "wilson_interval": [
+            0.4254479424936542,
+            0.43917805918834246
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "random_full_window",
+        "rows": 4,
+        "columns": 5,
+        "height": 4,
+        "width": 5,
+        "q": 256,
+        "model": "two_random"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "27201459535",
+        "denominator": "2097152"
+      },
+      "exact_variance": {
+        "numerator": "30668566023022070245",
+        "denominator": "8796093022208"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "4381287410763044545",
+        "denominator": "8796093022208"
+      },
+      "variance_ratio": {
+        "numerator": "73890366392459",
+        "denominator": "10555920084719"
+      },
+      "variance_ratio_float": 6.999898237144145,
+      "gaussian_pair_occurrence_prediction": 0.33026559657572996,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 107,
+          "upper_count": 56,
+          "count": 163,
+          "rate": 0.00815,
+          "wilson_interval": [
+            0.006994949153050663,
+            0.009493956715339456
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 3283,
+          "upper_count": 3347,
+          "count": 6630,
+          "rate": 0.3315,
+          "wilson_interval": [
+            0.3250087298397809,
+            0.33805598631112643
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "fixed_checker_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "checker"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "13488075",
+        "denominator": "128"
+      },
+      "exact_variance": {
+        "numerator": "1641857826037",
+        "denominator": "65536"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "280612473525",
+        "denominator": "65536"
+      },
+      "variance_ratio": {
+        "numerator": "1641857826037",
+        "denominator": "280612473525"
+      },
+      "variance_ratio_float": 5.8509794857380975,
+      "gaussian_pair_occurrence_prediction": 0.2869278824517426,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 103,
+          "upper_count": 95,
+          "count": 198,
+          "rate": 0.0099,
+          "wilson_interval": [
+            0.008618910164088058,
+            0.011369323578105698
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 2914,
+          "upper_count": 2945,
+          "count": 5859,
+          "rate": 0.29295,
+          "wilson_interval": [
+            0.28668277554347327,
+            0.29929674658735966
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "fixed_split_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "split"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "11221125",
+        "denominator": "128"
+      },
+      "exact_variance": {
+        "numerator": "185228619993",
+        "denominator": "16384"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "206623786095",
+        "denominator": "65536"
+      },
+      "variance_ratio": {
+        "numerator": "82323831108",
+        "denominator": "22958198455"
+      },
+      "variance_ratio_float": 3.585814072883882,
+      "gaussian_pair_occurrence_prediction": 0.17374640461550175,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 108,
+          "upper_count": 89,
+          "count": 197,
+          "rate": 0.00985,
+          "wilson_interval": [
+            0.008572345467316908,
+            0.011315907478482453
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 1738,
+          "upper_count": 1720,
+          "count": 3458,
+          "rate": 0.1729,
+          "wilson_interval": [
+            0.16772199681088343,
+            0.17820363317702018
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "fixed_diverse_q65536_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 65536,
+        "model": "fixed",
+        "reference": "diverse"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "902000951416544107",
+        "denominator": "2147483648"
+      },
+      "exact_variance": {
+        "numerator": "88364393374218274616636501761163",
+        "denominator": "4611686018427387904"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "18028686184617871416141538846037",
+        "denominator": "4611686018427387904"
+      },
+      "variance_ratio": {
+        "numerator": "88364393374218274616636501761163",
+        "denominator": "18028686184617871416141538846037"
+      },
+      "variance_ratio_float": 4.901321841721947,
+      "gaussian_pair_occurrence_prediction": 0.24463312769028084,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 89,
+          "upper_count": 83,
+          "count": 172,
+          "rate": 0.0086,
+          "wilson_interval": [
+            0.007411318531531259,
+            0.009977414504408366
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 2489,
+          "upper_count": 2390,
+          "count": 4879,
+          "rate": 0.24395,
+          "wilson_interval": [
+            0.23804759623203722,
+            0.24995074543229392
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "fixed_palette_q65536_window4",
+        "rows": 16,
+        "columns": 16,
+        "height": 4,
+        "width": 4,
+        "q": 65536,
+        "model": "fixed",
+        "reference": "palette"
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "763616698567172367",
+        "denominator": "2147483648"
+      },
+      "exact_variance": {
+        "numerator": "919239918476898221226053279624497",
+        "denominator": "4611686018427387904"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "15277310641027278488649883690743",
+        "denominator": "4611686018427387904"
+      },
+      "variance_ratio": {
+        "numerator": "919239918476898221226053279624497",
+        "denominator": "15277310641027278488649883690743"
+      },
+      "variance_ratio_float": 60.17027080723722,
+      "gaussian_pair_occurrence_prediction": 0.7398384496060194,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 126,
+          "upper_count": 87,
+          "count": 213,
+          "rate": 0.01065,
+          "wilson_interval": [
+            0.009318408505499542,
+            0.012169537182610053
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 7295,
+          "upper_count": 7380,
+          "count": 14675,
+          "rate": 0.73375,
+          "wilson_interval": [
+            0.7275798883983693,
+            0.7398303347454018
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "known_nonuniform_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 8,
+        "model": "independent_pmf",
+        "pmf": [
+          "1/2",
+          "1/8",
+          "1/8",
+          "1/16",
+          "1/16",
+          "1/16",
+          "1/32",
+          "1/32"
+        ]
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "12466629",
+        "denominator": "256"
+      },
+      "exact_variance": {
+        "numerator": "80292488373",
+        "denominator": "131072"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "12302300493",
+        "denominator": "131072"
+      },
+      "variance_ratio": {
+        "numerator": "8921387597",
+        "denominator": "1366922277"
+      },
+      "variance_ratio_float": 6.5266238959685925,
+      "gaussian_pair_occurrence_prediction": 0.31332938388104925,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 111,
+          "upper_count": 101,
+          "count": 212,
+          "rate": 0.0106,
+          "wilson_interval": [
+            0.009271717448195603,
+            0.012116247443519605
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 3162,
+          "upper_count": 3031,
+          "count": 6193,
+          "rate": 0.30965,
+          "wilson_interval": [
+            0.3032793484102321,
+            0.3160937597163269
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    },
+    {
+      "case": {
+        "id": "known_sparse_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 8,
+        "model": "independent_pmf",
+        "pmf": [
+          "1023/1024",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/1024"
+        ]
+      },
+      "sample_size": 20000,
+      "alpha": 0.01,
+      "exact_mean": {
+        "numerator": "4833675",
+        "denominator": "262144"
+      },
+      "exact_variance": {
+        "numerator": "198200648325141",
+        "denominator": "137438953472"
+      },
+      "pair_occurrence_variance": {
+        "numerator": "17705050642125",
+        "denominator": "137438953472"
+      },
+      "variance_ratio": {
+        "numerator": "146443329",
+        "denominator": "13081625"
+      },
+      "variance_ratio_float": 11.19458240088674,
+      "gaussian_pair_occurrence_prediction": 0.441381497157094,
+      "observations": {
+        "exact_moment_gaussian": {
+          "lower_count": 0,
+          "upper_count": 502,
+          "count": 502,
+          "rate": 0.0251,
+          "wilson_interval": [
+            0.023021534946061902,
+            0.027360860900026266
+          ]
+        },
+        "pair_occurrence_independent_gaussian": {
+          "lower_count": 0,
+          "upper_count": 3464,
+          "count": 3464,
+          "rate": 0.1732,
+          "wilson_interval": [
+            0.16801834705338586,
+            0.17850716771288405
+          ]
+        }
+      },
+      "verification": "exact moments, saved-score hash, both tail counts and Wilson intervals agree"
+    }
+  ]
+}

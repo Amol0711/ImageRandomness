@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "0871674b5114b266b87d419b360305c6b4b4d44e0f9b0ddbd53cb4a977a26bf2",
+  "raw_files": 10,
+  "source_files": 5,
+  "thresholds_reconstructed": 12,
+  "rates_reconstructed": 108,
+  "paired_contrasts_reconstructed": 198,
+  "nested_alpha_decisions": true,
+  "exact_keys": "independently recomputed with Python integer arithmetic",
+  "audit_scope": "Source and protocol hashes, saved raw statistics, fixed tie seeds, calibration order cuts, every rejection count and paired Clopper-Pearson interval."
+}

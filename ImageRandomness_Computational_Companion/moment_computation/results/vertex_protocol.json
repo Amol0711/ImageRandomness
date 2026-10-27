@@ -1,0 +1,60 @@
+{
+  "protocol_version": "1.0",
+  "study": "Six-degree comparison of exact vertex aggregation kernels",
+  "scope": "Vertex-only kernel comparison with a separate complete sixty-call batch. Its repetitions remain separate from the scaling experiment.",
+  "measurement_authorization": "Measurements require an explicit SHA-256 matching these protocol bytes. Protocol inspection and --verify-only do not measure elapsed times. Run only after other computational experiments finish, with no concurrent benchmark jobs.",
+  "target": "Psi=sum_x a_0(x)*(sum_j c_0j*f_j(x))^2, where a_0 is the central folded-law multiplicity and f_j is q times the conditional absolute-distance profile.",
+  "cases": {
+    "q": 65536,
+    "degrees": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "center": "q//3",
+    "leaf_j": "j*(q-1)//(2*(degree+1)), for j=1,...,degree",
+    "weights": "All incident weights equal one.",
+    "folded_radii": "All leaf folded radii are distinct for these cases. No claim of distinctness between the center and every leaf is made.",
+    "preparation": "For each degree, prepare one fresh immutable VertexCase using the unchanged make_star_case implementation. Both kernels and all repetitions receive this identical prepared case. Preparation is excluded from both kernel timings. Neither kernel enumerates the alphabet."
+  },
+  "benchmark": {
+    "repeats": 5,
+    "methods": [
+      "sweep_vertex",
+      "pairwise_vertex"
+    ],
+    "case_order": "Increasing listed degree.",
+    "repetition_order": "For zero-based repetitions 0,2,4 run sweep_vertex then pairwise_vertex; for repetitions 1,3 reverse the order. Five repetitions alternate but do not fully balance the two orders.",
+    "warmup": "Exactly one untimed degree-2 q=8 call to each kernel, with exact equality checked before measurements. No per-case warmup.",
+    "timing_scope": "time.perf_counter wall-clock seconds around the kernel call alone, including its returned exact integer and diagnostic dictionary. Exclude profile preparation, garbage collection, result comparison, serialization and checkpoint I/O.",
+    "gc_policy": "Run gc.collect before every timed call. Ordinary automatic garbage collection remains enabled throughout all measured calls.",
+    "tracing": "No memory allocation tracing, debugger trace or profiler during measurements.",
+    "thread_settings": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "call_timeout_seconds": 120,
+    "timeout_mechanism": "Linux SIGALRM and ITIMER_REAL. Preserve observed elapsed time even if it exceeds the nominal deadline.",
+    "failure_policy": "Checkpoint any observed timeout, interruption, equality failure or other exception, then abort the batch. Never silently repeat a failed or interrupted call. An externally killed process leaves its persisted in-flight marker with unavailable elapsed time. Inspect it as interrupted rather than interpreting it as a completed observation. A new run requires an explicit fresh output directory.",
+    "checkpoint": "Create fresh vertex_benchmark.json and vertex_benchmark.csv without replacing existing files. Atomically checkpoint both before and after each invocation. Existing files are never accepted for resumption or automatic overwrite.",
+    "summary": "Retain every actual elapsed time without decimal rounding. Compute per-method median, minimum, maximum and mean only when all five declared repetitions complete with equal exact results. Compute pairwise-to-sweep median ratios only when both methods complete all five repetitions. No partial median substitutes for a complete summary.",
+    "output_equality": "Retain the exact integer result from every completed call as a decimal string. Compare every completed result for a degree with the first completed result for that degree, and verify structural counter invariance within each method.",
+    "diagnostics": "Retain every diagnostic dictionary, including pair products, interval integrations, event counts and result bit length. Confirm d*(d+1)//2 pair products and the 3*d+5 sweep-event bound. These counters describe structural work rather than CPU instructions."
+  },
+  "implementation_sha256": {
+    "code/vertex_ablation.py": "3641b13a3380426d868dba415a71c370276c6c035d203b1e6abb65fe3d3301a6",
+    "code/moment_engine.py": "78107f4baaad496285e459351627c617034b5728cfe200b39f26025c1b0e8bb0"
+  },
+  "provenance": "Record this complete protocol and its SHA-256 before the first measurement, hashes of the runner and unchanged code collection, Python and available NumPy versions, platform, CPU and affinity, clock properties, garbage collection settings and numerical thread environment. Preserve all historical files.",
+  "historical_records": {
+    "results/scaling_protocol.json": "7d5b94c61f0ccd72835747de2e56e59b26cbdb1e62de26a2c6e8a2c3d0cfbcc2",
+    "results/scaling.json": "e59bc39ef8ca13a1c4464a93e1e743e8869b1df73046387592e75eae67b26d79"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "title": "Calibration and paired power of finite-grid absolute-difference statistics",
+  "date": "2026-10-25",
+  "protocol_version": "1.0",
+  "status": "The experimental design was fixed before simulation. Drivers require the exact protocol SHA256.",
+  "scope": "Known independent null laws and explicitly generated disjoint-copy or partial-identity alternatives. No encryption-security claim, no new growing-window CLT, no general optimal-window assertion.",
+  "calibration": {
+    "sample_size": 20000,
+    "alphas": [
+      0.05,
+      0.01,
+      0.001
+    ],
+    "master_seed": 2026102601,
+    "batch_size": 32,
+    "edge_chunk_size": 8192,
+    "seed_derivation": "SeedSequence([master_seed,zero_based_case_index])",
+    "quantile_probabilities": [
+      0.0005,
+      0.005,
+      0.025,
+      0.5,
+      0.975,
+      0.995,
+      0.9995
+    ],
+    "rules": [
+      "exact_moment_gaussian",
+      "pair_occurrence_independent_gaussian"
+    ],
+    "decision": "Strict abs(S-mu)>z_(1-alpha/2)*sqrt(variance); equality is acceptance. Both rules use the same exact mean and same observed scores.",
+    "naive_variance": "sum_e c_e Var(|D_i-D_j|), treating all nonnegative weighted pair occurrences as independent. This is not sum_e c_e^2 Var(h_e).",
+    "uncertainty": "Pointwise95%Wilson intervals for each fixed-rule rejection probability; no simultaneous equivalence claim. alpha=.001 uses about20expected rejections forR20000 andabout5 for the256² R5000case, so it is exploratory.",
+    "diagnostics": "Empirical mean/variance vs exact, standardized mean, variance ratio, normal quantiles, empirical CDFdistance. Known nonuniform and sparse laws are distinct specified nulls, not robustness under unknown misspecification.",
+    "cases": [
+      {
+        "id": "random_q2_4",
+        "rows": 4,
+        "columns": 4,
+        "height": 2,
+        "width": 2,
+        "q": 2,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q2_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 2,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q2_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 2,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q16_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 16,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q256_8",
+        "rows": 8,
+        "columns": 8,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q256_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q256_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q256_256",
+        "rows": 256,
+        "columns": 256,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "two_random",
+        "sample_size": 5000
+      },
+      {
+        "id": "random_q65536_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 65536,
+        "model": "two_random"
+      },
+      {
+        "id": "random_q65536_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 65536,
+        "model": "two_random"
+      },
+      {
+        "id": "random_window3",
+        "rows": 32,
+        "columns": 32,
+        "height": 3,
+        "width": 3,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_window4",
+        "rows": 32,
+        "columns": 32,
+        "height": 4,
+        "width": 4,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_rectangle",
+        "rows": 16,
+        "columns": 24,
+        "height": 2,
+        "width": 3,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_strip",
+        "rows": 4,
+        "columns": 128,
+        "height": 2,
+        "width": 3,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "random_full_window",
+        "rows": 4,
+        "columns": 5,
+        "height": 4,
+        "width": 5,
+        "q": 256,
+        "model": "two_random"
+      },
+      {
+        "id": "fixed_constant_zero_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "constant_zero"
+      },
+      {
+        "id": "fixed_constant_mid_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "constant_mid"
+      },
+      {
+        "id": "fixed_checker_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "checker"
+      },
+      {
+        "id": "fixed_split_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "split"
+      },
+      {
+        "id": "fixed_diverse_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "diverse"
+      },
+      {
+        "id": "fixed_diverse_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 256,
+        "model": "fixed",
+        "reference": "diverse"
+      },
+      {
+        "id": "fixed_diverse_q65536_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 65536,
+        "model": "fixed",
+        "reference": "diverse"
+      },
+      {
+        "id": "fixed_palette_q65536_window4",
+        "rows": 16,
+        "columns": 16,
+        "height": 4,
+        "width": 4,
+        "q": 65536,
+        "model": "fixed",
+        "reference": "palette"
+      },
+      {
+        "id": "fixed_checker_window4",
+        "rows": 32,
+        "columns": 32,
+        "height": 4,
+        "width": 4,
+        "q": 256,
+        "model": "fixed",
+        "reference": "checker"
+      },
+      {
+        "id": "known_nonuniform_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 8,
+        "model": "independent_pmf",
+        "pmf": [
+          "1/2",
+          "1/8",
+          "1/8",
+          "1/16",
+          "1/16",
+          "1/16",
+          "1/32",
+          "1/32"
+        ]
+      },
+      {
+        "id": "known_nonuniform_64",
+        "rows": 64,
+        "columns": 64,
+        "height": 2,
+        "width": 2,
+        "q": 8,
+        "model": "independent_pmf",
+        "pmf": [
+          "1/2",
+          "1/8",
+          "1/8",
+          "1/16",
+          "1/16",
+          "1/16",
+          "1/32",
+          "1/32"
+        ]
+      },
+      {
+        "id": "known_sparse_16",
+        "rows": 16,
+        "columns": 16,
+        "height": 2,
+        "width": 2,
+        "q": 8,
+        "model": "independent_pmf",
+        "pmf": [
+          "1023/1024",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/1024"
+        ]
+      }
+    ]
+  },
+  "power": {
+    "geometries": [
+      {
+        "id": "grid64_q256",
+        "rows": 64,
+        "columns": 64,
+        "q": 256,
+        "windows": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      }
+    ],
+    "calibration_size": 99999,
+    "null_sample_size": 20000,
+    "alternative_sample_size": 10000,
+    "alphas": [
+      0.05,
+      0.01
+    ],
+    "master_seed": 2026102602,
+    "batch_size": 32,
+    "edge_chunk_size": 8192,
+    "alternatives": [
+      {
+        "id": "copy_lag1_theta0p025",
+        "kind": "copying",
+        "lag": 1,
+        "theta": 0.025
+      },
+      {
+        "id": "copy_lag1_theta0p1",
+        "kind": "copying",
+        "lag": 1,
+        "theta": 0.1
+      },
+      {
+        "id": "copy_lag1_theta0p3",
+        "kind": "copying",
+        "lag": 1,
+        "theta": 0.3
+      },
+      {
+        "id": "copy_lag3_theta0p1",
+        "kind": "copying",
+        "lag": 3,
+        "theta": 0.1
+      },
+      {
+        "id": "copy_lag3_theta0p3",
+        "kind": "copying",
+        "lag": 3,
+        "theta": 0.3
+      },
+      {
+        "id": "identity_0p002",
+        "kind": "partial_identity",
+        "epsilon": 0.002
+      },
+      {
+        "id": "identity_0p005",
+        "kind": "partial_identity",
+        "epsilon": 0.005
+      },
+      {
+        "id": "identity_0p01",
+        "kind": "partial_identity",
+        "epsilon": 0.01
+      }
+    ],
+    "statistics": [
+      "NPCR_count",
+      "UACI_sum",
+      "S_2x2",
+      "S_3x3",
+      "S_4x4",
+      "S_5x5"
+    ],
+    "discrepancy": "Exact integer abs(denominator*raw_statistic-numerator) for Fraction null center; positive scaling does not alter ranks.",
+    "calibration": "Independent null bank; independent continuous uniform tie variables for every statistic/sample. Reject above kth largest calibration lexicographic pair, k=alpha*(m+1), integer at both nominal levels.",
+    "bank_interpretation": "Each rule has exact nominal marginal level over fresh banks/test observations. The fixed bank has a random conditional size; pointwise Wilson intervals assess that conditional size, and Beta(k,m+1-k) quantifies its across-bank variation. No exact equal realized-size assertion.",
+    "pairing": "All statistics use the same fields within each model; fresh independent tie variables per statistic and shared across alpha levels preserve nested tests.",
+    "paired_intervals": "At least95%pointwise conditional coverage by subtracting endpoints of two97.5%Clopper-Pearson intervals for the discordant probabilities. No simultaneouscoverage or universalpowerordering claim.",
+    "comparisons": "Each S window versus NPCR and UACI; S_3x3,S_4x4,S_5x5 versus S_2x2. All contrasts are predefined.",
+    "copying": "Each row partitioned into full blocks of2lag. Pair corresponding positions in the first/second halves; independent Bernoulli(theta) per pair replaces recipient difference by donor difference. Incomplete final block untouched. Equivalent difference distribution to copying both independent input-image intensities together.",
+    "partial_identity": "Independently replace each difference by zero with probability epsilon; equivalent to setting the second input equal to the first at selected coordinates.",
+    "storage": "Save raw integer statistics, calibration/test ties or their fixed seeds, thresholds and rejection counts. Archive source/protocol hashes.",
+    "seed_derivation": "SeedSequence([master_seed,geometry_index,phase,stream]); phase0 calibration, phase1 independentnull, phase2+alternative_index for alternatives; stream0 field generation and alternative activation, stream1 tie uniforms. Each group has a tie array (sample_size,stat_count), reused across alpha levels."
+  },
+  "analysis": {
+    "finite_grid_sensitivity": "Exact standardized mean shift for q2,256; grids64²,256²; lags1,2,3,4,6; widths2..12; theta=1/10. Bounded width search is descriptive and not poweroptimality.",
+    "statistical_progression": "Moment correctness -> finite-grid Gaussian tail calibration -> randomized finite-sample rank calibration -> paired alternative power -> model-specific window sensitivity.",
+    "sensitivity_parameters": {
+      "grids": [
+        [
+          64,
+          64
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "alphabets": [
+        2,
+        256
+      ],
+      "lags": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "widths": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "theta": "1/10"
+    }
+  }
+}

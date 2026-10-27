@@ -1,0 +1,13 @@
+case_id,method,status,estimated_workspace_bytes,peak_traced_bytes,peak_is_censored,elapsed_seconds,exact_mean_equal,exact_variance_equal
+alphabet_q2p8_16,piecewise_exact,completed,,376361,False,0.5514699119994475,True,True
+alphabet_q2p8_16,piecewise_cached,completed,,240093,False,0.257870452998759,True,True
+alphabet_q2p8_16,alphabet_exact,completed,679488,468805,False,1.1254478869996092,True,True
+alphabet_q2p8_16,alphabet_float64,completed,446720,227584,False,0.029354504000366433,,
+alphabet_q2p16_16,piecewise_exact,completed,,420149,False,0.6738291740002751,True,True
+alphabet_q2p16_16,piecewise_cached,completed,,253633,False,0.33956129599755513,True,True
+alphabet_q2p16_16,alphabet_exact,censored_timeout,100986032,100790649,True,120.19063875400025,,
+alphabet_q2p16_16,alphabet_float64,completed,39092480,35176987,False,0.17405584700100007,,
+alphabet_q2p32_16,piecewise_exact,completed,,432649,False,0.7256415420015401,True,True
+alphabet_q2p32_16,piecewise_cached,completed,,263093,False,0.34028183500049636,True,True
+alphabet_q2p32_16,alphabet_exact,not_run,7146825910360,,,,,
+alphabet_q2p32_16,alphabet_float64,not_run,2542620934400,,,,,

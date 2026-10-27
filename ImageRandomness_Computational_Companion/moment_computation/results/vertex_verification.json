@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "checks": 1602,
+  "scope": "Saved-record consistency and deterministic structural audit. No kernels or timings were rerun.",
+  "protocol_sha256": "3eb147e6151525ad3a1a723421a3e607866bf625aafb8e266e8a67cd9321e3bc",
+  "runner_sha256": "f56fded3b1460b276285fc8e59b785180ec9405a69bcb2b5d968dc0f6b948e48",
+  "auditor_sha256": "39a0b4d2770662421611283821950793bd381a294e02a47e3abb68fb61b1f58a",
+  "record_sha256": "4f56c2e7f97a130657c1922ca4c4f4b38f47e535225260a8d6b8fee9be9eaad4",
+  "csv_sha256": "da873d22c2deeb43fbcba8a480a73ec67baa49e081114172313ab953b0208174",
+  "completed_calls": 60,
+  "complete_method_summaries": 12,
+  "historical_archive_audit": {
+    "archive_sha256": "796e017d4077a94071e05a9f39eba94be676d3318dce5e5981911768182654b0",
+    "byte_identical_files": [
+      "analysis/verify_scaling_record.py",
+      "code/alphabet_baseline.py",
+      "code/moment_engine.py",
+      "code/monte_carlo.py",
+      "code/reference_engine.py",
+      "code/run_comparison.py",
+      "code/run_scaling.py",
+      "code/verify_algorithms.py",
+      "code/vertex_ablation.py",
+      "provenance/run_scaling_moment_record.py",
+      "provenance/scaling_interruption.json",
+      "results/comparison.csv",
+      "results/comparison.json",
+      "results/monte_carlo.json",
+      "results/monte_carlo_replicates.csv",
+      "results/monte_carlo_summary.csv",
+      "results/protocol.json",
+      "results/scaling.csv",
+      "results/scaling.json",
+      "results/scaling_memory.csv",
+      "results/scaling_protocol.json",
+      "results/scaling_verification.json",
+      "results/verification.json",
+      "results/vertex_scaling.csv"
+    ]
+  },
+  "recomputed_results": [
+    {
+      "degree": 8,
+      "q": 65536,
+      "raw_square_sum": "4635129698259884920625764",
+      "sweep_median_seconds": 9.285799751523882e-05,
+      "pairwise_median_seconds": 0.001288291001401376,
+      "pairwise_over_sweep_median_ratio": 13.873775397643655,
+      "structural_counts": {
+        "sweep_vertex": {
+          "pair_products": 0,
+          "interval_integrations": 12,
+          "raw_events": 29,
+          "neighbor_coefficient_events": 24
+        },
+        "pairwise_vertex": {
+          "pair_products": 36,
+          "interval_integrations": 180,
+          "raw_events": 0,
+          "neighbor_coefficient_events": 0
+        }
+      }
+    },
+    {
+      "degree": 16,
+      "q": 65536,
+      "raw_square_sum": "18694033381504669567068864",
+      "sweep_median_seconds": 0.00011237699800403789,
+      "pairwise_median_seconds": 0.0029756419971818104,
+      "pairwise_over_sweep_median_ratio": 26.479102040747616,
+      "structural_counts": {
+        "sweep_vertex": {
+          "pair_products": 0,
+          "interval_integrations": 24,
+          "raw_events": 53,
+          "neighbor_coefficient_events": 48
+        },
+        "pairwise_vertex": {
+          "pair_products": 136,
+          "interval_integrations": 744,
+          "raw_events": 0,
+          "neighbor_coefficient_events": 0
+        }
+      }
+    },
+    {
+      "degree": 32,
+      "q": 65536,
+      "raw_square_sum": "75111815849378327523550132",
+      "sweep_median_seconds": 0.00017969699547393247,
+      "pairwise_median_seconds": 0.01184428299893625,
+      "pairwise_over_sweep_median_ratio": 65.91252662682625,
+      "structural_counts": {
+        "sweep_vertex": {
+          "pair_products": 0,
+          "interval_integrations": 44,
+          "raw_events": 101,
+          "neighbor_coefficient_events": 96
+        },
+        "pairwise_vertex": {
+          "pair_products": 528,
+          "interval_integrations": 2896,
+          "raw_events": 0,
+          "neighbor_coefficient_events": 0
+        }
+      }
+    },
+    {
+      "degree": 64,
+      "q": 65536,
+      "raw_square_sum": "301146918954672211503104200",
+      "sweep_median_seconds": 0.000347285000316333,
+      "pairwise_median_seconds": 0.04627135200280463,
+      "pairwise_over_sweep_median_ratio": 133.2374043239911,
+      "structural_counts": {
+        "sweep_vertex": {
+          "pair_products": 0,
+          "interval_integrations": 88,
+          "raw_events": 197,
+          "neighbor_coefficient_events": 192
+        },
+        "pairwise_vertex": {
+          "pair_products": 2080,
+          "interval_integrations": 11680,
+          "raw_events": 0,
+          "neighbor_coefficient_events": 0
+        }
+      }
+    },
+    {
+      "degree": 128,
+      "q": 65536,
+      "raw_square_sum": "1206018873940572384623667036",
+      "sweep_median_seconds": 0.000615842996921856,
+      "pairwise_median_seconds": 0.18927615199936554,
+      "pairwise_over_sweep_median_ratio": 307.3448150671797,
+      "structural_counts": {
+        "sweep_vertex": {
+          "pair_products": 0,
+          "interval_integrations": 172,
+          "raw_events": 389,
+          "neighbor_coefficient_events": 384
+        },
+        "pairwise_vertex": {
+          "pair_products": 8256,
+          "interval_integrations": 46400,
+          "raw_events": 0,
+          "neighbor_coefficient_events": 0
+        }
+      }
+    },
+    {
+      "degree": 256,
+      "q": 65536,
+      "raw_square_sum": "4826951310897630677509356544",
+      "sweep_median_seconds": 0.0012799280011677183,
+      "pairwise_median_seconds": 0.7806834999937564,
+      "pairwise_over_sweep_median_ratio": 609.9432931239214,
+      "structural_counts": {
+        "sweep_vertex": {
+          "pair_products": 0,
+          "interval_integrations": 344,
+          "raw_events": 773,
+          "neighbor_coefficient_events": 768
+        },
+        "pairwise_vertex": {
+          "pair_products": 32896,
+          "interval_integrations": 185984,
+          "raw_events": 0,
+          "neighbor_coefficient_events": 0
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Saved records and source inspection establish internal consistency, not independent observation of wall-clock execution or system load.",
+    "This comparison isolates prepared vertex kernels; profile construction and complete moment evaluation are outside its timing scope.",
+    "Five alternating repetitions do not fully balance kernel order. Timing ratios describe this recorded machine and workload.",
+    "Structural counters count mathematical operations and intervals, not CPU instructions."
+  ]
+}

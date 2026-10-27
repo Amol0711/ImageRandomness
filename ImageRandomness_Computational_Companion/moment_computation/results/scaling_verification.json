@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "scope": "Independent audit of saved records, exact rational errors, arithmetic summaries, grid identities and provenance; no algorithm execution or scientific measurements.",
+  "input_sha256": {
+    "results/scaling.json": "e59bc39ef8ca13a1c4464a93e1e743e8869b1df73046387592e75eae67b26d79",
+    "provenance/scaling_interruption.json": "90db224b772c0d151805120610b9e170e0ce368aab5f6610ce22b176250d3d70",
+    "results/scaling_protocol.json": "7d5b94c61f0ccd72835747de2e56e59b26cbdb1e62de26a2c6e8a2c3d0cfbcc2"
+  },
+  "verifier_sha256": "94c6aa525b6e3b32d92fab3ec7f308e5d476be08866f808921dd102fe743c82e",
+  "counts": {
+    "completed_moment_calls": 201,
+    "completed_moment_combinations": 67,
+    "completed_vertex_calls": 55,
+    "completed_vertex_combinations": 11,
+    "exact_moment_calls": 153,
+    "floating_moment_calls": 48,
+    "grid_formula_cases": 18,
+    "memory_censored_timeout": 1,
+    "memory_completed": 9,
+    "memory_not_run": 2,
+    "moment_cases": 18,
+    "paired_vertex_degrees": 5,
+    "source_transitions": 1,
+    "workspace_omissions": 5
+  },
+  "checks": {
+    "censoring": 6,
+    "completion": 2,
+    "exact_outputs": 1140,
+    "grid_identities": 126,
+    "input_stability": 3,
+    "memory": 66,
+    "moment_counts": 108,
+    "output_errors": 1686,
+    "preservation": 3,
+    "provenance": 22,
+    "timing_arithmetic": 918,
+    "unreduced_bits": 868,
+    "vertex": 205,
+    "workspace": 46
+  },
+  "failures": [],
+  "limitations": [
+    "Output bit lengths concern unreduced final numerators, not maximum intermediate operands.",
+    "Recorded allocation peaks are traced allocations rather than process RSS; censored peaks remain marked.",
+    "The degree-eight sweep has no completed observation or paired timing ratio.",
+    "This record audit does not rerun the algorithms or establish independent timing reproducibility."
+  ]
+}

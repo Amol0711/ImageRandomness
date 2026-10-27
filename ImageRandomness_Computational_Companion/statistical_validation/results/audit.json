@@ -1,0 +1,318 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "0871674b5114b266b87d419b360305c6b4b4d44e0f9b0ddbd53cb4a977a26bf2",
+  "counts": {
+    "calibration_cases": 27,
+    "calibration_paired_count_checks": 162,
+    "calibration_rule_rows": 162,
+    "calibration_tail_count_checks": 486,
+    "nested_power_decision_checks": 54,
+    "npcr_binomial_formula_rows": 8,
+    "power_paired_rows": 198,
+    "power_rate_rows": 108,
+    "rank_threshold_reconstructions": 12,
+    "raw_archive_hash_checks": 10,
+    "raw_score_hash_checks": 37,
+    "source_hash_checks": 17
+  },
+  "audit_code_sha256": "34c7a5edb06ca7648b9d39d15be32ead7e8ac7c8dc73d051e6d002a5af2d4565",
+  "elapsed_seconds": 0.6467564040003708,
+  "input_result_sha256": {
+    "calibration.json": "f77a04d6d703de4c2c7a695242361220cf3b67adff8f35fdb9fb81cb44a1df69",
+    "power.json": "c4dc3921b184e91aa35d5cf6d375ddc34cf2a60fecbc8542e31c4d69cf50530f",
+    "sensitivity.json": "010b74bc624324c97989d668914fefdd45d2c2fad74845f962d513c7e2e72518",
+    "verification.json": "5c3bec96152a272dfebc1b7e2bb685fb5eb91876085afb3f831766b98161f8e4",
+    "calibration_scores.npz": "6b45b0ce349742ccc56ead799f5cf1a4e4c5ed0947cc16a2d8c7216de57a843b"
+  },
+  "npcr_conditional_binomial": [
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "null",
+      "alpha": 0.05,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "255",
+        "denominator": "256"
+      },
+      "threshold_value": 8,
+      "threshold_tie": 0.32972394417072926,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4071
+        ],
+        [
+          4089,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4072,
+        4088
+      ],
+      "strict_probability_float64": 0.03198575839618425,
+      "equality_probability_float64": 0.02620530752635563,
+      "conditional_probability_float64": 0.049550548566743,
+      "observed_rejections": 990,
+      "observed_rate": 0.0495,
+      "observed_wilson_lower": 0.04657939854423662,
+      "observed_wilson_upper": 0.05259362594231365,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 1.0000000000000002,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "null",
+      "alpha": 0.01,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "255",
+        "denominator": "256"
+      },
+      "threshold_value": 10,
+      "threshold_tie": 0.8608363446056255,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4069
+        ],
+        [
+          4091,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4070,
+        4090
+      ],
+      "strict_probability_float64": 0.008711458260276628,
+      "equality_probability_float64": 0.008200722233749345,
+      "conditional_probability_float64": 0.009852700743199107,
+      "observed_rejections": 189,
+      "observed_rate": 0.00945,
+      "observed_wilson_lower": 0.008200155040557626,
+      "observed_wilson_upper": 0.010888251534086622,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 1.0000000000000002,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "identity_0p002",
+      "alpha": 0.05,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "25449",
+        "denominator": "25600"
+      },
+      "threshold_value": 8,
+      "threshold_tie": 0.32972394417072926,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4071
+        ],
+        [
+          4089,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4072,
+        4088
+      ],
+      "strict_probability_float64": 0.45905969798428214,
+      "equality_probability_float64": 0.0814366184259225,
+      "conditional_probability_float64": 0.5136447133828828,
+      "observed_rejections": 5091,
+      "observed_rate": 0.5091,
+      "observed_wilson_lower": 0.4993001896759241,
+      "observed_wilson_upper": 0.5188928215537297,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 1.0000000000000004,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "identity_0p002",
+      "alpha": 0.01,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "25449",
+        "denominator": "25600"
+      },
+      "threshold_value": 10,
+      "threshold_tie": 0.8608363446056255,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4069
+        ],
+        [
+          4091,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4070,
+        4090
+      ],
+      "strict_probability_float64": 0.30736693065193343,
+      "equality_probability_float64": 0.07304649475241229,
+      "conditional_probability_float64": 0.3175323478754251,
+      "observed_rejections": 3121,
+      "observed_rate": 0.3121,
+      "observed_wilson_lower": 0.3030921095245435,
+      "observed_wilson_upper": 0.3212521970631566,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 1.0000000000000004,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "identity_0p005",
+      "alpha": 0.05,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "10149",
+        "denominator": "10240"
+      },
+      "threshold_value": 8,
+      "threshold_tie": 0.32972394417072926,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4071
+        ],
+        [
+          4089,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4072,
+        4088
+      ],
+      "strict_probability_float64": 0.9810988098522906,
+      "equality_probability_float64": 0.0072188638211770845,
+      "conditional_probability_float64": 0.9859374414219177,
+      "observed_rejections": 9854,
+      "observed_rate": 0.9854,
+      "observed_wilson_lower": 0.9828557977417283,
+      "observed_wilson_upper": 0.9875714166400189,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 1.0000000000000007,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "identity_0p005",
+      "alpha": 0.01,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "10149",
+        "denominator": "10240"
+      },
+      "threshold_value": 10,
+      "threshold_tie": 0.8608363446056255,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4069
+        ],
+        [
+          4091,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4070,
+        4090
+      ],
+      "strict_probability_float64": 0.9557547477731451,
+      "equality_probability_float64": 0.014801305035100234,
+      "conditional_probability_float64": 0.9578145514864368,
+      "observed_rejections": 9572,
+      "observed_rate": 0.9572,
+      "observed_wilson_lower": 0.9530542307327177,
+      "observed_wilson_upper": 0.9609946411571357,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 1.0000000000000007,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "identity_0p01",
+      "alpha": 0.05,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "5049",
+        "denominator": "5120"
+      },
+      "threshold_value": 8,
+      "threshold_tie": 0.32972394417072926,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4071
+        ],
+        [
+          4089,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4072,
+        4088
+      ],
+      "strict_probability_float64": 0.9999993474424484,
+      "equality_probability_float64": 3.866541320339647e-07,
+      "conditional_probability_float64": 0.999999606607455,
+      "observed_rejections": 10000,
+      "observed_rate": 1.0,
+      "observed_wilson_lower": 0.9996160016293234,
+      "observed_wilson_upper": 1.0,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 0.9999999999999999,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    },
+    {
+      "geometry_id": "grid64_q256",
+      "model_id": "identity_0p01",
+      "alpha": 0.01,
+      "n": 4096,
+      "success_probability": {
+        "numerator": "5049",
+        "denominator": "5120"
+      },
+      "threshold_value": 10,
+      "threshold_tie": 0.8608363446056255,
+      "strict_rejection_count_ranges": [
+        [
+          0,
+          4069
+        ],
+        [
+          4091,
+          4096
+        ]
+      ],
+      "boundary_counts": [
+        4070,
+        4090
+      ],
+      "strict_probability_float64": 0.9999965118777275,
+      "equality_probability_float64": 1.949952922290838e-06,
+      "conditional_probability_float64": 0.999996783240304,
+      "observed_rejections": 10000,
+      "observed_rate": 1.0,
+      "observed_wilson_lower": 0.9996160016293234,
+      "observed_wilson_upper": 1.0,
+      "formula_inside_observed_wilson": true,
+      "pmf_sum_float64": 0.9999999999999999,
+      "interpretation": "Exact conditional binomial-law formula, including uniform tie randomization; numerical probability evaluated in float64, not exact arithmetic. Wilson coverage is not asserted for every realization."
+    }
+  ],
+  "scope": "Deterministic reanalysis of saved statistics and frozen tie seeds. No new image simulation, threshold fitting design, or selection of alternatives. All reported raw rejection and discordance counts were independently reproduced."
+}

@@ -1,0 +1,7231 @@
+{
+  "status": "completed",
+  "scope": "Exact finite-grid mean sensitivity, not predicted power",
+  "protocol_sha256": "0871674b5114b266b87d419b360305c6b4b4d44e0f9b0ddbd53cb4a977a26bf2",
+  "code_sha256": {
+    "alternative_analysis.py": "0f00f7c7c3f9fd0eb726df3816ec8ce102a9914ae00e5742521049416cad4b62"
+  },
+  "parameters": {
+    "grids": [
+      [
+        64,
+        64
+      ],
+      [
+        256,
+        256
+      ]
+    ],
+    "alphabets": [
+      2,
+      256
+    ],
+    "lags": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "widths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "theta": "1/10"
+  },
+  "rows": [
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 4032,
+      "null_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "19719",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "1008",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "58527",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 2.0303134053543705
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 11532,
+      "null_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "132132",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "2883",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "343077",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 1.5862463424401432
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 22448,
+      "null_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "759600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "5612",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "1110688",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 1.2878200430967794
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 36000,
+      "null_mean": {
+        "numerator": "540000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2858550",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "1800",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "538200",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.0646322275431022
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 52392,
+      "null_mean": {
+        "numerator": "1096515",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "16602075",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "13098",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "5469477",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.9092196097190175
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 70644,
+      "null_mean": {
+        "numerator": "1978032",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "20212892",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "17661",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "9872499",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.7856535160264094
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 91200,
+      "null_mean": {
+        "numerator": "3274992",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "43307712",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "4560",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3270432",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.6929186054342166
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 112896,
+      "null_mean": {
+        "numerator": "5080320",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "84180600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "28224",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "25373376",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.6152371485774183
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 136400,
+      "null_mean": {
+        "numerator": "7486875",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "303077775",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "6820",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "7480055",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.554016025512834
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 160380,
+      "null_mean": {
+        "numerator": "10585080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "256350600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "8019",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "10577061",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.500844656139693
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 185712,
+      "null_mean": {
+        "numerator": "14460732",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "411894912",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "46428",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "72257232",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.457527031230929
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "19719",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 5952,
+      "null_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "132132",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "1488",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "344472",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.8187077896465256
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 15128,
+      "null_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "759600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "3782",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "1112518",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.8678787246956555
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 27000,
+      "null_mean": {
+        "numerator": "540000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2858550",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "1350",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "538650",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.7984741706573267
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 41772,
+      "null_mean": {
+        "numerator": "1096515",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "16602075",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "10443",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "5472132",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.7249183374786762
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 59276,
+      "null_mean": {
+        "numerator": "1978032",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "20212892",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "14819",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "9875341",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.659226513447447
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 78432,
+      "null_mean": {
+        "numerator": "3274992",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "43307712",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "19608",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "16355352",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.5959100006734263
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 98784,
+      "null_mean": {
+        "numerator": "5080320",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "84180600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "24696",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "25376904",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.5383325050052409
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 121000,
+      "null_mean": {
+        "numerator": "7486875",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "303077775",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "6050",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "7480825",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.4914658290839657
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 144936,
+      "null_mean": {
+        "numerator": "10585080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "256350600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "36234",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "52889166",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.45261517073364854
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 169176,
+      "null_mean": {
+        "numerator": "14460732",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "411894912",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "42294",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "72261366",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.4167883229706408
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "19719",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "132132",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 7320,
+      "null_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "759600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "366",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "222894",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.4199413184011237
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 17700,
+      "null_mean": {
+        "numerator": "540000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2858550",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "885",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "539115",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.5234441785420253
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 30798,
+      "null_mean": {
+        "numerator": "1096515",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "16602075",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "15399",
+        "denominator": "10"
+      },
+      "alternative_mean": {
+        "numerator": "10949751",
+        "denominator": "10"
+      },
+      "standardized_mean_decrease": 0.53447368949699
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 46284,
+      "null_mean": {
+        "numerator": "1978032",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "20212892",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "11571",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "9878589",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.5147385105000613
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 64296,
+      "null_mean": {
+        "numerator": "3274992",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "43307712",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "16074",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "16358886",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.4885076168311227
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 84168,
+      "null_mean": {
+        "numerator": "5080320",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "84180600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "21042",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "25380558",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.4586812670197716
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 105600,
+      "null_mean": {
+        "numerator": "7486875",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "303077775",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "5280",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "7481595",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.42891563265509736
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 127710,
+      "null_mean": {
+        "numerator": "10585080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "256350600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "12771",
+        "denominator": "2"
+      },
+      "alternative_mean": {
+        "numerator": "21157389",
+        "denominator": "2"
+      },
+      "standardized_mean_decrease": 0.3988207447038296
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 150732,
+      "null_mean": {
+        "numerator": "14460732",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "411894912",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "37683",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "72265977",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.37134899452647324
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "19719",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "132132",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "759600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 9600,
+      "null_mean": {
+        "numerator": "540000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2858550",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "480",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "539520",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.2839019273448273
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 21948,
+      "null_mean": {
+        "numerator": "1096515",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "16602075",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "5487",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "5477088",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.38088929596337223
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 36540,
+      "null_mean": {
+        "numerator": "1978032",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "20212892",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "1827",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "1976205",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.4063725082895221
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 52896,
+      "null_mean": {
+        "numerator": "3274992",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "43307712",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "13224",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "16361736",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.4018927911518456
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 70560,
+      "null_mean": {
+        "numerator": "5080320",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "84180600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "3528",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "5076792",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.3845232178608864
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 90200,
+      "null_mean": {
+        "numerator": "7486875",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "303077775",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "4510",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "7482365",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.36636543622622897
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 111672,
+      "null_mean": {
+        "numerator": "10585080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "256350600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "27918",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "52897482",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.3487362790898603
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 134832,
+      "null_mean": {
+        "numerator": "14460732",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "411894912",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "33708",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "72269952",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.33217715966081146
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "19719",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "11907",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "132132",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "759600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "223260",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "540000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2858550",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "540000",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "1096515",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "16602075",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "1096515",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 12180,
+      "null_mean": {
+        "numerator": "1978032",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "20212892",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "609",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "1977423",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.13545750276317403
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 26904,
+      "null_mean": {
+        "numerator": "3274992",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "43307712",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "6726",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "16368234",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.2044109886030939
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 43848,
+      "null_mean": {
+        "numerator": "5080320",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "84180600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "10962",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "25390638",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.238953713956408
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 62700,
+      "null_mean": {
+        "numerator": "7486875",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "303077775",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "3135",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "7483740",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.25466865688896406
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 83160,
+      "null_mean": {
+        "numerator": "10585080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "256350600",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "4158",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "10580922",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.25969722910947046
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 104304,
+      "null_mean": {
+        "numerator": "14460732",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "411894912",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "26076",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "72277584",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.25696723671874094
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 4032,
+      "null_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "2768065862014530010629",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "18038862639",
+        "denominator": "655360"
+      },
+      "alternative_mean": {
+        "numerator": "16758103391631",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 1.5516219619096954
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 11532,
+      "null_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "10316107071773801088153",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "825492714099",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "98233632977781",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.8127469042477933
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 22448,
+      "null_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "104625246842235455071275",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "401722607659",
+        "denominator": "2621440"
+      },
+      "alternative_mean": {
+        "numerator": "9938267989477",
+        "denominator": "327680"
+      },
+      "standardized_mean_decrease": 0.49678447657456165
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 36000,
+      "null_mean": {
+        "numerator": "4831838206875",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "1223607066228001169857275",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "64424509425",
+        "denominator": "262144"
+      },
+      "alternative_mean": {
+        "numerator": "19262928318075",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.3294618412281381
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 52392,
+      "null_mean": {
+        "numerator": "313966404231795",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "20372610482780773739556825",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "1875182720997",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "1566081655716981",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.23501481520800205
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 70644,
+      "null_mean": {
+        "numerator": "35398261451931",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "8404481141605447038495943",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "5056894493133",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "2826804021661347",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.17443291525326457
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 91200,
+      "null_mean": {
+        "numerator": "58608264714111",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "5855923501791993390319587",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "81604378605",
+        "denominator": "131072"
+      },
+      "alternative_mean": {
+        "numerator": "29263330167753",
+        "denominator": "65536"
+      },
+      "standardized_mean_decrease": 0.13488875805543885
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 112896,
+      "null_mean": {
+        "numerator": "5682241731285",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "28694751913050721959142575",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "126272038473",
+        "denominator": "163840"
+      },
+      "alternative_mean": {
+        "numerator": "113518562587227",
+        "denominator": "163840"
+      },
+      "standardized_mean_decrease": 0.10667703358188556
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 136400,
+      "null_mean": {
+        "numerator": "2143725551116875",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "1016113359007247811981294525",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "488194615865",
+        "denominator": "524288"
+      },
+      "alternative_mean": {
+        "numerator": "2141772772653415",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.08663570104642847
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 160380,
+      "null_mean": {
+        "numerator": "378854770124655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "129436059989061113493018825",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "2296089515907",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "3028542071481333",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.07135364769835083
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 185712,
+      "null_mean": {
+        "numerator": "1035139516695999",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "492810697563988241116702023",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "3323445692871",
+        "denominator": "2621440"
+      },
+      "alternative_mean": {
+        "numerator": "1293093534446781",
+        "denominator": "655360"
+      },
+      "standardized_mean_decrease": 0.05988368463325764
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "2768065862014530010629",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 5952,
+      "null_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "10316107071773801088153",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "26628797229",
+        "denominator": "655360"
+      },
+      "alternative_mean": {
+        "numerator": "12329133117027",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 0.4194822731601514
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 15128,
+      "null_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "104625246842235455071275",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "541452210323",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "159274280836627",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.33478953856111765
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 27000,
+      "null_mean": {
+        "numerator": "4831838206875",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "1223607066228001169857275",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "193273528275",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "77116137781725",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.2470963809211036
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 41772,
+      "null_mean": {
+        "numerator": "313966404231795",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "20372610482780773739556825",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "2990156230779",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "391710466232049",
+        "denominator": "2621440"
+      },
+      "standardized_mean_decrease": 0.18737667699016378
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 59276,
+      "null_mean": {
+        "numerator": "35398261451931",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "8404481141605447038495943",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "4243141356307",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "2827617774798173",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.14636325072975073
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 78432,
+      "null_mean": {
+        "numerator": "58608264714111",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "5855923501791993390319587",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "701797656003",
+        "denominator": "1310720"
+      },
+      "alternative_mean": {
+        "numerator": "585380849485107",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 0.1160043319276774
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 98784,
+      "null_mean": {
+        "numerator": "5682241731285",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "28694751913050721959142575",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "883904269311",
+        "denominator": "1310720"
+      },
+      "alternative_mean": {
+        "numerator": "908274772736289",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 0.09334240438414987
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 121000,
+      "null_mean": {
+        "numerator": "2143725551116875",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "1016113359007247811981294525",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "866151737825",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "2141993247641225",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.07685425092828331
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 144936,
+      "null_mean": {
+        "numerator": "378854770124655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "129436059989061113493018825",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "5187461498901",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "7571907940994199",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.0644825556977689
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 169176,
+      "null_mean": {
+        "numerator": "1035139516695999",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "492810697563988241116702023",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "6055044892491",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "10345340122067499",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.05455157572755662
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "2768065862014530010629",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "10316107071773801088153",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 7320,
+      "null_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "104625246842235455071275",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "52398600999",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "31910748008391",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.16199493801344403
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 17700,
+      "null_mean": {
+        "numerator": "4831838206875",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "1223607066228001169857275",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "253403070405",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "154365419549595",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.16198540527050123
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 30798,
+      "null_mean": {
+        "numerator": "313966404231795",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "20372610482780773739556825",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "4409213425047",
+        "denominator": "20971520"
+      },
+      "alternative_mean": {
+        "numerator": "3135254828892903",
+        "denominator": "20971520"
+      },
+      "standardized_mean_decrease": 0.13815060083173092
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 46284,
+      "null_mean": {
+        "numerator": "35398261451931",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "8404481141605447038495943",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "3313137771363",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "2828547778383117",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.11428363413144921
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 64296,
+      "null_mean": {
+        "numerator": "58608264714111",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "5855923501791993390319587",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "2301243476661",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "2342029345087779",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.09509657442908438
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 84168,
+      "null_mean": {
+        "numerator": "5682241731285",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "28694751913050721959142575",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "3012490060713",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "3633622217961687",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.07953153842935218
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 105600,
+      "null_mean": {
+        "numerator": "2143725551116875",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "1016113359007247811981294525",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "47244640245",
+        "denominator": "65536"
+      },
+      "alternative_mean": {
+        "numerator": "2142213722629035",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.06707280081013817
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 127710,
+      "null_mean": {
+        "numerator": "378854770124655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "129436059989061113493018825",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "3656735154963",
+        "denominator": "4194304"
+      },
+      "alternative_mean": {
+        "numerator": "6058019586839517",
+        "denominator": "4194304"
+      },
+      "standardized_mean_decrease": 0.05681864538942752
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 150732,
+      "null_mean": {
+        "numerator": "1035139516695999",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "492810697563988241116702023",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "10789816838499",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "20692000517081481",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.0486042234865824
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "2768065862014530010629",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "10316107071773801088153",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "104625246842235455071275",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 9600,
+      "null_mean": {
+        "numerator": "4831838206875",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "1223607066228001169857275",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "4294967295",
+        "denominator": "65536"
+      },
+      "alternative_mean": {
+        "numerator": "1206885809895",
+        "denominator": "16384"
+      },
+      "standardized_mean_decrease": 0.08785649099417016
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 21948,
+      "null_mean": {
+        "numerator": "313966404231795",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "20372610482780773739556825",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "1571099036511",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "49008153816327",
+        "denominator": "327680"
+      },
+      "standardized_mean_decrease": 0.09845215231686572
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 36540,
+      "null_mean": {
+        "numerator": "35398261451931",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "8404481141605447038495943",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "523127016531",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "565849056214365",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.09022392168272306
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 52896,
+      "null_mean": {
+        "numerator": "58608264714111",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "5855923501791993390319587",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "473305395909",
+        "denominator": "1310720"
+      },
+      "alternative_mean": {
+        "numerator": "585609341745201",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 0.07823547967215452
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 70560,
+      "null_mean": {
+        "numerator": "5682241731285",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "28694751913050721959142575",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "126272038473",
+        "denominator": "262144"
+      },
+      "alternative_mean": {
+        "numerator": "181705463362647",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.06667314598867848
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 90200,
+      "null_mean": {
+        "numerator": "2143725551116875",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "1016113359007247811981294525",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "645676750015",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "2142434197616845",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.057291350691993016
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 111672,
+      "null_mean": {
+        "numerator": "378854770124655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "129436059989061113493018825",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "3996896564727",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "7573098505928373",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.049683280619592436
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 2048,
+      "copied_pair_weight": 134832,
+      "null_mean": {
+        "numerator": "1035139516695999",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "492810697563988241116702023",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "2412912626331",
+        "denominator": "2621440"
+      },
+      "alternative_mean": {
+        "numerator": "161665145964177",
+        "denominator": "81920"
+      },
+      "standardized_mean_decrease": 0.043477195692639116
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "2768065862014530010629",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3409345038771",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "10316107071773801088153",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "104625246842235455071275",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "15981573304695",
+        "denominator": "524288"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "4831838206875",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "1223607066228001169857275",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "4831838206875",
+        "denominator": "65536"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "313966404231795",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "20372610482780773739556825",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "313966404231795",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 12180,
+      "null_mean": {
+        "numerator": "35398261451931",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "8404481141605447038495943",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "174375672177",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "566197807558719",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.030074640560907685
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 26904,
+      "null_mean": {
+        "numerator": "58608264714111",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "5855923501791993390319587",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "962931667539",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "2343367656896901",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.039792183626354456
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 43848,
+      "null_mean": {
+        "numerator": "5682241731285",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "28694751913050721959142575",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "1569381049593",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "3635065326972807",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.04143259786439305
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 62700,
+      "null_mean": {
+        "numerator": "2143725551116875",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "1016113359007247811981294525",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "897648164655",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "535706975738055",
+        "denominator": "524288"
+      },
+      "standardized_mean_decrease": 0.039824475481019535
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 83160,
+      "null_mean": {
+        "numerator": "378854770124655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "129436059989061113493018825",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "595282467087",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "1514823798031533",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.03699818769544117
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 1920,
+      "copied_pair_weight": 104304,
+      "null_mean": {
+        "numerator": "1035139516695999",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "492810697563988241116702023",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "1866592786407",
+        "denominator": "2621440"
+      },
+      "alternative_mean": {
+        "numerator": "1293457747673397",
+        "denominator": "655360"
+      },
+      "standardized_mean_decrease": 0.03363330232826799
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 65280,
+      "null_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "324615",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "3264",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "191811",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 8.101787647139373
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 193548,
+      "null_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2248164",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "48387",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "5758053",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 6.454233864834934
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 384560,
+      "null_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "13350960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "19228",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3821312",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 5.262327418282596
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 635040,
+      "null_mean": {
+        "numerator": "9525600",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "51919350",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "31752",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "9493848",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 4.4066287395171155
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 945768,
+      "null_mean": {
+        "numerator": "19845315",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "311798235",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "236442",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "98990133",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 3.787326891619549
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1312500,
+      "null_mean": {
+        "numerator": "36750000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "392826140",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "65625",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "36684375",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 3.3110758270158636
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1737024,
+      "null_mean": {
+        "numerator": "62497008",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "871706304",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "434256",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "312050784",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 2.9416481796662857
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2214144,
+      "null_mean": {
+        "numerator": "99636480",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "1756521720",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "553536",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "497628864",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 2.641490813045949
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2746640,
+      "null_mean": {
+        "numerator": "150997275",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "6562412175",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "137332",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "150859943",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.3974799867709016
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 3328380,
+      "null_mean": {
+        "numerator": "219673080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "5765935560",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "166419",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "219506661",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.191633932236184
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 3963120,
+      "null_mean": {
+        "numerator": "309008700",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "9634584960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "198156",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "308810544",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.018788032521932
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "324615",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 97536,
+      "null_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2248164",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "24384",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "5782056",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 3.2525273019640615
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 257048,
+      "null_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "13350960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "64262",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "19138438",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 3.5174504322204716
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 476280,
+      "null_mean": {
+        "numerator": "9525600",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "51919350",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "23814",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "9501786",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 3.304971554637836
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 756012,
+      "null_mean": {
+        "numerator": "19845315",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "311798235",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "189003",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "99037572",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 3.0274492031735885
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1095500,
+      "null_mean": {
+        "numerator": "36750000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "392826140",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "54775",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "36695225",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.7636446236159076
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1490016,
+      "null_mean": {
+        "numerator": "62497008",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "871706304",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "372504",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "312112536",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 2.523340410998144
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1937376,
+      "null_mean": {
+        "numerator": "99636480",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "1756521720",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "484344",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "497698056",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 2.3113044614152054
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2440360,
+      "null_mean": {
+        "numerator": "150997275",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "6562412175",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "122018",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "150875257",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.130135096159758
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2998248,
+      "null_mean": {
+        "numerator": "219673080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "5765935560",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "749562",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "1097615838",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 1.9742523552176356
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 3604440,
+      "null_mean": {
+        "numerator": "309008700",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "9634584960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "180222",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "308828478",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.8360787298752885
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "324615",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2248164",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 127512,
+      "null_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "13350960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "31878",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "19170822",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 1.7448769860621238
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 316260,
+      "null_mean": {
+        "numerator": "9525600",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "51919350",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "15813",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "9509787",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.194571058767452
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 564750,
+      "null_mean": {
+        "numerator": "19845315",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "311798235",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "56475",
+        "denominator": "2"
+      },
+      "alternative_mean": {
+        "numerator": "39634155",
+        "denominator": "2"
+      },
+      "standardized_mean_decrease": 2.261540739422501
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 871500,
+      "null_mean": {
+        "numerator": "36750000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "392826140",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "43575",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "36706425",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 2.1985543491385333
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1237032,
+      "null_mean": {
+        "numerator": "62497008",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "871706304",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "309258",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "312175782",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 2.0949122930880315
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1658376,
+      "null_mean": {
+        "numerator": "99636480",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "1756521720",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "414594",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "497767806",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 1.9784553166261494
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 2134080,
+      "null_mean": {
+        "numerator": "150997275",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "6562412175",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "106704",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "150890571",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.8627902055486143
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 2659998,
+      "null_mean": {
+        "numerator": "219673080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "5765935560",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "1329999",
+        "denominator": "10"
+      },
+      "alternative_mean": {
+        "numerator": "2195400801",
+        "denominator": "10"
+      },
+      "standardized_mean_decrease": 1.751525329583877
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 3236940,
+      "null_mean": {
+        "numerator": "309008700",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "9634584960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "161847",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "308846853",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.6488765755242192
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "324615",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2248164",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "13350960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 161280,
+      "null_mean": {
+        "numerator": "9525600",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "51919350",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "8064",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "9517536",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.1191438068614896
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 382524,
+      "null_mean": {
+        "numerator": "19845315",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "311798235",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "95631",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "99130944",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 1.5318169275021742
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 661500,
+      "null_mean": {
+        "numerator": "36750000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "392826140",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "33075",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "36716925",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.6687822168159954
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 996000,
+      "null_mean": {
+        "numerator": "62497008",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "871706304",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "49800",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "62447208",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.686724873661861
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1383840,
+      "null_mean": {
+        "numerator": "99636480",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "1756521720",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "69192",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "99567288",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.6509317581537182
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1827800,
+      "null_mean": {
+        "numerator": "150997275",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "6562412175",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "91390",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "150905885",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.5954453149374705
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2327160,
+      "null_mean": {
+        "numerator": "219673080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "5765935560",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "116358",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "219556722",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.5323619363602587
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2881200,
+      "null_mean": {
+        "numerator": "309008700",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "9634584960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "144060",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "308864640",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.4676648901123839
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "324615",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "195075",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "2248164",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "1161288",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "13350960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "3840540",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "9525600",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "51919350",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "9525600",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "19845315",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "311798235",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "19845315",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 220500,
+      "null_mean": {
+        "numerator": "36750000",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "392826140",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "11025",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "36738975",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.5562607389386651
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 499992,
+      "null_mean": {
+        "numerator": "62497008",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "871706304",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "124998",
+        "denominator": "5"
+      },
+      "alternative_mean": {
+        "numerator": "312360042",
+        "denominator": "5"
+      },
+      "standardized_mean_decrease": 0.8467358865782542
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 837000,
+      "null_mean": {
+        "numerator": "99636480",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "1756521720",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "41850",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "99594630",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 0.9985474343671682
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1230060,
+      "null_mean": {
+        "numerator": "150997275",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "6562412175",
+        "denominator": "2"
+      },
+      "mean_decrease": {
+        "numerator": "61503",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "150935772",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.0736915768092707
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1677720,
+      "null_mean": {
+        "numerator": "219673080",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "5765935560",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "83886",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "219589194",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.1047260471434424
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 2175600,
+      "null_mean": {
+        "numerator": "309008700",
+        "denominator": "1"
+      },
+      "null_variance": {
+        "numerator": "9634584960",
+        "denominator": "1"
+      },
+      "mean_decrease": {
+        "numerator": "108780",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "308899920",
+        "denominator": "1"
+      },
+      "standardized_mean_decrease": 1.1082367537583309
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 65280,
+      "null_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "45825575412732681168645",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "14602888803",
+        "denominator": "32768"
+      },
+      "alternative_mean": {
+        "numerator": "54921464788083",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 6.174187107355624
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 193548,
+      "null_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "176826969059152841240841",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "13854705500211",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "1648709954525109",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 3.2947544049064086
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 384560,
+      "null_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "1856345545827322451204715",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "1376393852471",
+        "denominator": "524288"
+      },
+      "alternative_mean": {
+        "numerator": "4274065120831",
+        "denominator": "8192"
+      },
+      "standardized_mean_decrease": 2.0204276799219936
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 635040,
+      "null_mean": {
+        "numerator": "85233625969275",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "22485219928543118015763675",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "1136448346257",
+        "denominator": "262144"
+      },
+      "alternative_mean": {
+        "numerator": "339798055530843",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 1.3557390963564215
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 945768,
+      "null_mean": {
+        "numerator": "5682331925598195",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "388049292065303140974695385",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "33850355238813",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "28343958917513349",
+        "denominator": "10485760"
+      },
+      "standardized_mean_decrease": 0.9720638044175992
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1312500,
+      "null_mean": {
+        "numerator": "657666867046875",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "166090301160905758423435495",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "18790481915625",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "10503879390834375",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.7290138622766519
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1737024,
+      "null_mean": {
+        "numerator": "1118427522480639",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "120190249842271452853658019",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "7771313823573",
+        "denominator": "655360"
+      },
+      "alternative_mean": {
+        "numerator": "2792183149289811",
+        "denominator": "327680"
+      },
+      "standardized_mean_decrease": 0.5670871613707295
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2214144,
+      "null_mean": {
+        "numerator": "111441516403365",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "612346813370833573348690815",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "2476478142297",
+        "denominator": "163840"
+      },
+      "alternative_mean": {
+        "numerator": "2226353849925003",
+        "denominator": "163840"
+      },
+      "standardized_mean_decrease": 0.45289835606976353
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2746640,
+      "null_mean": {
+        "numerator": "43235223850608075",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "22572025850657477406178484925",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "9830607475949",
+        "denominator": "524288"
+      },
+      "alternative_mean": {
+        "numerator": "43195901420704279",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.3701434557079056
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 3328380,
+      "null_mean": {
+        "numerator": "7862405784932655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "2996822515499805912871553745",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "47650944151107",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "62851595335310133",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.3077485427623893
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 3963120,
+      "null_mean": {
+        "numerator": "22119704339507775",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "11908035504149705521258890375",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "14184558988467",
+        "denominator": "524288"
+      },
+      "alternative_mean": {
+        "numerator": "5526379945129827",
+        "denominator": "131072"
+      },
+      "standardized_mean_decrease": 0.2599715197242269
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "45825575412732681168645",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 97536,
+      "null_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "176826969059152841240841",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "109092169293",
+        "denominator": "163840"
+      },
+      "alternative_mean": {
+        "numerator": "206947845148821",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 1.6603486764882687
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 257048,
+      "null_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "1856345545827322451204715",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "9200106277043",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "2739965509579507",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 1.3504963965794379
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 476280,
+      "null_mean": {
+        "numerator": "85233625969275",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "22485219928543118015763675",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "3409345038771",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "1360328670469629",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 1.0168043222673162
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 756012,
+      "null_mean": {
+        "numerator": "5682331925598195",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "388049292065303140974695385",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "54117446910459",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "7089385545270129",
+        "denominator": "2621440"
+      },
+      "standardized_mean_decrease": 0.7770318946140683
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1095500,
+      "null_mean": {
+        "numerator": "657666867046875",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "166090301160905758423435495",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "15683788905575",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "10506986083844425",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.6084835703802455
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1490016,
+      "null_mean": {
+        "numerator": "1118427522480639",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "120190249842271452853658019",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "13332437477139",
+        "denominator": "1310720"
+      },
+      "alternative_mean": {
+        "numerator": "11170942787329251",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 0.48644632649691
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1937376,
+      "null_mean": {
+        "numerator": "111441516403365",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "612346813370833573348690815",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "17335346996079",
+        "denominator": "1310720"
+      },
+      "alternative_mean": {
+        "numerator": "17813307277542321",
+        "denominator": "1310720"
+      },
+      "standardized_mean_decrease": 0.39628606156104307
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2440360,
+      "null_mean": {
+        "numerator": "43235223850608075",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "22572025850657477406178484925",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "17468777313377",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "43200286295981321",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.32886846604263553
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2998248,
+      "null_mean": {
+        "numerator": "7862405784932655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "2996822515499805912871553745",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "107311475852493",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "157140804222800607",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.2772238905534368
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 3604440,
+      "null_mean": {
+        "numerator": "22119704339507775",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "11908035504149705521258890375",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "25801586527983",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "44213607092487567",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.23644294004592148
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "45825575412732681168645",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "176826969059152841240841",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 127512,
+      "null_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "1856345545827322451204715",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "4563832247667",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "2744601783608883",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.6699312833425558
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 316260,
+      "null_mean": {
+        "numerator": "85233625969275",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "22485219928543118015763675",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "4527754522389",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "2722948276494411",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.6751795896536941
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 564750,
+      "null_mean": {
+        "numerator": "5682331925598195",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "388049292065303140974695385",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "16170551865675",
+        "denominator": "4194304"
+      },
+      "alternative_mean": {
+        "numerator": "11348493299330715",
+        "denominator": "4194304"
+      },
+      "standardized_mean_decrease": 0.5804521125105091
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 871500,
+      "null_mean": {
+        "numerator": "657666867046875",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "166090301160905758423435495",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "12476879991975",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "10510192992758025",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.4840652045516968
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1237032,
+      "null_mean": {
+        "numerator": "1118427522480639",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "120190249842271452853658019",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "44275099857237",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "44692825799368323",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.4038545036825951
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1658376,
+      "null_mean": {
+        "numerator": "111441516403365",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "612346813370833573348690815",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "59355589023441",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "71263214909130159",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.3392172162901555
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 2134080,
+      "null_mean": {
+        "numerator": "43235223850608075",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "22572025850657477406178484925",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "1909542459357",
+        "denominator": "131072"
+      },
+      "alternative_mean": {
+        "numerator": "43204671171258363",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.2875934763773655
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 2659998,
+      "null_mean": {
+        "numerator": "7862405784932655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "2996822515499805912871553745",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "380820147158847",
+        "denominator": "20971520"
+      },
+      "alternative_mean": {
+        "numerator": "628611642647453553",
+        "denominator": "20971520"
+      },
+      "standardized_mean_decrease": 0.24594863214262494
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 3236940,
+      "null_mean": {
+        "numerator": "22119704339507775",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "11908035504149705521258890375",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "46341838119591",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "88432475519911509",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.21233578873618233
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "45825575412732681168645",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "176826969059152841240841",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "1856345545827322451204715",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 161280,
+      "null_mean": {
+        "numerator": "85233625969275",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "22485219928543118015763675",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "18038862639",
+        "denominator": "16384"
+      },
+      "alternative_mean": {
+        "numerator": "85161470518719",
+        "denominator": "65536"
+      },
+      "standardized_mean_decrease": 0.3443146911381388
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 382524,
+      "null_mean": {
+        "numerator": "5682331925598195",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "388049292065303140974695385",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "27382134492543",
+        "denominator": "10485760"
+      },
+      "alternative_mean": {
+        "numerator": "443504335835913",
+        "denominator": "163840"
+      },
+      "standardized_mean_decrease": 0.3931595642071182
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 661500,
+      "null_mean": {
+        "numerator": "657666867046875",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "166090301160905758423435495",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "9470402885475",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "10513199469864525",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.36742298658743255
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 996000,
+      "null_mean": {
+        "numerator": "1118427522480639",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "120190249842271452853658019",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "1782411427425",
+        "denominator": "262144"
+      },
+      "alternative_mean": {
+        "numerator": "2235072633533853",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.3251646567492714
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1383840,
+      "null_mean": {
+        "numerator": "111441516403365",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "612346813370833573348690815",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "2476478142297",
+        "denominator": "262144"
+      },
+      "alternative_mean": {
+        "numerator": "3563652046765383",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.2830614725436022
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 1827800,
+      "null_mean": {
+        "numerator": "43235223850608075",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "22572025850657477406178484925",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "13083902036335",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "43209056046535405",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.24631848671209544
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2327160,
+      "null_mean": {
+        "numerator": "7862405784932655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "2996822515499805912871553745",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "16658460150387",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "31432964679580233",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.21517377786638597
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32768,
+      "copied_pair_weight": 2881200,
+      "null_mean": {
+        "numerator": "22119704339507775",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "11908035504149705521258890375",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "10312216475295",
+        "denominator": "524288"
+      },
+      "alternative_mean": {
+        "numerator": "690918503844765",
+        "denominator": "16384"
+      },
+      "standardized_mean_decrease": 0.18900006626835483
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "45825575412732681168645",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "55856049671475",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "176826969059152841240841",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "41564116500633",
+        "denominator": "262144"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "1856345545827322451204715",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "274916561585655",
+        "denominator": "524288"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 5,
+      "width": 5,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "85233625969275",
+        "denominator": "65536"
+      },
+      "null_variance": {
+        "numerator": "22485219928543118015763675",
+        "denominator": "2199023255552"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "85233625969275",
+        "denominator": "65536"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 0,
+      "null_mean": {
+        "numerator": "5682331925598195",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "388049292065303140974695385",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "alternative_mean": {
+        "numerator": "5682331925598195",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.0
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 7,
+      "width": 7,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 220500,
+      "null_mean": {
+        "numerator": "657666867046875",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "166090301160905758423435495",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "3156800961825",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "10519513071788175",
+        "denominator": "2097152"
+      },
+      "standardized_mean_decrease": 0.12247432886247751
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 499992,
+      "null_mean": {
+        "numerator": "1118427522480639",
+        "denominator": "131072"
+      },
+      "null_variance": {
+        "numerator": "120190249842271452853658019",
+        "denominator": "274877906944"
+      },
+      "mean_decrease": {
+        "numerator": "17895410731347",
+        "denominator": "5242880"
+      },
+      "alternative_mean": {
+        "numerator": "44719205488494213",
+        "denominator": "5242880"
+      },
+      "standardized_mean_decrease": 0.16323265768813425
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 9,
+      "width": 9,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 837000,
+      "null_mean": {
+        "numerator": "111441516403365",
+        "denominator": "8192"
+      },
+      "null_variance": {
+        "numerator": "612346813370833573348690815",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "5991479376525",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "14258522620254195",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.17120653581266262
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 10,
+      "width": 10,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1230060,
+      "null_mean": {
+        "numerator": "43235223850608075",
+        "denominator": "2097152"
+      },
+      "null_variance": {
+        "numerator": "22572025850657477406178484925",
+        "denominator": "8796093022208"
+      },
+      "mean_decrease": {
+        "numerator": "17610224902959",
+        "denominator": "2097152"
+      },
+      "alternative_mean": {
+        "numerator": "10804403406426279",
+        "denominator": "524288"
+      },
+      "standardized_mean_decrease": 0.16576568430084263
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 11,
+      "width": 11,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 1677720,
+      "null_mean": {
+        "numerator": "7862405784932655",
+        "denominator": "262144"
+      },
+      "null_variance": {
+        "numerator": "2996822515499805912871553745",
+        "denominator": "549755813888"
+      },
+      "mean_decrease": {
+        "numerator": "12009587550279",
+        "denominator": "1048576"
+      },
+      "alternative_mean": {
+        "numerator": "31437613552180341",
+        "denominator": "1048576"
+      },
+      "standardized_mean_decrease": 0.1551252817176271
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "copy_pair_count": 32256,
+      "copied_pair_weight": 2175600,
+      "null_mean": {
+        "numerator": "22119704339507775",
+        "denominator": "524288"
+      },
+      "null_variance": {
+        "numerator": "11908035504149705521258890375",
+        "denominator": "1099511627776"
+      },
+      "mean_decrease": {
+        "numerator": "7786775705835",
+        "denominator": "524288"
+      },
+      "alternative_mean": {
+        "numerator": "5527979390950485",
+        "denominator": "131072"
+      },
+      "standardized_mean_decrease": 0.1427143357536557
+    }
+  ],
+  "maxima": [
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        2
+      ],
+      "maximum_squared_index": {
+        "numerator": "32256",
+        "denominator": "7825"
+      },
+      "maximum_index": 2.030313405354371
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        4
+      ],
+      "maximum_squared_index": {
+        "numerator": "3575881",
+        "denominator": "4747500"
+      },
+      "maximum_index": 0.8678787246956556
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        6
+      ],
+      "maximum_squared_index": {
+        "numerator": "26347689",
+        "denominator": "92233750"
+      },
+      "maximum_index": 0.53447368949699
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        7
+      ],
+      "maximum_squared_index": {
+        "numerator": "68121",
+        "denominator": "412508"
+      },
+      "maximum_index": 0.4063725082895221
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        11
+      ],
+      "maximum_squared_index": {
+        "numerator": "3969",
+        "denominator": "58850"
+      },
+      "maximum_index": 0.25969722910947046
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        2
+      ],
+      "maximum_squared_index": {
+        "numerator": "4237051179727360512",
+        "denominator": "1759915733332398725"
+      },
+      "maximum_index": 1.5516219619096954
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        3
+      ],
+      "maximum_squared_index": {
+        "numerator": "3462420224249994432",
+        "denominator": "19676712962107654475"
+      },
+      "maximum_index": 0.4194822731601514
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        4
+      ],
+      "maximum_squared_index": {
+        "numerator": "69825624644653081",
+        "denominator": "2660798220854898275"
+      },
+      "maximum_index": 0.161994938013444
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        6
+      ],
+      "maximum_squared_index": {
+        "numerator": "125548800006398235602",
+        "denominator": "12952754560400786945625"
+      },
+      "maximum_index": 0.0984521523168657
+    },
+    {
+      "rows": 64,
+      "columns": 64,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        9
+      ],
+      "maximum_squared_index": {
+        "numerator": "20879062746976817523",
+        "denominator": "12162606882264236226250"
+      },
+      "maximum_index": 0.04143259786439305
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 2,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        2
+      ],
+      "maximum_squared_index": {
+        "numerator": "417792",
+        "denominator": "6365"
+      },
+      "maximum_index": 8.101787647139373
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 2,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        4
+      ],
+      "maximum_squared_index": {
+        "numerator": "1032401161",
+        "denominator": "83443500"
+      },
+      "maximum_index": 3.517450432220472
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 2,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        6
+      ],
+      "maximum_squared_index": {
+        "numerator": "212628375",
+        "denominator": "41573098"
+      },
+      "maximum_index": 2.2615407394225016
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 2,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        8
+      ],
+      "maximum_squared_index": {
+        "numerator": "4305625",
+        "denominator": "1513379"
+      },
+      "maximum_index": 1.686724873661861
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 2,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        12
+      ],
+      "maximum_squared_index": {
+        "numerator": "2347835",
+        "denominator": "1911624"
+      },
+      "maximum_index": 1.1082367537583306
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "lag": 1,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        2
+      ],
+      "maximum_squared_index": {
+        "numerator": "133279759558226632704",
+        "denominator": "3496267293258005735"
+      },
+      "maximum_index": 6.174187107355624
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "lag": 2,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        3
+      ],
+      "maximum_squared_index": {
+        "numerator": "309929244797381395456",
+        "denominator": "112425274700003078025"
+      },
+      "maximum_index": 1.6603486764882687
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "lag": 3,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        5
+      ],
+      "maximum_squared_index": {
+        "numerator": "92005443947841259059",
+        "denominator": "201824978377455405650"
+      },
+      "maximum_index": 0.6751795896536941
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "lag": 4,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        6
+      ],
+      "maximum_squared_index": {
+        "numerator": "114409291121952101338614",
+        "denominator": "740156580577750707588875"
+      },
+      "maximum_index": 0.39315956420711823
+    },
+    {
+      "rows": 256,
+      "columns": 256,
+      "q": 256,
+      "lag": 6,
+      "theta": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "maximizing_widths_in_declared_set": [
+        9
+      ],
+      "maximum_squared_index": {
+        "numerator": "60862855504394433375",
+        "denominator": "2076402985243961490802"
+      },
+      "maximum_index": 0.17120653581266262
+    }
+  ],
+  "row_count": 220,
+  "maximizer_comparison": "Exact rational squared indices; all exact ties retained"
+}

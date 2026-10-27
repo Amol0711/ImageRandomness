@@ -1,0 +1,285 @@
+{
+  "protocol_version": "1.0",
+  "study": "Exact fixed-reference raw mean and variance on complete-pair window graphs",
+  "timing_authorization": "Run measurements sequentially after confirming the protocol checksum and numerical thread settings.",
+  "model": "Independent uniform U_i on {0,...,q-1}; D_i=abs(v_i-U_i); S=sum_(i,j) c_ij abs(D_i-D_j). All compared methods return raw E[S] and Var(S).",
+  "reference_construction": {
+    "seed_offset": 271828,
+    "hash": "x=(1664525*(index+271828)+1013904223)&0xffffffff; x=x^(x>>13)",
+    "palette": "v_i=(x_i%32)*(q-1)//31",
+    "diverse": "v_i=x_i%q",
+    "checker": "v_(r,c)=0 if (r+c)%2==0 else q//2",
+    "split": "v_(r,c)=0 if c<columns//2 else q//2"
+  },
+  "benchmark": {
+    "repeats": 3,
+    "method_order": [
+      "piecewise_exact",
+      "piecewise_cached",
+      "alphabet_exact",
+      "alphabet_float64"
+    ],
+    "warmup": "One untimed call per method on a four-vertex q=8 graph; no per-case warmup.",
+    "timing_scope": "Fresh per-reference moment evaluation, including reference validation, profiles, pair calculations, vertex accumulation and materialization of both mean and variance. Preconstructed validated topology and reference generation are excluded. Caches do not survive calls.",
+    "topology_scope": "Rectangular edge enumeration and prepare_graph validation/adjacency construction timed separately, with three repeats on first encounter of each distinct geometry. Reused unchanged across references and methods.",
+    "summary": "Median, minimum and maximum wall-clock seconds from perf_counter; retain every timing replicate.",
+    "deterministic_edge_budget": 300000,
+    "alphabet_exact_work_budget": 2000000,
+    "alphabet_float64_work_budget": 200000000,
+    "alphabet_workspace_budget_bytes": 134217728,
+    "work_proxy": "q*(2*e+K+C), where K is the number of occurring unordered pairs of folded reference classes and C is the number of folded classes. This is a prespecified budget proxy, not a measured operation count.",
+    "skip_policy": "Record budget_work, budget_workspace or budget_edges before running a method. An omitted method is not a timeout or evidence of measured speedup.",
+    "relative_variance_error_target": 1e-10,
+    "error_scope": "Exact Fraction equality for both exact methods; relative floating mean and variance errors against the exact Fraction oracle, with absolute error when the oracle is zero. Floating error is evaluated by exact conversion of the returned binary float before division by the oracle.",
+    "memory_scope": "Separate untimed tracemalloc run on selected case/method combinations. Report peak traced allocations during fresh per-reference moment evaluation including output materialization; preexisting reference and topology excluded. This is not process RSS.",
+    "memory_case_ids": [
+      "q2_checker_16",
+      "area_16",
+      "window4_32",
+      "full_4x5",
+      "q65536_palette_16",
+      "q256_diverse_32"
+    ],
+    "thread_settings": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "case_order": "Listed order below; no random timing order. No concurrent measurement jobs."
+  },
+  "cases": [
+    {
+      "id": "q2_checker_16",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 2,
+      "reference": "checker"
+    },
+    {
+      "id": "area_16",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "area_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "area_64",
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "area_128",
+      "rows": 128,
+      "columns": 128,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "area_256",
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "window3_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "window4_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "rectangle_32x48",
+      "rows": 32,
+      "columns": 48,
+      "height": 2,
+      "width": 3,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "strip_4x128",
+      "rows": 4,
+      "columns": 128,
+      "height": 2,
+      "width": 3,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "full_4x5",
+      "rows": 4,
+      "columns": 5,
+      "height": 4,
+      "width": 5,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "q4096_palette_16",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 4096,
+      "reference": "palette"
+    },
+    {
+      "id": "q4096_palette_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 4096,
+      "reference": "palette"
+    },
+    {
+      "id": "q65536_palette_16",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 65536,
+      "reference": "palette"
+    },
+    {
+      "id": "q65536_palette_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 65536,
+      "reference": "palette"
+    },
+    {
+      "id": "q256_diverse_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "diverse"
+    },
+    {
+      "id": "q4096_diverse_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 4096,
+      "reference": "diverse"
+    },
+    {
+      "id": "q65536_diverse_32",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 65536,
+      "reference": "diverse"
+    },
+    {
+      "id": "q256_checker_64",
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "checker"
+    },
+    {
+      "id": "q256_split_64",
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "split"
+    },
+    {
+      "id": "q256_diverse_64",
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "diverse"
+    },
+    {
+      "id": "q65536_palette_64",
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 65536,
+      "reference": "palette"
+    },
+    {
+      "id": "q65536_diverse_128",
+      "rows": 128,
+      "columns": 128,
+      "height": 2,
+      "width": 2,
+      "q": 65536,
+      "reference": "diverse"
+    }
+  ],
+  "monte_carlo": {
+    "case_ids": [
+      "area_16",
+      "area_64"
+    ],
+    "sample_sizes": [
+      1000,
+      5000,
+      20000
+    ],
+    "independent_replicates": 10,
+    "master_seed": 2026102501,
+    "seed_derivation": "numpy.random.SeedSequence([master_seed, case_index, sample_size, replicate_index]) with zero-based indices",
+    "batch_size": 32,
+    "edge_chunk_size": 8192,
+    "bootstrap_seed": 2026102502,
+    "bootstrap_resamples": 10000,
+    "bootstrap_interval": "2.5th and 97.5th percentiles of replicate-resampled RMSE, with independent bootstrap seeds derived from [bootstrap_seed,case_index,sample_size]. Descriptive uncertainty only; ten replications do not establish a population precision guarantee.",
+    "variance_estimator": "Unbiased sample variance with ddof=1 of the raw simulated S values",
+    "timing_scope": "Random-number generation, D formation, weighted edge statistics and sample mean/variance, excluding graph/reference construction and exact oracle calculation.",
+    "variance_relative_rmse_target": 0.01,
+    "target_interpretation": "Report observed RMSE threshold crossing and whether the descriptive interval lies below the target. Neither is a certification. No matched-accuracy claim when the descriptive upper endpoint exceeds 1%; no extrapolation to unmeasured budgets.",
+    "reported_errors": "Per-replicate signed relative mean/variance errors; cross-replicate RMSE, minimum, maximum and sample SD; descriptive percentile bootstrap interval for relative variance RMSE.",
+    "scope": "Conditional moment estimation under the stated independent uniform model only. No empirical rejection-rate, image-security or nonuniform-null claim."
+  }
+}

@@ -1,0 +1,286 @@
+Statistical details and recorded evidence
+Finite-grid calibration, paired detection and window sensitivity
+
+Purpose and reading order
+
+This note documents statistical protocols and numerical diagnostics.
+It connects each result to
+the complete observations, calculations and verification programs.
+Paths below are relative to statistical_validation/ unless stated otherwise.
+Reported rates and interval endpoints in this note are percentages, whereas
+the CSV and JSON records store probabilities as fractions. Differences
+between rejection probabilities are reported in percentage points.
+
+1. Null models and sampling design
+
+The Gaussian-calibration study contains 27 cases and 525,000 independent
+fields. Each case has 20,000 fields except the 256 by 256 random-image pair,
+which has 5,000. The design covers alphabets 2, 16, 256 and 65536, small
+and large grids, rectangular windows, strips and full-image windows.
+Fixed references include constant, checkerboard, split, palette and diverse
+configurations. Checkerboard and split references use intensities 0 and q/2.
+The deterministic palette and diverse constructions are specified in
+../moment_computation/COMPUTATIONAL_DETAILS.txt and results/protocol.json.
+
+Two further models specify independent difference pixels on {0,...,7}.
+The first has probability vector
+
+    p = (1/2, 1/8, 1/8, 1/16, 1/16, 1/16, 1/32, 1/32).
+
+The sparse law has p_s(0)=1023/1024 and p_s(7)=1/1024, with zero mass
+elsewhere. Their exact moments use the specified probability laws.
+
+Every two-sided Gaussian rule uses the exact null mean. The exact-variance
+rule uses V=Var(S). The pair-occurrence rule instead uses
+
+    V_pair = sum_e c_e Var(h_e),     h_e = abs(D_i-D_j),
+
+where c_e is the comparison multiplicity. This rule omits the squared
+multiplicities and shared-endpoint covariances of the exact variance.
+At nominal level alpha, its normal-tail prediction is
+
+    2 Phi(-z_(1-alpha/2) / sqrt(V/V_pair)).
+
+Here Phi is the standard normal distribution function and z is its quantile.
+This prediction describes the effect of the variance ratio under a normal
+approximation. It is separate from the observed rejection proportion.
+Rectangular windows and specified-law cases assess finite-grid behavior.
+The single full-image window is a stress test with one statistic per
+independent field.
+
+results/calibration.json and calibration.csv retain every case at nominal
+5%, 1% and 0.1%, with separate lower and upper tails, empirical moments,
+moment ratios and quantiles. results/calibration_predictions.json and
+calibration_predictions.csv independently reconstruct twelve specified configurations. Their 95% Wilson intervals are pointwise
+confidence intervals for the exact-variance rule's rejection probability.
+
+2. Variance ratios and finite-grid Gaussian departures
+
+Selected nominal 1% comparisons
+
+Model and geometry                    V/V_pair   Predicted pair   Observed pair   Exact-variance
+                                                 rejection (%)   rejection (%)  rejection (%)
+Random, 64x64, 2x2, q=256               5.0408       25.127          25.185           0.935
+Random, 32x32, 4x4, q=256              77.6456       77.004          77.165           0.930
+Fixed diverse, 64x64, 2x2, q=65536      4.9013       24.463          24.395           0.860
+Fixed palette, 16x16, 4x4, q=65536     60.1703       73.984          73.375           1.065
+
+The fixed diverse reference's exact-variance interval is [0.741%, 0.998%],
+with its upper endpoint below 1%. These fixed-reference cases use the
+finite-breakpoint calculation for heterogeneous folded-uniform laws.
+The complete twelve-row table also retains the binary, rectangular,
+full-image, checkerboard, split and specified-law observations.
+
+The binary 4 by 4 grid with 2 by 2 windows has observed rejection 1.610%
+at nominal 1%. At nominal 5%, the lower and upper tails are 4.695% and
+0.040%, respectively, giving total 4.735%. The total near 5% therefore
+coexists with pronounced tail asymmetry.
+
+For the sparse 16 by 16 case, the empirical variance is 0.9922 times its
+exact value. The exact-variance rule rejects 2.585%, 2.510% and 1.655%
+at nominal 5%, 1% and 0.1%, respectively. Every observed rejection is in
+the upper tail. At nominal 1%, the pair-occurrence normal-tail prediction
+is 44.138%, whereas its observed rejection is 17.320%. Accurate variance
+normalization and accurate Gaussian tail probabilities are distinct issues.
+
+At nominal 0.1%, attaining that level would produce an expected 20
+rejections in an ordinary 20,000-field case and five in the largest-grid
+case. The finite-null evaluations below quantify the binary and sparse
+departures independently of Monte Carlo variation.
+
+3. Exact and certified rejection probabilities
+
+Complete enumeration of all 65,536 binary 4 by 4 difference fields gives
+exact rejection probabilities for the existing Gaussian rules. For the
+sparse law, enumeration covers all 177,589,057 supports containing at most
+four nonzero pixels. Every support retains its original probability.
+The exact omitted probability is Pr(Binomial(256,1/1024)>4), approximately
+6.38217463693e-6, and is added once to obtain the certified upper bound.
+This corresponds to approximately 0.000638217464 percentage points.
+
+Nominal (%)   Binary exact (%)   Sparse certified interval (%)
+5                 4.476929          [2.51005, 2.51069]
+1                 1.544189          [2.43948, 2.44013]
+0.1               0.518799          [1.60529, 1.60594]
+
+Binary values are displayed to six decimal places. Sparse endpoints are
+rounded outward to five decimal places. At nominal 5%, the exact binary
+lower and upper tails are 4.43115234375% and 0.0457763671875%, respectively.
+Sparse rejection occurs entirely in the upper tail at all three levels.
+These evaluations quantify the existing Gaussian rules rather than define
+new exact-level tests. Integer rejection sets and truncation bounds are evaluated by
+analysis/exact_calibration.py. results/exact_calibration.json
+retains exact rational weights, score histograms, quantile certificates,
+source hashes and all verification outputs.
+
+4. Rank calibration and the realized null bank
+
+The paired experiment uses 64 by 64 grids with q=256 and six raw statistics.
+They are the NPCR change count, UACI absolute-difference sum, and weighted
+pair sums S_w for square-window widths w=2,3,4,5. Centered discrepancies
+use their exact null means. A separate bank of 99,999 null fields sets the
+randomized rank thresholds at nominal 5% and 1%. All six statistics observe
+the same field in each model. Independent uniform tie variables resolve
+equal discrepancies, and each statistic reuses its ties across significance
+levels to preserve nested rejection sets.
+
+A separate 20,000-field null sample assesses the realized bank's conditional
+rejection probabilities. The six observed rates range from 4.950% to 5.140%
+at nominal 5% and from 0.945% to 1.050% at nominal 1%. All twelve pointwise
+95% Wilson intervals contain the corresponding nominal level. The exact
+common marginal levels average over banks and new observations. A realized
+bank has its own conditional rejection probabilities. The central 95%
+intervals from the across-bank Beta law are [4.866%, 5.136%] and
+[0.939%, 1.063%], respectively. These are intervals describing variation
+across independent banks, distinct from confidence intervals conditional
+on the bank used in the experiment.
+
+The NPCR count has a binomial law under the independent null and partial
+identity. Evaluating the exact-law expression in float64, including the
+randomized boundary mass, gives conditional null rejection probabilities
+4.955055% and 0.985270%. Their observed values are 4.950% and 0.945%.
+For partial identity with epsilon=0.005, the nominal 5% probability is
+98.5937%, compared with observed rejection 98.540%.
+
+For disjoint copying, the zero-count generating function gives the NPCR
+law at the realized bank threshold. At theta=0.10, nominal 5% rejection
+probabilities are 6.0704% for lag one and 5.9999% for lag three, compared
+with observed values 6.70% and 5.30%. The observations retain these
+finite-sample deviations from the conditional model probabilities.
+Independent reconstruction reproduces every saved NPCR and UACI sequence
+across 199,999 fields, including the bank. Exact small-field enumeration
+also verifies the copying generator. The detailed probabilities, boundary
+values and pointwise diagnostics are in results/npcr_copying_diagnostic.json
+and results/audit.json.
+
+5. Paired detection and graphical display
+
+Each of the eight nonzero alternatives uses 10,000 independent fields.
+Disjoint copying preserves the individual difference-pixel law while
+changing joint laws. Partial identity replaces individual differences by
+zero independently and changes the pixel-equality probability. These
+models induce complementary responses in pair differences and equality
+counts. results/power_rates.csv retains all six statistics under every
+model at both significance levels, with pointwise Wilson intervals.
+
+At nominal 5%, lag-one copying with theta=0.10 gives rejection 35.89%
+for S_2 and 6.70% for NPCR. Lag-three copying with theta=0.30 gives
+11.37% for S_4 and 7.86% for S_2. Partial identity with epsilon=0.005
+gives 6.20% for S_2 and 98.54% for NPCR. At epsilon=0.010, NPCR rejects
+all 10,000 simulated observations, giving the observed proportion 100%.
+This remains a finite-sample estimate of population power.
+
+The three selected paired contrasts at nominal 5% are
+
+Alternative                   First minus second  Difference (pp)   95% interval (pp)
+Lag-one copy, theta=0.10       S_2 minus NPCR            29.19           [27.66, 30.70]
+Lag-three copy, theta=0.30     S_4 minus S_2              3.51           [2.59, 4.43]
+Identity, epsilon=0.005        S_2 minus NPCR           -92.34           [-92.97, -91.64]
+
+Here pp means percentage points. Every contrast uses 10,000 common fields.
+Its interval combines two 97.5% Clopper-Pearson intervals for the discordant
+probabilities, giving at least 95% pointwise coverage conditional on the
+bank. The coverage statement applies separately to each contrast.
+results/power_paired.csv retains the complete paired results.
+
+The complete six-statistic comparison, including lag-three copying, is
+retained in results/power_rates.csv. The independent null assessment uses
+20,000 fields and each nonzero-alternative case uses 10,000 fields.
+
+6. Finite-boundary window sensitivity and mean checks
+
+The exact window study evaluates 220 mean-sensitivity indices over widths
+2 through 12, alphabets q=2 and q=256, square grids 64 by 64 and 256 by
+256, and lags 1,2,3,4,6. The copying probability is theta=0.10. The index
+is the exact mean decrease divided by the null standard deviation.
+
+For q=256 and lag three, selected indices are
+
+Grid       Width 4        Width 5
+64x64      0.161994938    0.161985405
+256x256    0.669931283    0.675179590
+
+The finite boundary changes the maximizing width within this search from
+four on the smaller grid to five on the larger grid. On the smaller grid,
+the observed nominal 5% powers at theta=0.30 are nearly tied at 11.37%
+and 11.30%. The different theta values identify separate sensitivity and
+power evaluations. Maximizing a mean-sensitivity index and maximizing
+rejection probability are different objectives.
+
+All 54 empirical means across the null and eight alternative models lie
+within 2.61 estimated Monte Carlo standard errors of their exact predictions.
+For lag-three copying at theta=0.30, S_2 and S_3 have zero exact mean
+response but observed rejection rates 7.86% and 8.47%. Their null rates
+are 5.09% and 5.08%, respectively. These are descriptive comparisons of
+observed rejection despite zero exact mean shift. The complete sensitivity
+grid and exact moment inputs are retained in results/sensitivity.json and
+sensitivity.csv, and empirical mean diagnostics are in results/power.json.
+
+7. Verification and evidence map
+
+The saved-data checks reconstruct calibration tail counts, rank thresholds,
+rejection rates and paired contrasts from recorded integer scores and seeded
+ties. results/power_audit.json reports 12 reconstructed thresholds, 108
+rejection-rate records and 198 paired contrasts, with all checks passed.
+The checks verify nested decisions across significance levels and retain
+the exact integer discrepancy keys. Independent finite-model checks cover
+scoring, moments, copying, partial identity and rank exchangeability.
+These checks are documented in results/verification.json and results/audit.json.
+
+Design and raw observations
+    results/protocol.json
+    results/calibration_scores.npz
+    results/power_grid64_q256_calibration.npz
+    results/power_grid64_q256_null.npz
+    results/power_grid64_q256_copy_lag1_theta0p025.npz
+    results/power_grid64_q256_copy_lag1_theta0p1.npz
+    results/power_grid64_q256_copy_lag1_theta0p3.npz
+    results/power_grid64_q256_copy_lag3_theta0p1.npz
+    results/power_grid64_q256_copy_lag3_theta0p3.npz
+    results/power_grid64_q256_identity_0p002.npz
+    results/power_grid64_q256_identity_0p005.npz
+    results/power_grid64_q256_identity_0p01.npz
+
+Calibration summaries and independently reconstructed predictions
+    results/calibration.json
+    results/calibration.csv
+    results/calibration_predictions.json
+    results/calibration_predictions.csv
+    code/calibration_predictions.py
+
+Exact and certified finite-null probabilities
+    results/exact_calibration.json
+    results/exact_calibration.csv
+    analysis/exact_calibration.py
+    analysis/enumerate_cut_histogram.cpp
+
+Ranks, conditional NPCR probabilities and paired detection
+    results/power.json
+    results/power_rates.csv
+    results/power_paired.csv
+    results/npcr_copying_diagnostic.json
+    code/npcr_copying_diagnostic.py
+
+Exact sensitivity, verification and independent saved-data audits
+    results/sensitivity.json
+    results/sensitivity.csv
+    code/alternative_analysis.py
+    results/verification.json
+    results/audit.json
+    results/power_audit.json
+    code/verify_statistics.py
+    code/audit_results.py
+
+README.txt gives the reproduction commands. The NPZ files contain recorded
+integer statistics, while raw image fields can be regenerated from the
+specified seed streams. Reanalysis, new simulation and exact enumeration
+are distinct operations. Use a working copy or a fresh output directory
+when a command writes files so that the delivered observations remain intact.
+
+Public export identity
+
+The companion-root EXPORT_PROVENANCE.json distinguishes original experimental
+digests from distributed-file digests. Descriptive metadata and local paths
+are normalized; numerical observations and computational parameters retain
+their original values. Public checksums must not be interpreted as original
+experimental file checksums.

@@ -1,0 +1,291 @@
+{
+  "protocol_version": "1.0",
+  "study": "Scaling of exact fixed-reference moment computation and vertex aggregation",
+  "measurement_authorization": "Measurements require an explicitly supplied SHA-256 matching the protocol bytes. Verification and digest inspection do not start measurements.",
+  "model": "Independent uniform U_i on {0,...,q-1}; D_i=abs(v_i-U_i); S=sum_(i,j) c_ij abs(D_i-D_j). Moment methods return identical raw E[S] and Var(S), with graph normalizer one.",
+  "reference_construction": {
+    "implementation": "run_comparison.reference_for is reused without alteration, with Python integer references and q at most 2^32.",
+    "integer_hash": "x=(1664525*(index+271828)+1013904223)&0xffffffff; x=x^(x>>13)",
+    "palette": "v_i=(x_i%32)*(q-1)//31",
+    "diverse": "v_i=x_i%q",
+    "interpretation": "The palette has at most 32 input levels. Folding can change its number of classes with q; class diversity is not fixed across the alphabet sweep. Report actual folded-class and occurring class-pair counts for every case.",
+    "selection": "All cases and references are fixed before measurements. No outcome-dependent case selection."
+  },
+  "benchmark": {
+    "repeats": 3,
+    "method_order": [
+      "piecewise_exact",
+      "piecewise_cached",
+      "alphabet_exact",
+      "alphabet_float64"
+    ],
+    "repetition_order": "Within each case, repetition r uses the listed order rotated left by r modulo four, with zero-based r. Three repetitions do not fully balance four methods.",
+    "case_order": "Listed case order; shared geometry timings are recorded only on first encounter. No concurrent measurement jobs.",
+    "warmup": "One tiny untimed q=8 four-vertex call per method at each process invocation that includes moments or memory. No per-case warmup. Warmup results are checked and never included in measurements.",
+    "gc_policy": "gc.collect before every measured call; ordinary automatic garbage collection remains enabled.",
+    "timing_scope": "Fresh per-reference moment evaluation including reference validation, profile construction, edge and vertex calculations, and materialization of both mean and variance. Reference generation, topology preparation, comparison, diagnostic serialization and checkpoint I/O are excluded. Caches are local to a call and are rebuilt on every repetition.",
+    "topology_scope": "Three fresh rectangular edge enumerations and three fresh graph-validation/adjacency constructions per distinct geometry. Enumeration and validation are timed separately. Prepared topology is then reused for references and methods. Topology restoration after a resumed process is untimed and never replaces completed timing records.",
+    "clock": "time.perf_counter wall-clock seconds",
+    "summary": "Retain every invocation and its elapsed time. Median, minimum and maximum are populated only when all declared repetitions complete. Partial completed medians are separately labelled and never substituted for full summaries.",
+    "prepared_graph_edge_cap": 300000,
+    "edge_cap_scope": "The deterministic distinct-edge cap applies to every prepared comparison graph and all methods, checked before enumeration and again after graph validation.",
+    "alphabet_workspace_budget_bytes": 536870912,
+    "workspace_scope": "Use alphabet_baseline.estimate_workspace separately for exact and float64 methods. This is an estimated working-array guard, not a measured RSS or hard process-memory cap. Caller reference and graph, interpreter and allocator overhead are outside the estimator.",
+    "eligibility": "No alphabet work-proxy cutoff is used. An estimated workspace excess is recorded as omitted_workspace before any method call and is not a measured timeout or observed speedup.",
+    "call_timeout_seconds": 120,
+    "timeout_scope": "Each measured topology, moment, vertex or memory call uses Linux SIGALRM and ITIMER_REAL. Signal handling may be deferred inside native code; retain actual elapsed time even when it exceeds the nominal deadline.",
+    "timeout_policy": "The first timeout censors that method/case and suppresses its remaining repetitions. Keep earlier completed repetitions and the elapsed censored call. Do not replace a slow or timed-out call and do not repeat until favorable. Other eligible methods continue.",
+    "interrupt_policy": "Checkpoint an in-flight marker before every call. A process interrupted before its completion checkpoint is restored as censored_interruption with unavailable elapsed time and is never silently repeated. An observed KeyboardInterrupt retains elapsed time. A programming or arithmetic error is recorded and aborts the run.",
+    "output_equality": "Compare both exact Fraction outputs from every completed exact repetition against the first completed uncached piecewise call. Preserve exact numerator and denominator strings. If this oracle is unavailable, explicitly mark comparisons unavailable.",
+    "float_error": "Convert each returned binary64 output exactly with Fraction.from_float before subtracting the exact oracle; store exact absolute error and signed relative error. When the oracle is zero, report absolute error and label its scale.",
+    "relative_variance_error_target": 1e-10,
+    "normalizations": [
+      "elapsed_seconds / e",
+      "elapsed_seconds / (n+e+sum_v d_v*log2(1+d_v))"
+    ],
+    "diagnostics": "Record n, e, maximum degree, sum d_v^2, sum d_v log2(1+d_v), folded classes, occurring class pairs, edge weights, and each implementation diagnostic dictionary for each completed call. Event and interval counters describe structural work, not CPU instructions.",
+    "bit_diagnostics": "Record bit lengths of the unreduced final mean and variance numerators returned by exact implementations. These are not measurements of the maximum intermediate operand size.",
+    "thread_settings": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "checkpoint": "Atomically save the report JSON and summary CSV files before and after every completed call and after each case. Resume preserves completed repetitions, censored calls and omissions. Reject resume if source hashes, protocol hash or principal environment metadata differ. Explicit --restart preserves the previous JSON report and starts fresh.",
+    "provenance": "Record full protocol, its SHA-256, SHA-256 for every Python source in the code directory, Python/NumPy versions, CPU/platform/affinity, NumPy build configuration, numerical thread environment and available thread-pool metadata. Fresh results are not pooled with prior study timings."
+  },
+  "cases": [
+    {
+      "id": "degree_w2_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "degree_w3_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 3,
+      "width": 3,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "degree_w4_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 4,
+      "width": 4,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "degree_w6_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 6,
+      "width": 6,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "degree_w8_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 8,
+      "width": 8,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "degree_w12_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 12,
+      "width": 12,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "degree_w16_32",
+      "group": "degree",
+      "rows": 32,
+      "columns": 32,
+      "height": 16,
+      "width": 16,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "alphabet_q2p8_16",
+      "group": "alphabet",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "alphabet_q2p12_16",
+      "group": "alphabet",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 4096,
+      "reference": "palette"
+    },
+    {
+      "id": "alphabet_q2p16_16",
+      "group": "alphabet",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 65536,
+      "reference": "palette"
+    },
+    {
+      "id": "alphabet_q2p20_16",
+      "group": "alphabet",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 1048576,
+      "reference": "palette"
+    },
+    {
+      "id": "alphabet_q2p24_16",
+      "group": "alphabet",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 16777216,
+      "reference": "palette"
+    },
+    {
+      "id": "alphabet_q2p32_16",
+      "group": "alphabet",
+      "rows": 16,
+      "columns": 16,
+      "height": 2,
+      "width": 2,
+      "q": 4294967296,
+      "reference": "palette"
+    },
+    {
+      "id": "area_64",
+      "group": "area",
+      "rows": 64,
+      "columns": 64,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "area_128",
+      "group": "area",
+      "rows": 128,
+      "columns": 128,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "area_256",
+      "group": "area",
+      "rows": 256,
+      "columns": 256,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "palette"
+    },
+    {
+      "id": "diverse_q256_32",
+      "group": "reference_diversity",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 256,
+      "reference": "diverse"
+    },
+    {
+      "id": "diverse_q4096_32",
+      "group": "reference_diversity",
+      "rows": 32,
+      "columns": 32,
+      "height": 2,
+      "width": 2,
+      "q": 4096,
+      "reference": "diverse"
+    }
+  ],
+  "case_reuse": {
+    "area_32": "degree_w2_32"
+  },
+  "vertex_ablation": {
+    "q": 65536,
+    "degrees": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "repeats": 5,
+    "method_order": [
+      "sweep_vertex",
+      "pairwise_vertex"
+    ],
+    "repetition_order": "Alternate the listed two-method order by zero-based repetition modulo two. Five repetitions do not fully balance both positions.",
+    "preparation": "vertex_ablation.make_star_case constructs immutable identical profiles and unit weights before timing. Central reference floor(q/3); leaf j has floor(j*(q-1)/(2*(d+1))), j=1,...,d. The same prepared case is supplied to both kernels.",
+    "warmup": "One tiny untimed degree-two q=8 call to each vertex kernel per process invocation of this phase.",
+    "timing_scope": "Only the vertex aggregation kernel and construction of its result/diagnostic record are timed. Profile construction is excluded from both methods.",
+    "target": "Exact integer sum_x a_0(x)*(sum_j c_0j f_j(x))^2. Every completed repetition must agree with the first completed kernel output.",
+    "methods": "The sweep uses the production sorted-event kernel. The pairwise kernel separately integrates every diagonal and unordered cross product on merged piecewise intervals.",
+    "diagnostics": [
+      "degree",
+      "pair_products",
+      "interval_integrations",
+      "raw_events",
+      "neighbor_coefficient_events",
+      "raw_square_sum_bits"
+    ],
+    "interpretation": "This measures one vertex kernel, not the runtime of a complete alternative moment algorithm. Counters describe structural work, not CPU instructions."
+  },
+  "memory": {
+    "case_ids": [
+      "alphabet_q2p8_16",
+      "alphabet_q2p16_16",
+      "alphabet_q2p32_16"
+    ],
+    "repeats": 1,
+    "eligibility": "One fresh call for each selected method that completed all moment-timing repetitions. Preserve the reason for every method not run.",
+    "scope": "Separate tracemalloc peak allocated bytes during fresh evaluation, including output Fraction materialization and excluding preconstructed reference and topology. Tracing is never active inside wall-clock comparison calls. Peaks are traced allocations, not process RSS. A timed-out trace has a censored peak.",
+    "order": "All moment and vertex wall-clock timings precede allocation tracing in --phase all. A standalone memory phase requires completed moment records. Traced elapsed times are recorded only as execution/censoring metadata and are not timing comparisons."
+  },
+  "phase_order": [
+    "moments",
+    "vertex",
+    "memory"
+  ]
+}

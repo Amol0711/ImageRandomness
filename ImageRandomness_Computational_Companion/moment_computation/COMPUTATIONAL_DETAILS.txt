@@ -1,0 +1,633 @@
+Computational details and recorded evidence
+Exact moment computation for image randomness statistics
+
+Purpose and reading order
+
+This note documents the computational protocols and recorded observations.
+It brings together the auxiliary timing, allocation and sampling results,
+while the machine-readable records retain every recorded repetition, exact
+output, resource decision and source checksum. Paths in this note are
+relative to moment_computation/ unless explicitly stated otherwise.
+
+The principal moment-computation comparison uses the 18-case
+scaling study in results/scaling.json. Its five-point area curve uses only
+that study. The complete six-degree vertex curve uses the separate 60-call
+batch in results/vertex_benchmark.json. The original 23-case study remains
+available in results/comparison.json and supplies the auxiliary comparisons
+below. These are distinct experiments with different resource rules and
+execution orders. Their repetitions and medians are never pooled, and time
+ratios use unrounded medians from the same experiment.
+
+Section 6 gives the complete principal benchmark protocol, execution
+conditions and completion ledger. Section 9 supplies its numerical tables.
+The principal 18-case study covers alphabet size, image area and window width.
+The prepared vertex kernels use the separate complete experiment in Section 7.
+
+1. Common computational model and implementations
+
+For a deterministic reference v, independent pixels U_i are uniform on
+{0,...,q-1}, D_i = abs(v_i-U_i), and the raw statistic is
+
+    S = sum_{(i,j,c) in edges} c * abs(D_i-D_j).
+
+The four implementations evaluate the same raw mean and variance formulas.
+Exact breakpoint is the deterministic uncached algorithm, and Cached
+breakpoint adds profile and pair caching. Both use arbitrary-precision
+integers. Exact alphabet evaluates finite sums with integer prefix sums.
+These three methods return exact rational moments. Float64 alphabet
+evaluates the finite-sum formulas in NumPy using the occurring folded-law
+classes and unordered edge-class pairs, and returns floating-point
+approximations. All four retain shared-endpoint covariance by aggregating
+incident projections. Their recorded method names are piecewise_exact,
+piecewise_cached, alphabet_exact and alphabet_float64, respectively.
+
+For zero-based row-major pixel index r, the deterministic construction uses
+
+    t = (1664525*(r+271828)+1013904223) mod 2^32,
+    x = t xor floor(t/2^13).
+
+Here xor denotes bitwise exclusive OR. Palette references set k = x mod 32
+and v = floor(k*(q-1)/31). Diverse references set v = x mod q. Checkerboard
+references alternate 0 and floor(q/2) according to row-plus-column parity.
+Split references use 0 in columns below floor(columns/2) and floor(q/2)
+elsewhere. The protocol files record each case's geometry and construction.
+
+Per-reference timings include reference validation, profile and pair
+preparation, vertex accumulation and materialization of both outputs.
+Reference generation and prepared graph construction are outside these
+timings. Caches are rebuilt on every call. Graph enumeration and graph
+validation/adjacency construction have separate measurements. Ordinary
+automatic garbage collection remains enabled, with an explicit collection
+before each measured call and outside the timer.
+
+The recorded moment studies use an AMD EPYC 9V74 processor, Linux x86-64,
+Python 3.12.14 and NumPy 2.3.5. Calls run sequentially with one numerical
+backend thread. The shared host is not reserved exclusively. Elapsed times
+characterize these implementations, inputs and recorded execution conditions.
+
+2. Independent verification
+
+results/verification.json records exact covariance-expansion checks on
+1,004 fixed-reference graphs, including 100 signed-weight cases. Exact
+alphabet evaluation agrees on all 1,004 graphs, and 902 also undergo full
+comparison-image enumeration. Additional checks cover 405 rectangular
+geometries and 58 general rational-law instances. All exact comparisons
+pass. The record also retains zero-variance, input-validation, graph-reuse,
+normalization and large-alphabet structural checks.
+
+The vertex-kernel verifier in code/vertex_ablation.py independently compares
+both aggregation kernels with direct alphabet enumeration on 182 small
+cases, including signed weights and exact cancellation. These untimed
+algorithm checks are separate from saved-record audits. The latter verify
+the arithmetic, provenance and completeness of existing measurements
+without rerunning timing experiments.
+
+3. Original 23-case timing study
+
+The original study covers grids from 4 by 5 to 256 by 256, alphabets
+2, 256, 4096 and 65536, and rectangular, strip, square and full-image
+windows. The four methods use three fresh repetitions in the recorded
+listed order. The complete design is results/protocol.json, and all 92
+case-method rows are retained in results/comparison.json and comparison.csv.
+
+The alphabet work proxy is q*(2*e+K_f+C_f), where e counts distinct edges,
+C_f counts occurring folded-law classes and K_f counts occurring unordered
+class pairs. The limits are 2,000,000 for Exact alphabet and 200,000,000
+for Float64 alphabet, with a 128 MiB estimated workspace guard. The
+original runner additionally applies a 300,000-edge eligibility check to
+Exact breakpoint. The work proxy is a prespecified resource rule, not a
+measured operation count. A resource omission supplies no elapsed time and
+does not represent a timeout or a measured speedup.
+
+The study completes 69 case-method combinations and records 23 omissions.
+All four completed Exact alphabet comparisons agree exactly. All 19
+Float64 alphabet comparisons meet the 1e-10 relative variance-error target.
+Their maximum absolute relative variance error is 1.3408600710130832e-16.
+
+Representative medians in seconds
+
+All rows below use 2 by 2 windows and three fresh repetitions. The four
+numeric columns follow the implementation order defined in Section 1.
+Omitted entries in this table result from the original work-budget rule.
+
+Grid       q       Reference  Exact       Cached     Exact      Float64
+                              breakpoint  breakpoint alphabet   alphabet
+16x16      2       checker    0.0136      0.0019     0.0010     0.0045
+16x16      256     palette    0.0444      0.0213     0.0479     0.0079
+256x256    256     palette   12.1374      2.2485     omitted    1.2899
+32x32      256     diverse    0.1753      0.1322     omitted    0.0408
+32x32      4096    diverse    0.2022      0.2099     omitted    0.1726
+16x16      65536   palette    0.0496      0.0235     omitted    0.1599
+64x64      256     checker    0.4455      0.0619     omitted    0.0805
+128x128    65536   diverse    3.6888      3.6662     omitted    omitted
+
+The corresponding case identifiers are q2_checker_16, area_16, area_256,
+q256_diverse_32, q4096_diverse_32, q65536_palette_16, q256_checker_64 and
+q65536_diverse_128. The records retain unrounded times and each repetition.
+
+Original image-area series
+
+These palette-reference cases use q=256 and 2 by 2 windows. Values are
+median seconds, rounded to nine decimal places. Exact alphabet completes
+only the 16 by 16 point, at 0.047906368 s, under the original resource rules.
+
+Grid       Pixels  Case        Exact breakpoint  Cached breakpoint  Float64 alphabet
+16x16         256  area_16          0.044364956         0.021311706       0.007920386
+32x32        1024  area_32          0.182172575         0.052018920       0.023390998
+64x64        4096  area_64          0.723590675         0.162822684       0.086777145
+128x128     16384  area_128         2.838824568         0.587408423       0.334797720
+256x256     65536  area_256        12.137356318         2.248464990       1.289899398
+
+Original alphabet series
+
+These cases use a 16 by 16 palette reference and 2 by 2 windows. Values are
+median seconds, rounded to nine decimal places. The original Exact alphabet
+baseline completes q=256 and is omitted at the other two alphabets.
+
+q       Case                 Exact breakpoint  Cached breakpoint  Float64 alphabet
+256     area_16                  0.044364956         0.021311706       0.007920386
+4096    q4096_palette_16         0.047708697         0.022664199       0.015036999
+65536   q65536_palette_16        0.049577219         0.023469904       0.159915629
+
+At q=65536, the Float64 alphabet time divided by the Exact breakpoint
+and Cached breakpoint times gives 3.23 and 6.81, respectively, after
+rounding. Its relative variance error is 4.434e-18. At q=2, Exact alphabet
+has the shortest recorded median. Vectorized float64 evaluation also has
+the shortest median on most tested 8-bit references.
+
+Caching reflects reuse of the local folded laws. The 64 by 64 checkerboard
+at q=256 has two folded-law classes and three occurring class pairs. Its
+cached median is 0.061885970 s, compared with 0.445451715 s without caching.
+The 32 by 32 diverse reference at q=4096 has 822 folded-law classes and
+3,891 occurring pairs, with medians 0.209918352 s and 0.202208575 s,
+respectively. The diverse 128 by 128 reference at q=65536 has 64,770
+edges and completes in 3.688805330 s without caching and 3.666242967 s
+with caching. Both alphabet methods are omitted by the work-budget rule.
+
+4. Graph preparation and traced allocations
+
+In the original 23-case study, the 64 by 64 graph with 2 by 2 windows has
+enumeration median 0.013680047 s and validation/adjacency median
+0.016980711 s. Their sum is 0.030660758 s. Adding the cached palette
+moment median of 0.162822684 s gives 0.193483442 s. This is a sum of
+component medians. It is not the median of a combined end-to-end run.
+Prepared graph reuse removes the graph-preparation component.
+
+Memory measurements use Python tracemalloc in separate fresh calls. They
+exclude the preexisting reference and prepared graph and include output
+materialization. Peaks measure traced allocations, not process resident
+set size. One MiB equals 2^20 bytes.
+
+For the original 16 by 16 palette case at q=65536, the completed peaks are
+
+Method                 Peak bytes       Peak MiB
+Exact breakpoint          420008          0.401
+Cached breakpoint         253492          0.242
+Float64 alphabet        35173759         33.544
+
+At q=256 on the same grid, the corresponding peaks are 376220, 239952
+and 224560 bytes, and the Exact alphabet peak is 468688 bytes. Small
+profile arrays can therefore favor Float64 alphabet in both time and
+traced allocation on these inputs.
+
+The separate 18-case scaling study measures allocations at q=2^8, 2^16
+and 2^32 on the 16 by 16 palette grid. Its complete record is
+results/scaling_memory.csv and the memory object in results/scaling.json.
+
+q       Method                 Status              Peak bytes
+2^8     Exact breakpoint       completed               376361
+2^8     Cached breakpoint      completed               240093
+2^8     Exact alphabet         completed               468805
+2^8     Float64 alphabet       completed               227584
+2^16    Exact breakpoint       completed               420149
+2^16    Cached breakpoint      completed               253633
+2^16    Exact alphabet         censored_timeout     100790649
+2^16    Float64 alphabet       completed             35176987
+2^32    Exact breakpoint       completed               432649
+2^32    Cached breakpoint      completed               263093
+2^32    Exact alphabet         not_run                     --
+2^32    Float64 alphabet       not_run                     --
+
+At q=2^16, the completed Exact breakpoint, Cached breakpoint and Float64
+alphabet peaks round to 0.401, 0.242 and 33.547 MiB. The Exact alphabet
+trace is censored at the nominal 120 s limit, with actual elapsed time
+120.190638754 s and partial peak 96.121 MiB. Its partial peak is not a
+completed-call memory measurement. All three untraced Exact alphabet
+timing calls for this case complete. At q=2^32, the two completed
+breakpoint peaks round to 0.413 and 0.251 MiB. Both alphabet methods
+exceed the workspace guard and have no observed allocation peak.
+Elapsed times from allocation tracing are not substituted for the
+untraced timing medians.
+
+5. Replicated Monte Carlo moment estimation
+
+The simulation comparison uses the original area_16 and area_64 inputs,
+with q=256, palette references and 2 by 2 windows. At each sample count
+1,000, 5,000 and 20,000, ten independent replications estimate the raw
+mean and variance. The variance estimator is the unbiased sample variance
+with ddof=1. Relative errors use the exact variance as reference. Empirical
+relative root mean squared error (RMSE) is calculated across the ten
+replications. Each descriptive 95% interval uses 10,000 bootstrap
+resamples of those replications and their 2.5th and 97.5th percentiles.
+
+Grid    Samples  Relative variance RMSE (%)  Descriptive 95% interval (%)  Median seconds
+16x16      1000            5.889                    [3.729, 7.541]            0.006897
+16x16      5000            1.627                    [0.572, 2.451]            0.019763
+16x16     20000            1.129                    [0.634, 1.527]            0.080789
+64x64      1000            4.190                    [2.852, 5.306]            0.142000
+64x64      5000            1.937                    [1.471, 2.297]            0.734463
+64x64     20000            0.808                    [0.452, 1.102]            2.986892
+
+The sampling timer includes random-number generation, difference formation,
+weighted edge statistics and sample mean/variance calculation. It excludes
+graph/reference construction and exact oracle calculation. At 20,000
+samples on the larger grid, the median is 2.986891574 s, compared with
+0.162822684 s for Cached breakpoint and 0.086777145 s for Float64 alphabet
+in the original timing study. These comparisons quantify observed sampling
+error alongside computation cost. Both 20,000-sample bootstrap upper
+endpoints exceed 1%, so the recorded experiment does not establish a
+sample budget delivering 1% population accuracy. The intervals summarize
+uncertainty across ten replications and do not certify a precision target.
+
+The master simulation seed is 2026102501. Each replication uses
+numpy.random.SeedSequence([master_seed, case_index, sample_size,
+replicate_index]), with zero-based indices. Bootstrap seeds derive from
+[2026102502, case_index, sample_size]. The batch size is 32 and the edge
+chunk size is 8192. All 60 individual runs, signed errors, exact oracles
+and summaries are retained. These moment-estimation experiments are
+separate from the rejection-rate and detection studies in
+../statistical_validation/.
+
+6. Principal 18-case benchmark protocol
+
+The seven degree cases use a 32 by 32 palette grid at q=256 with square
+window widths 2, 3, 4, 6, 8, 12 and 16. The six alphabet cases use a
+16 by 16 palette grid and 2 by 2 windows at q=2^8, 2^12, 2^16, 2^20,
+2^24 and 2^32. Three additional area cases use 64 by 64, 128 by 128 and
+256 by 256 palette grids at q=256 with 2 by 2 windows. Two diverse
+32 by 32 references use q=256 and q=4096.
+
+The five-point area series reuses alphabet_q2p8_16 and
+degree_w2_32 for its 16 by 16 and 32 by 32 points, followed by area_64,
+area_128 and area_256. All five points come from results/scaling.json.
+The original study's area cases have similar names but separate records.
+
+The 18 distinct inputs have the following case ledger. The two small-grid
+points reused in the area curve do not add cases to the design.
+
+Group                 Cases  Reference
+Window widths             7  palette
+Alphabet sizes            6  palette
+Additional image areas    3  palette
+Reference diversity       2  diverse
+
+Palette inputs use 32 integer intensity levels distributed across the
+alphabet by the deterministic formula in Section 1. Diverse inputs allow
+all q levels through the same fixed integer construction. Both assign the
+values deterministically to pixel positions. Folding may change the number
+of distinct local laws as q changes, so the records include actual folded
+class and occurring class-pair counts.
+
+The recorded host uses an AMD EPYC 9V74 processor, Linux x86-64, Python
+3.12.14 and NumPy 2.3.5. Calls run sequentially with one numerical-backend
+thread and no concurrent measurement jobs. The backend thread variables
+are all set to one in the saved metadata. Each case uses three fresh
+moment calls per eligible method. Repetition r, indexed from zero, rotates
+the listed order Exact breakpoint, Cached breakpoint, Exact alphabet,
+Float64 alphabet left by r positions. This rotation uses three of the four
+possible starting positions. Caches are local to a call and rebuilt for
+every repetition. A tiny untimed q=8 call per method precedes measurement
+at each process invocation; there is no per-case warmup.
+
+Elapsed wall-clock time includes reference validation, profile and pair
+preparation, edge and vertex accumulation, and materialization of both
+moment outputs. Reference generation, graph preparation, output comparison,
+diagnostic serialization and checkpoint I/O are outside this timer.
+Graph enumeration and validation/adjacency construction have separate
+measurements, and prepared topology is reused. Explicit garbage collection
+precedes each measured call outside the timer, while ordinary automatic
+garbage collection remains enabled. A median, minimum and maximum are
+reported only after all three repetitions complete.
+
+The prespecified resource limits are 512 MiB of estimated additional
+workspace for each alphabet method, a nominal 120 s per measured call,
+and 300,000 distinct edges for every prepared comparison graph. One MiB
+equals 2^20 bytes. The workspace estimate concerns working arrays and is
+not a process-memory cap. This protocol has no alphabet work-proxy cutoff.
+Resource omissions, censored timeouts and interrupted calls have distinct
+statuses. Signal delivery may be deferred inside native calls, so actual
+elapsed times are retained. Allocation tracing follows the timing phases.
+
+The study completes 67 of 72 case-method combinations, comprising 201
+timed calls. Five combinations exceed the estimated workspace guard.
+No moment-timing call reaches the timeout. All 15 completed Exact
+alphabet comparisons agree with both breakpoint implementations in all
+repetitions. The 16 completed Float64 alphabet cases have maximum absolute
+relative variance error 1.0297705359333676e-13, below the 1e-10 target.
+These accuracy counts refer to this study alone.
+
+Method                Completed cases  Workspace omissions
+Exact breakpoint                   18                   0
+Cached breakpoint                  18                   0
+Exact alphabet                     15                   3
+Float64 alphabet                   16                   2
+Total                              67                   5
+
+The five omissions are Exact alphabet at q=2^20, 2^24 and 2^32, and
+Float64 alphabet at q=2^24 and 2^32, all on the 16 by 16 palette input
+with 2 by 2 windows. They supply no elapsed time. The absence of a
+moment-timing timeout applies to these 201 untraced calls. Section 4
+separately records the timed-out Exact alphabet allocation trace at
+q=2^16 and preserves its partial peak and elapsed time.
+
+Independent covariance expansion and exhaustive small-case enumeration
+check the implementations separately from timing comparisons. Section 2
+lists those verification records. In the principal benchmark, exact-output
+equality and floating-point error are assessed against the completed
+uncached breakpoint result, preserving exact numerator and denominator
+strings. Float64 outputs are converted to their exact binary-rational
+values before errors are calculated. This keeps exact agreement distinct
+from the measured accuracy of the floating-point implementation.
+
+The saved records include edge and degree counts, folded classes, occurring
+class pairs, event/interval counts, and times divided by the edge count
+and by n+e+sum_i d_i*log2(1+d_i). Here n is the number of vertices and
+d_i is vertex i's degree. Event and interval counts describe structural
+work, not CPU instructions. Recorded bit lengths describe unreduced final
+mean and variance numerators, not the largest intermediate operand.
+
+7. Complete vertex comparison and historical record
+
+The complete vertex-only experiment uses degrees 8, 16, 32, 64, 128 and
+256 at q=65536. The center reference is floor(q/3), leaf j has reference
+floor(j*(q-1)/(2*(d+1))) for j=1,...,d, and all incident weights equal
+one. Leaf folded radii are mutually distinct. Each kernel receives the
+same prepared profiles and calculates the same central-vertex raw
+second-moment sum. The sweep aggregates incident profiles before squaring.
+The pairwise kernel integrates all diagonal and unordered cross products.
+
+Five fresh repetitions per method alternate execution order. All 60 calls
+complete with exact agreement. Profile preparation, explicit garbage
+collection and result serialization are outside the timed kernels.
+Automatic garbage collection remains enabled, and allocation tracing is
+absent from the timings. Every recorded call is retained, including the
+degree-256 sweep maximum of 0.003388705 s.
+
+At degree 256, the sweep processes 773 event records and integrates 344
+intervals. The pairwise expansion handles 32,896 products and 185,984
+intervals. The medians are 0.0012799280011677183 s and
+0.7806834999937564 s, respectively, with ratio
+609.9432931239214. This is a prepared vertex-kernel comparison. The
+complete moment baselines already use projection aggregation, so this
+ratio does not describe complete moment-algorithm runtime.
+
+results/vertex_verification.json records 1,602 saved-record consistency
+and structural checks, with all checks passed and no timing rerun.
+results/vertex_benchmark.json and vertex_benchmark.csv supply all six
+degrees and their within-experiment vertex ratios.
+
+The older vertex record remains in results/vertex_scaling.csv and the
+vertex_cases object of results/scaling.json. All 18 moment cases had
+completed before a duplicate-key error during vertex CSV export
+interrupted the first degree-eight sweep call. That call has no saved
+elapsed time or output and is recorded as censored_interruption. Its
+remaining sweep repetitions were suppressed. The degree-eight pairwise
+kernel and both kernels at the other five degrees completed after the
+CSV-export correction, leaving 55 completed calls in that historical record.
+
+provenance/run_scaling_moment_record.py preserves the measured moment
+runner, and provenance/scaling_interruption.json preserves its checkpoint
+before the CSV-export correction. The final scaling record retains its initial
+metadata and documents the source transition. The moment algorithms,
+input design and protocol bytes were unchanged, and original moment
+timings were retained without repetition. The separate complete vertex
+batch supplies a full six-degree comparison. Historical vertex calls
+are neither spliced into that curve nor pooled with its medians.
+
+8. Evidence and reproduction map
+
+Study design and original timing records
+    results/protocol.json
+    results/comparison.json
+    results/comparison.csv
+    code/run_comparison.py
+
+Exact algorithm verification and independent reference calculations
+    results/verification.json
+    code/verify_algorithms.py
+    code/reference_engine.py
+    code/vertex_ablation.py
+
+Monte Carlo oracles, all replications and six-row summary
+    results/monte_carlo.json
+    results/monte_carlo_replicates.csv
+    results/monte_carlo_summary.csv
+    code/monte_carlo.py
+
+Principal degree, alphabet and area study and separate allocations
+    results/scaling_protocol.json
+    results/scaling.json
+    results/scaling.csv
+    results/scaling_memory.csv
+    code/run_scaling.py
+    analysis/verify_scaling_record.py
+    results/scaling_verification.json
+
+Complete vertex-only experiment and saved-record audit
+    results/vertex_protocol.json
+    results/vertex_benchmark.json
+    results/vertex_benchmark.csv
+    analysis/run_vertex_benchmark.py
+    analysis/verify_vertex_record.py
+    results/vertex_verification.json
+
+Historical vertex observations and execution provenance
+    results/vertex_scaling.csv
+    results/scaling.json
+    provenance/run_scaling_moment_record.py
+    provenance/scaling_interruption.json
+
+README.txt gives the exact reproduction commands and protocol checksums.
+Make a working copy before running any program that writes result files.
+Use a fresh output directory for new scaling or vertex measurements and
+keep the delivered records intact. The saved-record audits reconstruct
+summaries and check provenance without new timing measurements. Verification,
+allocation and timing commands serve different purposes and remain separate.
+The root ../SHA256SUMS.txt covers the delivered files. Comparing these
+checksums establishes file identity independently of elapsed-time variation.
+
+9. Complete principal scaling comparisons
+
+The tables in this section give the principal moment-computation results
+under the 18-case protocol in Section 6 of this note. Timing entries are
+complete three-call medians in seconds, rounded to nine decimal places.
+Every value comes from results/scaling.json. The machine-readable record
+retains the unrounded medians and all 201 individual elapsed times.
+Omitted entries result from the estimated-workspace guard. They have no
+measured runtime. The four method columns use the names defined in Section 1.
+All four implementations retain shared-endpoint covariance through
+incident-projection aggregation.
+
+9.1 Window width
+
+These seven cases use 32 by 32 palette references at q=256. A width w means
+fully contained w by w windows. The columns e and Delta give the distinct
+edge count and maximum graph degree.
+
+ w       e  Delta  Exact breakpoint  Cached breakpoint  Exact alphabet  Float64 alphabet
+ 2    3906      8       0.175725292        0.051398748     0.139425146       0.024012893
+ 3   11346     24       0.473999683        0.109551128     0.346659177       0.059416417
+ 4   21960     48       0.887867896        0.163739657     0.651253530       0.109669211
+ 6   51330    120       1.953139117        0.302961171     1.399080054       0.234511984
+ 8   89376    224       3.258101646        0.447934930     2.423361694       0.429286866
+12  181896    528       6.586920249        0.789145808     4.947335816       0.828309481
+16  282240    960      10.281263912        1.209101841     7.579931676       1.232585678
+
+The case identifiers in row order are degree_w2_32, degree_w3_32,
+degree_w4_32, degree_w6_32, degree_w8_32, degree_w12_32 and degree_w16_32.
+Exact alphabet has a shorter median than uncached Exact breakpoint at
+every tested width in this 8-bit comparison. At w=16, the event sweep
+processes 1,592,665 raw records and integrates 48,521 intervals. Repeated
+palette cuts merge many event locations, reducing the integrated interval
+count. The structural table in Section 9.5 retains every width's counts.
+
+9.2 Alphabet size
+
+These six cases use 16 by 16 palette references and 2 by 2 windows.
+C_f is the number of occurring folded-law classes. The bit pair gives the
+unreduced mean- and variance-numerator lengths, respectively.
+
+   q  C_f  Numerator bits  Exact breakpoint  Cached breakpoint  Exact alphabet  Float64 alphabet
+ 2^8   31        (33, 56)       0.040063492        0.018570919     0.043405395       0.007138342
+2^12   31        (45, 80)       0.045911130        0.021275199     0.763287277       0.014957173
+2^16   31       (57, 104)       0.049140767        0.022795114    15.566936732       0.168423369
+2^20   16       (69, 128)       0.048639501        0.015969971         omitted       2.588611103
+2^24   31       (81, 152)       0.052326226        0.024244113         omitted           omitted
+2^32   31      (105, 200)       0.061061203        0.029282562         omitted           omitted
+
+The case identifiers in row order are alphabet_q2p8_16, alphabet_q2p12_16,
+alphabet_q2p16_16, alphabet_q2p20_16, alphabet_q2p24_16 and alphabet_q2p32_16.
+At q=65536, the Exact alphabet median divided by the Exact breakpoint and
+Cached breakpoint medians gives 316.8 and 682.9 after rounding. The
+corresponding Float64 alphabet ratios are 3.43 and 7.39. These ratios use
+unrounded medians from this study alone.
+
+The palette has 31 folded-law classes except at q=2^20, where 31 divides
+q-1 and the count is 16. The occurring class-pair count falls from 295 to
+130 at that alphabet. All six cases generate 6,472 raw event records.
+The integrated interval count is 3,015 except at q=2^20, where it is 2,744.
+These reductions explain the additional cache reuse and the cached timing
+dip at q=2^20. The numerator lengths grow from (33, 56) to (105, 200)
+bits across the tested range. They describe final unreduced outputs.
+Intermediate operand lengths and arithmetic operation counts are separate
+quantities used to describe computational work.
+
+9.3 Image area
+
+These five palette cases use q=256 and 2 by 2 windows. The first two reuse
+cases from the alphabet and width designs within the same 18-case study.
+All four methods complete at every displayed area.
+
+   Grid  Pixels  Exact breakpoint  Cached breakpoint  Exact alphabet  Float64 alphabet
+  16x16     256       0.040063492        0.018570919     0.043405395       0.007138342
+  32x32    1024       0.175725292        0.051398748     0.139425146       0.024012893
+  64x64    4096       0.718350921        0.160957983     0.530907184       0.092784130
+128x128   16384       2.851480875        0.595316722     2.028833629       0.339015972
+256x256   65536      11.838954405        2.247169329     8.092014953       1.360964039
+
+The case identifiers in row order are alphabet_q2p8_16, degree_w2_32,
+area_64, area_128 and area_256. The same grid sizes in Section 3 of this
+note belong to the original 23-case study and carry different timings.
+The largest-grid medians round to 11.839, 2.247, 8.092 and 1.361 s in the
+four-method order. These are elapsed times for complete per-reference
+moment calculations on prepared graphs. The fixed-window linear-area
+computational bound counts arithmetic operations, with integer bit
+cost treated separately.
+
+9.4 Reference diversity
+
+Both diverse cases use 32 by 32 grids and 2 by 2 windows. Their generator
+is given in Section 1 and differs from the palette construction.
+
+   q  C_f   K_f  Exact breakpoint  Cached breakpoint  Exact alphabet  Float64 alphabet
+ 256  128  2650       0.196852679        0.142886469     0.259160325       0.043217903
+4096  822  3891       0.218800770        0.226968375     6.295536991       0.172593344
+
+The case identifiers are diverse_q256_32 and diverse_q4096_32. Here K_f
+counts occurring unordered folded-law class pairs. At q=4096, 822 classes
+and 3,891 occurring pairs leave little reuse among 3,906 edges. Cached
+breakpoint takes 0.2270 s, compared with 0.2188 s without caching, while
+Exact alphabet and Float64 alphabet take 6.296 and 0.1726 s. Caching is
+therefore input-dependent. Small alphabets can favor compact exact or
+vectorized alphabet evaluation, while larger alphabets increase the work
+and storage of enumeration.
+
+9.5 Structural counts and integer output lengths
+
+Each row below is a distinct case from the principal study. C_f and K_f
+are the folded-law class and occurring class-pair counts. Events are raw
+vertex event records, and intervals are the intervals integrated in the
+vertex sweep. The final two columns give unreduced mean- and variance-
+numerator bit lengths. Counts are read from the cached implementation's
+first complete call, and output lengths from the uncached implementation.
+They agree across all three repetitions. The uncached and cached vertex
+event and interval counts also agree for each case.
+
+             Case  C_f   K_f   Events  Intervals  Mean bits  Variance bits
+     degree_w2_32   31   400    26998      12291         35             58
+     degree_w3_32   31   484    68908      24959         38             63
+     degree_w4_32   31   494   128701      36845         39             67
+     degree_w6_32   31   496   294070      46796         41             71
+     degree_w8_32   31   496   508315      48325         43             74
+    degree_w12_32   31   496  1028593      48521         45             78
+    degree_w16_32   31   496  1592665      48521         46             80
+ alphabet_q2p8_16   31   295     6472       3015         33             56
+alphabet_q2p12_16   31   295     6472       3015         45             80
+alphabet_q2p16_16   31   295     6472       3015         57            104
+alphabet_q2p20_16   16   130     6472       2744         69            128
+alphabet_q2p24_16   31   295     6472       3015         81            152
+alphabet_q2p32_16   31   295     6472       3015        105            200
+          area_64   31   343   110039      48853         37             61
+         area_128   31   328   444208     190779         39             63
+         area_256   31   273  1785360     760179         41             65
+  diverse_q256_32  128  2650    28357      14397         35             58
+ diverse_q4096_32  822  3891    28556      14783         47             83
+
+The underlying record also retains sum_i d_i^2, sum_i d_i*log2(1+d_i),
+weight sums, maximum incident-event counts and normalized elapsed times.
+These diagnostics identify the graph and interval work executed by the
+algorithms. They do not count processor instructions or make elapsed time
+independent of integer operand lengths. Exact rational agreement and
+float64 errors are reported separately from runtime.
+
+9.6 Evidence map for the principal displays
+
+All degree, alphabet, area and diversity values above
+    results/scaling.json
+    results/scaling.csv
+    results/scaling_protocol.json
+
+Structural counts and unreduced numerator lengths
+    results/scaling.json
+    results/scaling.csv
+
+Separate allocation measurements and their completion status
+    results/scaling_memory.csv
+    results/scaling.json
+
+Saved-record checks for arithmetic and source provenance
+    analysis/verify_scaling_record.py
+    results/scaling_verification.json
+
+The source, design and timing files in this map are identified in Section 8.
+The area, window-width and alphabet comparisons use one experiment, and the
+complete vertex comparison uses a separate experiment described in Section 7.
+Profile-preparation boundaries and repetition counts are specified separately.
+
+Public export identity
+
+The companion-root EXPORT_PROVENANCE.json distinguishes original experimental
+digests from distributed-file digests. Descriptive metadata and local paths
+are normalized; numerical observations and computational parameters retain
+their original values. Public checksums must not be interpreted as original
+experimental file checksums.

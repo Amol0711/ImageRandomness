@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "counts": {
+    "additive_copy_moment_checks": 30,
+    "alternative_endpoint_transforms": 4,
+    "calibration_summary_cases": 1,
+    "clopper_pearson_tail_checks": 13,
+    "copy_model_exact_cases": 15,
+    "fixed_graph_exact_cases": 60,
+    "general_iid_law_cases": 4,
+    "iid_graph_exact_cases": 60,
+    "iid_law_constant_cases": 7,
+    "large_integer_discrepancy_cases": 4,
+    "large_integer_rank_cases": 3,
+    "nested_rank_decision_checks": 1,
+    "paired_difference_checks": 3,
+    "paired_statistic_outcomes": 256,
+    "partial_identity_exact_cases": 15,
+    "power_expected_mean_checks": 12,
+    "rank_exchangeable_configurations": 33,
+    "rank_heldout_classifications": 375,
+    "score_distinct_outcomes": 236,
+    "score_kernel_batch_checks": 12,
+    "seeded_generator_cases": 3,
+    "signed_iid_graph_exact_cases": 60,
+    "tie_seed_reproduction_checks": 1,
+    "unattainable_rank_levels_rejected": 14,
+    "wilson_interval_cases": 20
+  },
+  "details": {
+    "zero_mean_shift_counterexample": {
+      "null_mean": {
+        "numerator": 9,
+        "denominator": 1
+      },
+      "null_variance": {
+        "numerator": 11,
+        "denominator": 2
+      },
+      "copy_mean": {
+        "numerator": 9,
+        "denominator": 1
+      },
+      "copy_variance": {
+        "numerator": 27,
+        "denominator": 2
+      }
+    },
+    "rank_checks": [
+      {
+        "pooled_size": 2,
+        "alpha": 0.5,
+        "rejection_count": 1,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      },
+      {
+        "pooled_size": 3,
+        "alpha": 0.5,
+        "rejection_count": 1,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 3
+        }
+      },
+      {
+        "pooled_size": 5,
+        "alpha": 0.2,
+        "rejection_count": 1,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      },
+      {
+        "pooled_size": 5,
+        "alpha": 0.5,
+        "rejection_count": 2,
+        "exact_marginal_level": {
+          "numerator": 2,
+          "denominator": 5
+        }
+      },
+      {
+        "pooled_size": 10,
+        "alpha": 0.1,
+        "rejection_count": 1,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 10
+        }
+      },
+      {
+        "pooled_size": 10,
+        "alpha": 0.2,
+        "rejection_count": 2,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      },
+      {
+        "pooled_size": 10,
+        "alpha": 0.5,
+        "rejection_count": 5,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      },
+      {
+        "pooled_size": 20,
+        "alpha": 0.05,
+        "rejection_count": 1,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 20
+        }
+      },
+      {
+        "pooled_size": 20,
+        "alpha": 0.1,
+        "rejection_count": 2,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 10
+        }
+      },
+      {
+        "pooled_size": 20,
+        "alpha": 0.2,
+        "rejection_count": 4,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      },
+      {
+        "pooled_size": 20,
+        "alpha": 0.5,
+        "rejection_count": 10,
+        "exact_marginal_level": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 0.8042052760001752,
+  "sha256": {
+    "moment_engine.py": "78107f4baaad496285e459351627c617034b5728cfe200b39f26025c1b0e8bb0",
+    "alphabet_baseline.py": "e3ef0cdb5bb19b9a37e06171dd12f9eca52ebf39b29652d55685819839a8bffa",
+    "statistical_core.py": "145b7a374a5657176159f5b4d26e694d9a4f69675ae2a29f92bdf4dcd479240c",
+    "alternative_analysis.py": "0f00f7c7c3f9fd0eb726df3816ec8ce102a9914ae00e5742521049416cad4b62",
+    "run_calibration.py": "ba0091faf255cfb97ea930337b1904d6c78f6865e851618707fb0088ca73228b",
+    "run_power.py": "d343863aa443b2a81a4fce626f9262d54fca0e0bd48a17374d935b6345a1ee6e",
+    "verify_statistics.py": "7e62762fb908d44e9320f87158d8ae8851e2390a95c36b51fe7baad18e303432"
+  },
+  "scope": "Finite exact checks of moment/scoring/copying identities and rank construction; no empirical calibration or power claim is inferred.",
+  "shared_pool_interpretation": "A fresh exchangeable observation has unconditional rank level k/(m+1). Reusing one calibration pool yields a random conditional rejection probability; independent assessment observations admit a conditional binomial Wilson interval, not a conditional nominal-size guarantee."
+}
