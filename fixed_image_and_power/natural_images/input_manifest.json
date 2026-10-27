@@ -1,0 +1,88 @@
+{
+  "upstream_version": "scikit-image 0.25.2",
+  "retrieval_date_utc": "2026-10-06",
+  "preprocessing": "Centered 256x256 crop in the supplied 8-bit grayscale image; no interpolation or intensity transformation.",
+  "statistical_role": "Fixed reference images compared with independent uniform 8-bit comparison pixels.",
+  "permutation": "Sort row-major indices by SHA-256 of ASCII fixed-image-permutation-v1, a zero byte, and a 4-byte big-endian index; tie-break by index. Apply the same permutation to every crop.",
+  "images": {
+    "camera": {
+      "source_filename": "camera.png",
+      "source_shape": [
+        512,
+        512
+      ],
+      "source_bytes": 139512,
+      "source_sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+      "crop_origin_zero_based": [
+        128,
+        128
+      ],
+      "crop_pixel_sha256": "685445e0c73e742f8c7b9262e59192536d26cfecceabd3c3502539bfb5732626",
+      "license": "CC0-1.0",
+      "credit": "Lav Varshney",
+      "description": "Camera photograph; the CC0 replacement used since scikit-image 0.18.",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/camera.png",
+      "license_documentation_url": "https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.camera",
+      "crop_shape": [
+        256,
+        256
+      ],
+      "crop_file_sha256": "fd770f132dfff5ae4babd0b830e8fb486743215a688fdafcc739e46f4267ab0a",
+      "permuted_pixel_sha256": "718c5ab1d63b8a1b54b96a59f2df506fd6c403c6153eb6d664dc143851dc5dbc",
+      "histogram_preserved": true
+    },
+    "clock": {
+      "source_filename": "clock_motion.png",
+      "source_shape": [
+        300,
+        400
+      ],
+      "source_bytes": 58784,
+      "source_sha256": "f029226b28b642e80113d86622e9b215ee067a0966feaf5e60604a1e05733955",
+      "crop_origin_zero_based": [
+        22,
+        72
+      ],
+      "crop_pixel_sha256": "a68a3c89ff40d7dea57c6915ef866fd493088eabe63e5cb8f5c5567772815718",
+      "license": "Public domain dedication by the photographer, as documented by scikit-image.",
+      "credit": "Stefan van der Walt",
+      "description": "Motion-blurred wall clock photograph.",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/clock_motion.png",
+      "license_documentation_url": "https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.clock",
+      "crop_shape": [
+        256,
+        256
+      ],
+      "crop_file_sha256": "7c93d8b31f50c13956f384d4bcc82030ec63c31372c179ade3b419151587a491",
+      "permuted_pixel_sha256": "f91f46729af2986a3e16bddee730ce2540e6edee63e3e0b27afdd124336a5adf",
+      "histogram_preserved": true
+    },
+    "grass": {
+      "source_filename": "grass.png",
+      "source_shape": [
+        512,
+        512
+      ],
+      "source_bytes": 217893,
+      "source_sha256": "b6b6022426b38936c43a4ac09635cd78af074e90f42ffa8227ac8b7452d39f89",
+      "crop_origin_zero_based": [
+        128,
+        128
+      ],
+      "crop_pixel_sha256": "8f48099c41b85fa495c03a7c868f6ff7a176940d96ccb90d7b0c6594456da7cc",
+      "license": "CC0-1.0",
+      "credit": "linolafett, Grass 01, DeviantArt",
+      "original_source_url": "https://www.deviantart.com/linolafett/art/Grass-01-434853879",
+      "description": "Grayscale grass texture distributed by scikit-image.",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/grass.png",
+      "license_documentation_url": "https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.grass",
+      "crop_shape": [
+        256,
+        256
+      ],
+      "crop_file_sha256": "d1923053e7bee97d31a86f33e308e35fc78f17b3fd866ebf7945d3f221bb41bc",
+      "permuted_pixel_sha256": "51c50716b2b5e1906a210708c0aeef4c08f2fd272f3e12a83d99fa4f91f3d5e8",
+      "histogram_preserved": true
+    }
+  }
+}

@@ -1,0 +1,6705 @@
+{
+  "oracle_agreement": {
+    "status": "PASS",
+    "fixed_cases": 364,
+    "uniform_comparison_images": 149484,
+    "comparators": [
+      "full",
+      "independent_pair",
+      "within_window"
+    ],
+    "cases": [
+      {
+        "name": "all_2_2x2_0000",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0001",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0010",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0011",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0100",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0101",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0110",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_0111",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1000",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1001",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1010",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1011",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1100",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1101",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1110",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_2_2x2_1111",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 16,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 24,
+          "decimal": 0.041666666666666664
+        }
+      },
+      {
+        "name": "all_3_2x2_0000",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0001",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0002",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0010",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0011",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_0012",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0020",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0021",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0022",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0100",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0101",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_0102",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0110",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_0111",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_0112",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_0120",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0121",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_0122",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0200",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0201",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0202",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0210",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0211",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_0212",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0220",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_0221",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_0222",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_1000",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1001",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1002",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1010",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1011",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_1012",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1020",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1021",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1022",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1100",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1101",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_1102",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1110",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_1111",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 2,
+          "denominator": 9,
+          "decimal": 0.2222222222222222
+        },
+        "variance": {
+          "numerator": 7,
+          "denominator": 486,
+          "decimal": 0.01440329218106996
+        }
+      },
+      {
+        "name": "all_3_2x2_1112",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_1120",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1121",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_1122",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1200",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1201",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1202",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1210",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1211",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_1212",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1220",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_1221",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_1222",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2000",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2001",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2002",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2010",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2011",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_2012",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2020",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2021",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2022",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2100",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2101",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_2102",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2110",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_2111",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 11,
+          "denominator": 36,
+          "decimal": 0.3055555555555556
+        },
+        "variance": {
+          "numerator": 23,
+          "denominator": 972,
+          "decimal": 0.023662551440329218
+        }
+      },
+      {
+        "name": "all_3_2x2_2112",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_2120",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2121",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_2122",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2200",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2201",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2202",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2210",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2211",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 10,
+          "denominator": 27,
+          "decimal": 0.37037037037037035
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 729,
+          "decimal": 0.02606310013717421
+        }
+      },
+      {
+        "name": "all_3_2x2_2212",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2220",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_3_2x2_2221",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 25,
+          "denominator": 972,
+          "decimal": 0.0257201646090535
+        }
+      },
+      {
+        "name": "all_3_2x2_2222",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 81,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 13,
+          "denominator": 486,
+          "decimal": 0.026748971193415638
+        }
+      },
+      {
+        "name": "all_4_2x2_0000",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0001",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0002",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0003",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0010",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0011",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0012",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0013",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0020",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0021",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0022",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0023",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0030",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0031",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0032",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0033",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0100",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0101",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0102",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0103",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0110",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0111",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0112",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0113",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0120",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0121",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0122",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0123",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0130",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0131",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0132",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0133",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0200",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0201",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0202",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0203",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0210",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0211",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0212",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0213",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0220",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0221",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0222",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_0223",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0230",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0231",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0232",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0233",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0300",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0301",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0302",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0303",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0310",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0311",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0312",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0313",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0320",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0321",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0322",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_0323",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0330",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_0331",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0332",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_0333",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_1000",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1001",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1002",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1003",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1010",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1011",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1012",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1013",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1020",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1021",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1022",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1023",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1030",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1031",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1032",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1033",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1100",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1101",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1102",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1103",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1110",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1111",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1112",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1113",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1120",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1121",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1122",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1123",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1130",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1131",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1132",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1133",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1200",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1201",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1202",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1203",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1210",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1211",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1212",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1213",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1220",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1221",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1222",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_1223",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1230",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1231",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1232",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1233",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1300",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1301",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1302",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1303",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1310",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1311",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1312",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1313",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1320",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1321",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1322",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_1323",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1330",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_1331",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1332",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_1333",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2000",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2001",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2002",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2003",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2010",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2011",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2012",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2013",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2020",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2021",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2022",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2023",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2030",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2031",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2032",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2033",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2100",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2101",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2102",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2103",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2110",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2111",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2112",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2113",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2120",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2121",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2122",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2123",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2130",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2131",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2132",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2133",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2200",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2201",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2202",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2203",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2210",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2211",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2212",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2213",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2220",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2221",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2222",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 1,
+          "denominator": 4,
+          "decimal": 0.25
+        },
+        "variance": {
+          "numerator": 11,
+          "denominator": 864,
+          "decimal": 0.01273148148148148
+        }
+      },
+      {
+        "name": "all_4_2x2_2223",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2230",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2231",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2232",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2233",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2300",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2301",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2302",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2303",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2310",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2311",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2312",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2313",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2320",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2321",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2322",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_2323",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2330",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_2331",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2332",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_2333",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3000",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3001",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3002",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3003",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3010",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3011",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3012",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3013",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3020",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3021",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3022",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3023",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3030",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3031",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3032",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3033",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3100",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3101",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3102",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3103",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3110",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3111",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3112",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3113",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3120",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3121",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3122",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3123",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3130",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3131",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3132",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3133",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3200",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3201",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3202",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3203",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3210",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3211",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3212",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3213",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3220",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3221",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3222",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 16,
+          "decimal": 0.3125
+        },
+        "variance": {
+          "numerator": 43,
+          "denominator": 2304,
+          "decimal": 0.018663194444444444
+        }
+      },
+      {
+        "name": "all_4_2x2_3223",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3230",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3231",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3232",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3233",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3300",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3301",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3302",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3303",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3310",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3311",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3312",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3313",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3320",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3321",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3322",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 13,
+          "denominator": 36,
+          "decimal": 0.3611111111111111
+        },
+        "variance": {
+          "numerator": 107,
+          "denominator": 5184,
+          "decimal": 0.020640432098765434
+        }
+      },
+      {
+        "name": "all_4_2x2_3323",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3330",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "all_4_2x2_3331",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3332",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 19,
+          "denominator": 48,
+          "decimal": 0.3958333333333333
+        },
+        "variance": {
+          "numerator": 145,
+          "denominator": 6912,
+          "decimal": 0.02097800925925926
+        }
+      },
+      {
+        "name": "all_4_2x2_3333",
+        "q": 4,
+        "width": 2,
+        "rows": 2,
+        "cols": 2,
+        "states": 256,
+        "mean": {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.4166666666666667
+        },
+        "variance": {
+          "numerator": 19,
+          "denominator": 864,
+          "decimal": 0.02199074074074074
+        }
+      },
+      {
+        "name": "strip_2",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 3,
+        "states": 64,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 7,
+          "denominator": 288,
+          "decimal": 0.024305555555555556
+        }
+      },
+      {
+        "name": "ramp_2",
+        "q": 2,
+        "width": 2,
+        "rows": 2,
+        "cols": 3,
+        "states": 64,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 7,
+          "denominator": 288,
+          "decimal": 0.024305555555555556
+        }
+      },
+      {
+        "name": "transpose_2",
+        "q": 2,
+        "width": 2,
+        "rows": 3,
+        "cols": 2,
+        "states": 64,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 7,
+          "denominator": 288,
+          "decimal": 0.024305555555555556
+        }
+      },
+      {
+        "name": "strip_3",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 3,
+        "states": 729,
+        "mean": {
+          "numerator": 4,
+          "denominator": 9,
+          "decimal": 0.4444444444444444
+        },
+        "variance": {
+          "numerator": 97,
+          "denominator": 5832,
+          "decimal": 0.016632373113854595
+        }
+      },
+      {
+        "name": "ramp_3",
+        "q": 3,
+        "width": 2,
+        "rows": 2,
+        "cols": 3,
+        "states": 729,
+        "mean": {
+          "numerator": 85,
+          "denominator": 216,
+          "decimal": 0.39351851851851855
+        },
+        "variance": {
+          "numerator": 97,
+          "denominator": 5832,
+          "decimal": 0.016632373113854595
+        }
+      },
+      {
+        "name": "transpose_3",
+        "q": 3,
+        "width": 2,
+        "rows": 3,
+        "cols": 2,
+        "states": 729,
+        "mean": {
+          "numerator": 85,
+          "denominator": 216,
+          "decimal": 0.39351851851851855
+        },
+        "variance": {
+          "numerator": 97,
+          "denominator": 5832,
+          "decimal": 0.016632373113854595
+        }
+      },
+      {
+        "name": "binary_3x3",
+        "q": 2,
+        "width": 2,
+        "rows": 3,
+        "cols": 3,
+        "states": 512,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 72,
+          "decimal": 0.013888888888888888
+        }
+      },
+      {
+        "name": "width3_single",
+        "q": 2,
+        "width": 3,
+        "rows": 3,
+        "cols": 3,
+        "states": 512,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 144,
+          "decimal": 0.006944444444444444
+        }
+      },
+      {
+        "name": "width3_overlap",
+        "q": 2,
+        "width": 3,
+        "rows": 3,
+        "cols": 4,
+        "states": 4096,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 17,
+          "denominator": 3456,
+          "decimal": 0.004918981481481482
+        }
+      },
+      {
+        "name": "width3_overlap_transpose",
+        "q": 2,
+        "width": 3,
+        "rows": 4,
+        "cols": 3,
+        "states": 4096,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 17,
+          "denominator": 3456,
+          "decimal": 0.004918981481481482
+        }
+      },
+      {
+        "name": "width4_single",
+        "q": 2,
+        "width": 4,
+        "rows": 4,
+        "cols": 4,
+        "states": 65536,
+        "mean": {
+          "numerator": 1,
+          "denominator": 2,
+          "decimal": 0.5
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 480,
+          "decimal": 0.0020833333333333333
+        }
+      }
+    ]
+  },
+  "api_agreement": {
+    "status": "PASS",
+    "exhaustive_fixed_cases": 360,
+    "enumerated_uniform_comparison_images": 75244,
+    "independent_covariance_cases": 7,
+    "input_rejection_cases": 11,
+    "negative_covariance_witness": {
+      "numerator": -151916170599,
+      "denominator": 1073741824,
+      "decimal": -141.48295912798494
+    },
+    "covariance_cases": [
+      {
+        "name": "negative_covariances",
+        "q": 256,
+        "arithmetic": "checked int64 with Python integer totals",
+        "mean": {
+          "numerator": 45149723,
+          "denominator": 150405120,
+          "decimal": 0.30018740718401077
+        },
+        "variance": {
+          "numerator": 102999493399723,
+          "denominator": 22621700122214400,
+          "decimal": 0.0045531278747072594
+        },
+        "negative_shared_covariances": 11
+      },
+      {
+        "name": "q7_minimal",
+        "q": 7,
+        "arithmetic": "checked int64 with Python integer totals",
+        "mean": {
+          "numerator": 17,
+          "denominator": 49,
+          "decimal": 0.3469387755102041
+        },
+        "variance": {
+          "numerator": 4195,
+          "denominator": 259308,
+          "decimal": 0.016177672883212244
+        },
+        "negative_shared_covariances": 0
+      },
+      {
+        "name": "q16_strip",
+        "q": 16,
+        "arithmetic": "checked int64 with Python integer totals",
+        "mean": {
+          "numerator": 1051,
+          "denominator": 3600,
+          "decimal": 0.29194444444444445
+        },
+        "variance": {
+          "numerator": 633071,
+          "denominator": 207360000,
+          "decimal": 0.003053004436728395
+        },
+        "negative_shared_covariances": 0
+      },
+      {
+        "name": "q512_int64_path",
+        "q": 512,
+        "arithmetic": "checked int64 with Python integer totals",
+        "mean": {
+          "numerator": 240043,
+          "denominator": 784896,
+          "decimal": 0.3058277784572733
+        },
+        "variance": {
+          "numerator": 35606784875,
+          "denominator": 2464246923264,
+          "decimal": 0.014449357545646154
+        },
+        "negative_shared_covariances": 0
+      },
+      {
+        "name": "q512_long_strip_reduction",
+        "q": 512,
+        "arithmetic": "checked int64 with Python integer totals",
+        "mean": {
+          "numerator": 171,
+          "denominator": 512,
+          "decimal": 0.333984375
+        },
+        "variance": {
+          "numerator": 187511,
+          "denominator": 2272788480,
+          "decimal": 8.250261810549127e-05
+        },
+        "negative_shared_covariances": 0
+      },
+      {
+        "name": "q1024_bigint_path",
+        "q": 1024,
+        "arithmetic": "Python integers",
+        "mean": {
+          "numerator": 174763,
+          "denominator": 1047552,
+          "decimal": 0.16682990438660802
+        },
+        "variance": {
+          "numerator": 21379858795,
+          "denominator": 6584191156224,
+          "decimal": 0.003247150376973751
+        },
+        "negative_shared_covariances": 0
+      },
+      {
+        "name": "64x64_totals_beyond_int64",
+        "q": 256,
+        "arithmetic": "checked int64 with Python integer totals",
+        "mean": {
+          "numerator": 80486759,
+          "denominator": 278691840,
+          "decimal": 0.28880199362851816
+        },
+        "variance": {
+          "numerator": 177883595402266567,
+          "denominator": 19797708876607704268800,
+          "decimal": 8.985059660739215e-06
+        },
+        "raw_variance_numerator_over_q5": 364305603383841929216,
+        "negative_shared_covariances": 11823
+      }
+    ],
+    "reflected_uaci_equalities": 5,
+    "checks_per_covariance_case": [
+      "exact_mean",
+      "exact_variance",
+      "pair_occurrence_variance",
+      "transpose",
+      "global_reflection",
+      "coordinate_reflection",
+      "repetition_scaling",
+      "float_conversion"
+    ]
+  },
+  "wall_seconds": 4.734593
+}

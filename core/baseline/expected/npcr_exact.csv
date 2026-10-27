@@ -1,0 +1,5 @@
+alpha,method,probability
+0.01,standard_gaussian,0.008711458260276628
+0.01,independent_rank,0.008711458260276628
+0.05,standard_gaussian,0.05819106592253988
+0.05,independent_rank,0.03198575839618425
