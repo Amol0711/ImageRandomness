@@ -1,5 +1,0 @@
-# Tested with Python 3.12.14; code requires Python 3.10 or later.
-numpy==2.3.5
-scipy==1.17.0
-# Optional upstream input refresh only; bundled-input reproduction needs no Pillow.
-# Pillow==12.3.0

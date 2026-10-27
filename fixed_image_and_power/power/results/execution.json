@@ -1,8 +1,0 @@
-{
-  "design_sha256": "7cf0a05ceb7c06c953cb9fe6936bb4241bd8f5ff8cb241a2efe7b3abdd0f0fa1",
-  "python": "3.12.14",
-  "numpy": "2.3.5",
-  "scipy": "1.17.0",
-  "raw_reused": true,
-  "elapsed_seconds": 0.278201529999933
-}
